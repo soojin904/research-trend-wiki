@@ -5,7 +5,10 @@
       "Read(//tmp/**)",
       "Skill(schedule)",
       "Skill(schedule:*)",
-      "PowerShell(schtasks /create /tn \"Wiki\\\\MonthlyFetchIngest\" /tr \"powershell.exe -ExecutionPolicy Bypass -NonInteractive -File `\"D:\\\\soojin\\\\wiki\\\\scripts\\\\monthly_fetch_ingest.ps1`\"\" /sc monthly /d 28,29,30,31 /st 23:00 /f)"
+      "PowerShell(schtasks /create /tn \"Wiki\\\\MonthlyFetchIngest\" /tr \"powershell.exe -ExecutionPolicy Bypass -NonInteractive -File `\"D:\\\\soojin\\\\wiki\\\\scripts\\\\monthly_fetch_ingest.ps1`\"\" /sc monthly /d 28,29,30,31 /st 23:00 /f)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
     ]
   }
 }
