@@ -1,0 +1,208 @@
+{
+  "main": {
+    "id": "f36905845285f191",
+    "type": "split",
+    "children": [
+      {
+        "id": "547daffb3a186b3a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "65dcc1e0c86069cd",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0c5be405535ac3ab",
+    "type": "split",
+    "children": [
+      {
+        "id": "838ed6b3aff9e46c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "296cd16d4588264d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "e71d1ea054797bf3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "446c1a1690b29aad",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "999201f45f5a2fcc",
+    "type": "split",
+    "children": [
+      {
+        "id": "c5800024c8d585d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "65d2fa2a1b3f258b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "백링크"
+            }
+          },
+          {
+            "id": "8209e5b419cf9a8a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "나가는 링크"
+            }
+          },
+          {
+            "id": "f9e2754978882771",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "26b7650dc16129e6",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "모든 속성"
+            }
+          },
+          {
+            "id": "efc310b4ec40e99f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false
+    }
+  },
+  "active": "65dcc1e0c86069cd",
+  "lastOpenFiles": [
+    "pages/tools/netminer.md",
+    "scripts/batch_ingest.py.tmp.5788.f453e9e40534",
+    "scripts/batch_ingest.py.tmp.5788.12576dda9fba",
+    "scripts/batch_ingest.py.tmp.5788.a758dcf3dbe4",
+    "scripts/batch_ingest.py.tmp.5788.92f25698b3ed",
+    "scripts/batch_ingest.py.tmp.5788.aee69234e37e",
+    "scripts/batch_ingest.py.tmp.5788.01a35a3c2db8",
+    "pages/concepts/social_network_analysis.md",
+    "overview.md.tmp.42888.a869cefa68fd",
+    "log.md.tmp.42888.902d101b3d0d",
+    "index.md.tmp.42888.d12887f9f3e7",
+    "pages/tools/netminer.md.tmp.42888.7d4c8e0b2708",
+    "pages/methods/systematic_literature_review.md",
+    "pages/methods/mixed_methods.md",
+    "pages/concepts/topic_modeling.md",
+    "pages/concepts/semantic_network_analysis.md",
+    "pages/concepts/centrality.md",
+    "pages/papers/2021_kang_csr_ad_semantic_network.md",
+    "pages/papers/2022_jeon_social_network_health_elderly.md",
+    "pages/papers/2022_park_digital_healthcare_network.md",
+    "pages/papers/2022_morashti_sustainable_packaging.md",
+    "pages/papers/2024_jang_happiness_topic_nn.md",
+    "overview.md",
+    "log.md",
+    "index.md",
+    "SCHEMA.md"
+  ]
+}
