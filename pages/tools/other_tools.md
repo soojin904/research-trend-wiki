@@ -16,7 +16,7 @@ tags: [tools, r, python, spss, saom, gephi, ucinet]
 - **유형**: 통계 프로그래밍 언어
 - **사용 사례**:
   - [[pages/papers/netminer/2022_park_digital_healthcare_network|Park 외 (2022)]] — 토픽모델링 (NetMiner와 병행)
-  - [[pages/papers/2026_mcmillan_network_rct_causal|McMillan 외 (2026)]] — SAOM 분석 (RSiena 패키지)
+  - [[pages/papers/sna/2026_mcmillan_network_rct_causal|McMillan 외 (2026)]] — SAOM 분석 (RSiena 패키지)
 - **관련 패키지**: igraph (네트워크), topicmodels / stm (토픽), RSiena (SAOM)
 - **특징**: 무료·오픈소스, 통계 연계 강점, 코딩 필요
 
@@ -30,9 +30,46 @@ tags: [tools, r, python, spss, saom, gephi, ucinet]
 - **유형**: 종단 네트워크 분석 전용 R 패키지
 - **풀네임**: Stochastic Actor-Oriented Model
 - **사용 사례**:
-  - [[pages/papers/2026_mcmillan_network_rct_causal|McMillan 외 (2026)]] — RCT 참여자 네트워크 위치 변화 모델링
+  - [[pages/papers/sna/2026_mcmillan_network_rct_causal|McMillan 외 (2026)]] — RCT 참여자 네트워크 위치 변화 모델링
 - **특징**: 네트워크 변화와 행동 변화를 동시에 모델링, R 기반
 - **관련 개념**: [[pages/concepts/causal_inference_networks|인과 추론과 네트워크]]
+
+---
+
+## 응용 분야 논문에서 새로 확인된 도구 (2026 수집, 459편)
+
+### BERTopic (Python 라이브러리)
+- **유형**: 임베딩 기반 토픽 모델링 라이브러리
+- **응용 편수**: ~18편 (LDA 대비 빠르게 성장)
+- **강점**: 사전학습 언어모델(BERT) 기반 — LDA보다 의미론적으로 일관된 토픽
+- **약점**: GPU 필요, 초매개변수 설정 복잡
+- **NetMiner 관련**: ❌ 미지원 — "BERTopic+LDA 비교" 논문 증가로 중기 도입 검토 필요
+- **설치**: `pip install bertopic`
+
+### Textom
+- **유형**: 한국어 텍스트 마이닝 + 의미연결망 분석 웹 서비스
+- **응용 편수**: ~2편
+- **강점**: 한국어 형태소 분석 + 의미연결망 + 중심성 분석, 노코드 웹 UI
+- **약점**: SNA 기능 제한적 (NetMiner 대비), 구독형 비용
+- **NetMiner 관련**: **국내 직접 경쟁 도구** — 의미연결망 분석 영역에서 NetMiner의 잠재 대체재
+
+### Sometrend
+- **유형**: 한국 소셜미디어 분석 서비스
+- **응용 편수**: ~1편
+- **강점**: 국내 SNS 데이터 수집·트렌드 분석 특화
+- **약점**: SNA·네트워크 분석 없음
+
+### Orange Data Mining
+- **유형**: 오픈소스 GUI 기반 데이터 마이닝·ML 도구
+- **강점**: 시각적 파이프라인, 텍스트 분석·클러스터링 기능
+- **약점**: SNA 기능 약함 (네트워크 분석 미지원)
+- **NetMiner 관련**: GUI 노코드 분석 도구로서 간접 경쟁
+
+### Hugging Face (플랫폼)
+- **유형**: 사전학습 모델 허브 및 배포 플랫폼
+- **응용 편수**: ~20편 (transformers 라이브러리 사용)
+- **강점**: BERT, GPT 계열 수천 개 모델 무료 이용, `transformers` 라이브러리
+- **NetMiner 관련**: ❌ 연동 없음 — 코딩 기반 LLM/감성 분석 연구자들의 표준 플랫폼
 
 ---
 
@@ -76,5 +113,9 @@ tags: [tools, r, python, spss, saom, gephi, ucinet]
 | UCINET | ✅ | ❌ | △ | ✅ | 유료 |
 | VOSviewer | △ | △ | ❌ | ✅ | 무료 |
 | RSiena | △ | ❌ | ✅ | ❌ | 무료 |
+| BERTopic | ❌ | ✅ | ❌ | ❌ | 무료 |
+| Textom | △ | ✅ | △ | ✅ | 유료 |
+| Orange Data Mining | ❌ | △ | △ | ✅ | 무료 |
 
 → **NetMiner의 차별점**: SNA + 텍스트마이닝 + 통계를 GUI 환경에서 통합 지원하는 유일한 도구
+→ **경쟁 위협**: Textom(국내 의미연결망), VOSviewer(서지계량)가 NetMiner 일부 사용자층 흡수 중

@@ -16,7 +16,7 @@ tags: [tools, netminer, sna, text-mining, machine-learning]
 | Value Transform | Diagonal, Dichotomize, Missing Value, Recode |
 | Network Transform | Symmetrize, Transpose, Merge (Layers/Multiple link), 2-Mode→1-Mode Projection, Ego Network Extract |
 | Pruning | Backbone, Remove Isolates |
-| Text | Tokenizer, Word Network (Sliding Window / Co-occurrence), Dictionary Generate (Thesaurus / Compound Words / Exception Words) |
+| Text(English, Korean, Chinese supported) | Tokenizer, Word Network (Sliding Window / Co-occurrence), Dictionary Generate (Thesaurus / Compound Words / Exception Words)|
 
 ### Network (네트워크 분석)
 | 기능 | 세부 |
@@ -53,7 +53,7 @@ tags: [tools, netminer, sna, text-mining, machine-learning]
 | Word Statistics | — |
 | **BERTopic** | **BERTopic, BERTrend** |
 | **LDA** | **Raw Text, TDM** |
-| Topic Evaluation | Raw Text, TDM |
+| Topic Evaluation(Perplexity, Coherence) | Raw Text, TDM |
 
 ### Visualize (시각화)
 | 기능 | 세부 |
@@ -64,15 +64,15 @@ tags: [tools, netminer, sna, text-mining, machine-learning]
 ### Extension (확장)
 | 기능 |
 |------|
-| SNS Data Collector |
-| Biblio Data Collector |
-| News Data Collector |
+| SNS Data Collector(유튜브) | 
+| Biblio Data Collector(openalex, kci, springer) |
+| News Data Collector(한국 뉴스) |
 
 ### Lab (실험적 기능)
 | 기능 |
 |------|
 | Knowledge Graph |
-| Sentiment Analysis |
+| Sentiment Analysis(English, German, Dutch, French, Spanish, Italian, Korean) - BERT 기반 감성 분류 모델 |
 
 ---
 

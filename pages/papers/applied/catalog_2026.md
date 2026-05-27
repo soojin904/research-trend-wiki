@@ -1,0 +1,29 @@
+---
+title: "응용 분야 논문 2026 — 카탈로그"
+tags: [catalog, applied, 2026]
+---
+
+# 응용 분야 논문 2026 — 목록
+
+관련도 기준 이하 논문 요약 목록. 상세 분석이 필요한 경우 raw/applied/ 파일 참조.
+
+## 논문 목록
+
+- **The Relevance of Value Systems for Offensive Language Detection** — Michael Wiegand 외 (2026-01-01) | Relevance (law), Value (mathematics), Offensive, Measure (data warehouse), Detection theory #hate-speech-and-cyberbullying-detection #sentiment-analysis-and-opinion-mining #authorship-attribution-and-profiling
+- **DiSCo: Making Absence Visible in Intelligent Summarization Interfaces** — Eran Fainman 외 (2026-01-12) | Automatic summarization, Transparency (behavior), Domain (mathematical analysis), Contrast (vision), Baseline (sea) #topic-modeling #speech-and-dialogue-systems #recommender-systems-and-techniques
+- **Supporting Humans in Evaluating AI Summaries of Legal Depositions** — Naghmeh Farzi 외 (2026-01-21) | Automatic summarization, Key (lock), Legal case, Work (physics) #topic-modeling #artificial-intelligence-in-law #text-readability-and-simplification
+- **Sweeping up Gangs: The Effects of Tough-on-Crime Policies from a Network Approach** — Magdalena Domínguez 외 (2026-01-29) | Criminology, Computer security, Computer science, Law and economics, Political science #crime-patterns-and-interventions #crime,-illicit-activities,-and-governance #cybercrime-and-law-enforcement-studies
+- **Animal contact-related nontyphoidal Salmonella enterica outbreaks in humans in the U.S. (2009–2022): serovar-specific temporal trends and associations with exposure sources and settings** — Hammad Ur Rehman Bajwa 외 (2026-02-04) | Salmonella enterica, Outbreak, Public health, Transmission (telecommunications), One Health #salmonella-and-campylobacter-epidemiology #listeria-monocytogenes-in-food-safety #sars-cov-2-detection-and-testing
+- **Wikipedia and Grokipedia: A Comparison of Human and Generative Encyclopedias** — Ortal Hadad 외 (2026-02-05) | Generative grammar, Narrative, Framing (construction), Topic model, Mediation #wikis-in-education-and-collaboration #digital-humanities-and-scholarship #topic-modeling
+- **Vibe Researching as Wolf Coming: Can AI Agents with Skills Replace or Augment Social Scientists?** — Yongjun Zhang 외 (2026-02-25) | Workflow, Tacit knowledge, Coding (social sciences), Pipeline (software), Automation #computational-and-text-analysis-methods #innovative-teaching-methodologies-in-social-sciences #language-and-cultural-evolution
+- **Rumor propagation on hypergraphs** — Kleber A. Oliveira 외 (2026-02-26) | Rumor, Pairwise comparison, Set (abstract data type), Homogeneous, Fraction (chemistry) #complex-network-analysis-techniques #misinformation-and-its-impacts #advanced-mathematical-theories
+- **Unpacking the Paradoxes of Trust in Uncertain Times** — Oliver Schilke 외 (2026-03-01) | Reputation, Unpacking, Affordance, Underpinning, Order (exchange) #social-capital-and-networks #management-and-organizational-studies #social-power-and-status-dynamics
+- **Mind the Shift: Decoding Monetary Policy Stance from FOMC Statements with Large Language Models** — Yixuan Tang 외 (2026-03-15) | Statement (logic), Tone (literature), Task (project management), Interpretation (philosophy), Treasury #computational-and-text-analysis-methods #monetary-policy-and-economic-impact #stock-market-forecasting-methods
+- **Unlocking the Value of Text: Event-Driven Reasoning and Multi-Level Alignment for Time Series Forecasting** — Siyuan Wang 외 (2026-03-16) | Representation (politics), Series (stratigraphy), Time series, Value (mathematics), Focus (optics) #time-series-analysis-and-forecasting #forecasting-techniques-and-applications #topic-modeling
+- **Enhancing Structural Mapping with LLM-derived Abstractions for Analogical Reasoning in Narratives** — Mohammadhossein Khojasteh 외 (2026-03-31) | Abstraction, Generalization, Component (thermodynamics), Categorization, Operationalization #topic-modeling #artificial-intelligence-in-games #ai-based-problem-solving-and-planning
+- **Understanding the spatial and temporal impact of global events through large-scale social media data** — Ann-Kathrin Meyer 외 (2026-04-17) | Social media, Georeference, Resilience (materials science), Psychological resilience, Temporal scales #human-mobility-and-location-based-analysis #data-driven-disease-surveillance #sentiment-analysis-and-opinion-mining
+- **Rank-Turbulence Delta and Interpretable Approaches to Stylometric Delta Metrics** — Dmitry Pronin 외 (2026-04-21) | Delta, Set (abstract data type), Benchmark (surveying), Probabilistic logic, Basis (linear algebra) #authorship-attribution-and-profiling #text-readability-and-simplification #topic-modeling
+- **GLIER: Generative Legal Inference and Evidence Ranking for Legal Case Retrieval** — Minghan Li 외 (2026-04-26) | Inference, Generative grammar, Task (project management), Generative model, Matching (statistics) #artificial-intelligence-in-law #topic-modeling #business-process-modeling-and-analysis
+- **A rapid review of clustering algorithms** — Hui Yin 외 (2026-05-01) | Cluster analysis, Computer science, Data mining, Field (mathematics), Set (abstract data type) #advanced-clustering-algorithms-research #complex-network-analysis-techniques #text-and-document-classification-technologies
+- **How Historians Use Visualization: A Corpus-Backed Taxonomy and Analysis for Cross-Disciplinary Practice** — Xinyue Chen 외 (2026-05-02) | Visualization, Scholarship, Boundary object, Construct (python library), Taxonomy (biology) #data-visualization-and-analytics #digital-humanities-and-scholarship #computational-and-text-analysis-methods
+- **The Impact of Editorial Intervention on Detecting Native Language Traces** — Ahmet Yavuz Uluslu 외 (2026-05-11) | Fluency, First language, Leverage (statistics), Language model, Robustness (evolution) #authorship-attribution-and-profiling #hate-speech-and-cyberbullying-detection #topic-modeling

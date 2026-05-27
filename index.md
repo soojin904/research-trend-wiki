@@ -73,7 +73,7 @@
 > **성격**: NetMiner 사용 여부와 무관. SNA·텍스트마이닝이 마케팅·보건학·경영학·커뮤니케이션 등 응용 분야에서 어떻게 쓰이는지 파악하고 신규 고객 세그먼트를 발굴하는 목적.
 > **인제스트**: `batch_ingest.py` → 관련도 점수 기반 분류 (개별 페이지: `pages/papers/applied/`, 카탈로그: `pages/papers/applied/catalog_YYYY.md`).
 
-**현황**: 973편 수집 (2026년) — 개별 페이지 379편 (`pages/papers/applied/`, arXiv ~80편 제외) · 카탈로그 240편 (`pages/papers/applied/catalog_2026.md`)
+**현황**: 1,717편 수집 (2025–2026년) — 개별 페이지 682편 (`pages/papers/applied/`, arXiv 제외: 2026년 451편 + 2025년 231편) · 카탈로그 2편 (`pages/papers/applied/catalog_2026.md` 등)
 
 `pages/papers/applied/` 폴더 직접 탐색 또는 `/wiki:query`로 검색
 

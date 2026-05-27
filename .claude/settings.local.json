@@ -8,7 +8,18 @@
       "PowerShell(schtasks /create /tn \"Wiki\\\\MonthlyFetchIngest\" /tr \"powershell.exe -ExecutionPolicy Bypass -NonInteractive -File `\"D:\\\\soojin\\\\wiki\\\\scripts\\\\monthly_fetch_ingest.ps1`\"\" /sc monthly /d 28,29,30,31 /st 23:00 /f)",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)",
+      "Bash(mv d:/soojin/wiki/raw/*.md d:/soojin/wiki/raw/sna/)",
+      "Bash(mv d:/soojin/wiki/pages/papers/*.md d:/soojin/wiki/pages/papers/sna/)",
+      "Bash(mkdir -p \"d:/soojin/wiki/.claude/plugins/wiki/synthesize\")",
+      "PowerShell(Get-ChildItem \"D:\\\\soojin\\\\wiki\\\\raw\\\\applied\\\\\" | Group-Object { $_.Name.Substring\\(0,4\\) } | Sort-Object Name)",
+      "PowerShell(Get-ChildItem \"D:\\\\soojin\\\\wiki\\\\pages\\\\papers\\\\applied\\\\\" | Group-Object { $_.Name.Substring\\(0,4\\) } | Sort-Object Name)"
+    ],
+    "additionalDirectories": [
+      "d:\\soojin\\wiki\\.claude\\plugins\\wiki"
     ]
   }
 }

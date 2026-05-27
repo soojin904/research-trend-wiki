@@ -39,7 +39,7 @@ argument-hint: "[sna|applied|all] [주제 키워드]"
 추출 항목:
 1. 사용된 방법론 목록 (논문명, 방법론명)
 2. 응용 분야 (마케팅/보건/경영/커뮤니케이션 등)
-3. 사용 도구 (소프트웨어, 라이브러리)
+3. 사용 도구 (소프트웨어명, Python/R인 경우 라이브러리명까지)
 4. NetMiner로 커버 가능한 워크플로우 여부
 5. 특이한 트렌드나 패턴
 
@@ -74,6 +74,9 @@ argument-hint: "[sna|applied|all] [주제 키워드]"
 
 #### 3-4. tools/ 페이지 보강
 - 논문에서 새로 발견된 도구(소프트웨어, 라이브러리) → `other_tools.md`에 추가
+- Python·R을 사용한 경우 "Python" 또는 "R"로 기록하지 않고 **실제 라이브러리명**을 기록한다
+  - 예: `networkx`, `igraph`, `statsmodels`, `sklearn`, `sna`, `ergm`, `lme4` 등
+  - 라이브러리명을 특정할 수 없을 때만 `Python (라이브러리 미상)` 형식으로 기록
 - NetMiner 대비 포지셔닝 업데이트
 
 #### 3-5. overview.md 갱신

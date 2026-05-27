@@ -1,5 +1,23 @@
 ﻿# 위키 로그
 
+## [2026-05-27] ingest + synthesize | raw/applied 2025년 신규 논문 인제스트 및 682편 기준 재합성
+- **인제스트**: `batch_ingest.py` 실행 — 2025년 신규 논문 231편 개별 페이지 생성 (2026년 신규 72편 포함, 총 303편 신규)
+- **기준 변경**: 379편 → 682편 (2026년 451편 + 2025년 231편, arXiv 제외)
+- **탐색 에이전트**: 8개 병렬 에이전트 × 38편 (303편 전체 커버)
+- **업데이트 파일**:
+  - `pages/insights/applied_method_frequency_2026.md` — 682편 기준 재합성. 감성 분석이 1위로 상승(~253편, 37%), LLM 2위(~234편, 34%). STM·keyATM·NMF 신규 추가. ABSA 급성장(~25편) 확인
+  - `overview.md` — Part 3 제목·수치 갱신 (682편)
+  - `index.md` — C 섹션 현황 갱신 (682편)
+  - `pages/methods/topic_modeling.md` — STM·keyATM 등장 반영, 682편 기준 수치 갱신
+  - `pages/methods/sentiment_analysis.md` — 682편 1위로 갱신, 저자원 언어 급증·ABSA 성장 추가
+  - `pages/methods/llm_nlp.md` — LoRA/PEFT 경량화·RAG+지식그래프·LLM 에이전트 트렌드 추가
+- **핵심 발견**:
+  1. 감성 분석이 2025 신규 논문에서 46%로 압도적 1위
+  2. BERTopic·STM·keyATM으로 토픽모델링 세분화 가속
+  3. LoRA/PEFT 경량 파인튜닝 표준화, 오픈소스 LLM 급부상
+  4. NetMiner 추정 사용 (2025_lee 한국 법률 담론), TEXTOM 직접 언급 (2026_yoo K-POP)
+  5. 저자원 언어 NLP (인도네시아·아랍어·방글라어 등) 20% 이상 차지
+
 ## [2026-05-27] schema | methods 페이지 목적 명시 — 제품 기획 검토 자료
 - `SCHEMA.md` — methods/ 폴더 설명 갱신: NetMiner 기능 목록([[pages/tools/netminer]])을 기준으로 ① 신규 기능 후보(❌) ② 기존 기능 개선 근거(⚠️) 두 가지 용도 명시
 - `index.md` — Methods 섹션 헤더에 기준선(NetMiner 현재 기능 요약) 및 용도 주석 추가

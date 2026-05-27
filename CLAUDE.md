@@ -6,7 +6,8 @@
 
 | 명령어 | 설명 |
 |--------|------|
-| `/wiki:ingest [파일]` | raw/ 소스를 위키에 통합. 인수 없으면 미등록 파일 자동 탐지 |
+| `/wiki:ingest [파일]` | raw/ 소스를 위키에 통합. 인수 없으면 미등록 파일 자동 탐지. 번역 포함 |
+| `/wiki:synthesize [sna\|applied\|all] [키워드]` | 논문 페이지 읽고 지식 합성 → methods/concepts/insights/tools/overview 업데이트 |
 | `/wiki:query <질문>` | 위키를 검색해 답변 합성. 가치 있는 답은 페이지로 저장 |
 | `/wiki:lint` | 고아 페이지, 깨진 링크, 누락 개념 등 위키 건강 점검 |
 

@@ -29,7 +29,12 @@ BASE_URL = "https://api.openalex.org/works"
 USER_AGENT = "wiki-fetcher/1.0 (mailto:netminer@cyram.com)"
 
 # fetch_openalex.py 가 수집하는 전문 SNA 학술지 ISSN — social network 쿼리에서 제외
-EXCLUDE_ISSNS = ["0378-8733", "2816-4245", "2050-1250"]
+# 2331-8422 : arXiv (OpenAlex 등록 ISSN)
+EXCLUDE_ISSNS = ["0378-8733", "2816-4245", "2050-1250", "2331-8422"]
+
+# venue display_name 에 포함된 경우 제외할 키워드 (소문자 비교)
+# arXiv는 ISSN 필터 외에 "arxiv (cornell university)" 표기도 별도 존재
+EXCLUDE_VENUE_KEYWORDS = ["arxiv"]
 
 
 def reconstruct_abstract(inverted_index: dict) -> str:
@@ -54,7 +59,10 @@ def openalex_id_short(paper: dict) -> str:
     return paper.get("id", "").replace("https://openalex.org/", "")
 
 
-def fetch_all(url: str, max_results: int = 500) -> list:
+MAX_PER_QUERY = 500
+
+
+def fetch_all(url: str) -> list:
     results = []
     page = 1
     while True:
@@ -70,14 +78,14 @@ def fetch_all(url: str, max_results: int = 500) -> list:
         batch = data.get("results", [])
         results.extend(batch)
         meta = data.get("meta", {})
-        total = min(meta.get("count", 0), max_results)
+        total = min(meta.get("count", 0), MAX_PER_QUERY)
         per_page = meta.get("per_page", 25)
         print(f"  {len(results)}/{total} 건 수신")
         if len(results) >= total or len(batch) < per_page:
             break
         page += 1
         time.sleep(0.3)
-    return results[:max_results]
+    return results[:MAX_PER_QUERY]
 
 
 def paper_to_markdown(paper: dict, query_keyword: str) -> str:
@@ -95,10 +103,9 @@ def paper_to_markdown(paper: dict, query_keyword: str) -> str:
     author_str = "; ".join(authors)
 
     venue = (
-        paper.get("primary_location", {})
-        .get("source", {})
-        .get("display_name", "") or ""
-    )
+        (paper.get("primary_location") or {})
+        .get("source") or {}
+    ).get("display_name", "") or ""
 
     topics = [t["display_name"] for t in paper.get("topics", [])]
     keywords = [k["display_name"] for k in paper.get("keywords", [])]
@@ -170,7 +177,7 @@ def build_social_network_url(from_date: str, to_date: str, per_page: int = 100) 
         f"{BASE_URL}"
         f'?search=("social+network")'
         f"&filter=from_publication_date:{from_date},to_publication_date:{to_date}{exclude_filter}"
-        f"&sort=publication_date:desc"
+        f"&sort=cited_by_count:desc"
         f"&per_page={per_page}"
     )
 
@@ -185,19 +192,17 @@ def build_text_analysis_url(from_date: str, to_date: str, per_page: int = 100) -
         f'?search=("text+analysis")'
         f"&filter=from_publication_date:{from_date},to_publication_date:{to_date}"
         f",topics.id:{topic_filter}{exclude_filter}"
-        f"&sort=publication_date:desc"
+        f"&sort=cited_by_count:desc"
         f"&per_page={per_page}"
     )
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--from-date", default="2026-01-01", metavar="YYYY-MM-DD",
+    parser.add_argument("--from-date", default="2025-12-01", metavar="YYYY-MM-DD",
                         help="수집 시작일 (기본: 2026-01-01)")
-    parser.add_argument("--to-date", default="2026-12-31", metavar="YYYY-MM-DD",
+    parser.add_argument("--to-date", default="2025-12-31", metavar="YYYY-MM-DD",
                         help="수집 종료일 (기본: 2026-12-31)")
-    parser.add_argument("--max-per-query", type=int, default=300,
-                        help="쿼리당 최대 수집 건수 (기본: 300)")
     parser.add_argument("--dry-run", action="store_true",
                         help="저장 없이 결과만 출력")
     args = parser.parse_args()
@@ -214,14 +219,29 @@ def main():
     for keyword, url in queries:
         print(f"\n=== 쿼리: \"{keyword}\" ===")
         print(f"URL: {url}\n")
-        papers = fetch_all(url, max_results=args.max_per_query)
+        papers = fetch_all(url)
         for p in papers:
             oid = openalex_id_short(p)
             if oid not in all_papers:
                 all_papers[oid] = (p, keyword)
             # 중복 시 먼저 수집된 것 유지 (social network 우선)
 
-    print(f"\n중복 제거 후 총 {len(all_papers)}건\n")
+    print(f"\n중복 제거 후 총 {len(all_papers)}건")
+
+    # venue 이름 기반 후처리 필터 (arXiv 등 ISSN 필터를 우회하는 경우 대응)
+    filtered_out = []
+    for oid in list(all_papers.keys()):
+        paper, _ = all_papers[oid]
+        venue = (
+            (paper.get("primary_location") or {})
+            .get("source") or {}
+        ).get("display_name", "") or ""
+        if any(kw in venue.lower() for kw in EXCLUDE_VENUE_KEYWORDS):
+            filtered_out.append(venue)
+            del all_papers[oid]
+    if filtered_out:
+        print(f"venue 필터로 제외: {len(filtered_out)}건 ({', '.join(set(filtered_out))})")
+    print(f"venue 필터 후 총 {len(all_papers)}건\n")
 
     saved, skipped_existing, dry_list = [], [], []
     for oid, (paper, keyword) in all_papers.items():

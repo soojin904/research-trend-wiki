@@ -21,10 +21,10 @@ except ImportError:
     _ANTHROPIC_AVAILABLE = False
 
 WIKI_DIR = Path(__file__).parent.parent
-RAW_DIR = WIKI_DIR / "raw"
-APPLIED_DIR = RAW_DIR / "applied"
-PAGES_DIR = WIKI_DIR / "pages" / "papers"
-APPLIED_PAGES_DIR = PAGES_DIR / "applied"
+RAW_DIR = WIKI_DIR / "raw" / "sna"
+APPLIED_DIR = WIKI_DIR / "raw" / "applied"
+PAGES_DIR = WIKI_DIR / "pages" / "papers" / "sna"
+APPLIED_PAGES_DIR = WIKI_DIR / "pages" / "papers" / "applied"
 INDEX_PATH = WIKI_DIR / "index.md"
 
 # 이미 인제스트된 논문 raw 파일명 (stem)
@@ -45,26 +45,47 @@ ALREADY_INGESTED = {
     "2026_openalex_The_influence_of_social_network_on_j_socnet_2025_12_008",
 }
 
-# 고관련도 키워드 (점수 +2)
+# SNA 전문 학술지(raw/sna/) 고관련도 키워드 (+2)
 HIGH_KEYWORDS = [
-    "topic model", "lda", "text mining", "text analysis", "semantic network",
-    "natural language", "nlp", "sentiment", "bert", "word embedding",
-    "machine learning", "deep learning", "neural network", "gnn", "graph neural",
-    "mixed method", "bibliometric", "systematic review", "keyword network",
-    "two-mode network", "bipartite", "affiliation network",
-    "netminer", "gephi", "ucinet", "software", "tool",
-]
-
-# 중간 관련도 키워드 (점수 +1)
-MED_KEYWORDS = [
+    "social network", "network analysis",
     "exponential random graph", "ergm", "saom", "stochastic actor",
     "community detect", "centrality", "betweenness", "closeness",
+    "network visualization", "data collection", "community", "brokerage", "blockmodel",
+    "natural language", "text mining", "text analysis",
+    "topic model", "lda", "sentiment", "bert", "word embedding",
+    "semantic network", "network text", "text network",
+    "machine learning", "deep learning", "gnn", "graph neural network",
+    "netminer", "gephi", "ucinet",
+]
+
+# SNA 전문 학술지 중간 관련도 키워드 (+1)
+MED_KEYWORDS = [
     "multilayer", "multiplex", "temporal network", "dynamic network",
     "diffusion", "contagion", "influence", "peer effect",
-    "ego", "egocentric", "personal network",
-    "visualization", "data collection", "survey",
-    "method", "model", "algorithm", "estimation",
-    "content analysis", "discourse", "frame",
+    "ego network", "egocentric", "personal network",
+    "content analysis", "discourse", "mixed method", "bibliometric", "systematic review", "keyword network", "co-occurrence network",
+    "two-mode network", "bipartite", "affiliation network", "graph analysis",
+]
+
+# ── applied 전용 규칙 ────────────────────────────────────────────────────────
+
+# 게이트: 최소 하나 이상 포함해야 인제스트 대상 (SNA 또는 넷마이너 알고리즘 사용 확인)
+APPLIED_GATE_KEYWORDS = [
+    "social network analysis",
+    "network analysis",
+    "keyword network",
+    "semantic network",
+    "co-occurrence network",
+    "text network",
+    "co-word",
+    "text analysis",
+    "topic model",
+    "sentiment analysis",
+    "netminer",
+    "gephi",
+    "ucinet",
+    "pajek",
+    "vosviewer",
 ]
 
 # 스킵 패턴
@@ -155,6 +176,17 @@ def score_paper(text: str) -> int:
     return score
 
 
+def passes_applied_gate(text: str) -> bool:
+    """SNA 또는 넷마이너 알고리즘 관련 키워드가 하나라도 있어야 통과."""
+    t = text.lower()
+    return any(kw in t for kw in APPLIED_GATE_KEYWORDS)
+
+
+def score_applied_paper(text: str) -> int:
+    """applied 전용 점수 계산. 게이트 통과 후 SNA 전문 학술지 키워드로 점수 부여."""
+    return score_paper(text)
+
+
 def parse_metadata(path: Path) -> dict:
     text = path.read_text(encoding="utf-8")
     def get_field(field):
@@ -202,7 +234,7 @@ def parse_metadata(path: Path) -> dict:
         "keywords": keywords,
         "abstract": abstract,
         "raw_text": text,
-        "source_file": path.name,
+        "source_file": f"sna/{path.name}",
     }
 
 
@@ -295,9 +327,9 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--threshold", type=int, default=3, help="개별 페이지 생성 관련도 임계값")
     parser.add_argument("--dry-run", action="store_true")
-    parser.add_argument("--no-translate", action="store_true", help="한국어 번역 API 호출 건너뜀")
+    parser.add_argument("--translate", action="store_true", help="Claude API로 한국어 번역 (기본: 건너뜀)")
     args = parser.parse_args()
-    use_translate = not args.no_translate and _ANTHROPIC_AVAILABLE
+    use_translate = args.translate and _ANTHROPIC_AVAILABLE
 
     # 신규 파일 수집
     new_files = []
@@ -317,6 +349,8 @@ def main():
 
     for f in new_files:
         meta = parse_metadata(f)
+        if not meta["abstract"]:
+            continue
         score_text = " ".join([meta["title"]] + meta["keywords"] + meta["tags"] + [meta["abstract"]])
         score = score_paper(score_text)
         meta["score"] = score
@@ -420,12 +454,20 @@ def ingest_applied(use_translate: bool = True, threshold: int = 3, dry_run: bool
 
     selected = []
     catalog_map = {}  # {year: [meta, ...]}
+    gate_failed = 0
 
     for f in sorted(APPLIED_DIR.glob("*.md")):
         meta = parse_metadata(f)
+        if not meta["abstract"]:
+            continue
         meta["source_file"] = f"applied/{f.name}"
         score_text = " ".join([meta["title"]] + meta["keywords"] + meta["tags"] + [meta["abstract"]])
-        score = score_paper(score_text)
+
+        if not passes_applied_gate(score_text):
+            gate_failed += 1
+            continue
+
+        score = score_applied_paper(score_text)
         meta["score"] = score
 
         slug = make_page_slug(meta)
@@ -441,7 +483,7 @@ def ingest_applied(use_translate: bool = True, threshold: int = 3, dry_run: bool
             catalog_map.setdefault(year, []).append(meta)
 
     total_catalog = sum(len(v) for v in catalog_map.values())
-    print(f"\napplied: 개별 페이지 대상 {len(selected)}편 (score>={threshold}), 카탈로그 대상 {total_catalog}편\n")
+    print(f"\napplied: 게이트 탈락 {gate_failed}편, 개별 페이지 대상 {len(selected)}편 (score>={threshold}), 카탈로그 대상 {total_catalog}편\n")
 
     # 개별 페이지 생성
     individual_created = []
@@ -516,12 +558,12 @@ tags: [catalog, applied, {year}]
 
 if __name__ == "__main__":
     import sys
-    _no_translate = "--no-translate" in sys.argv
+    _translate = "--translate" in sys.argv
     _dry_run = "--dry-run" in sys.argv
     _threshold = 3
     for _arg in sys.argv:
         if _arg.startswith("--threshold="):
             _threshold = int(_arg.split("=")[1])
-    _use_tr = not _no_translate and _ANTHROPIC_AVAILABLE
+    _use_tr = _translate and _ANTHROPIC_AVAILABLE
     individual_created, catalog_created = main()
     ingest_applied(use_translate=_use_tr, threshold=_threshold, dry_run=_dry_run)
