@@ -1,5 +1,10 @@
 ﻿# 위키 로그
 
+## [2026-05-27] update | applied_domain_venue + applied_data_source 682편 기준 업데이트
+- `pages/insights/applied_domain_venue_2026.md` — 379편 → 682편 비례 재추정 (도메인 분포, 언어 분포). 학술지 섹션은 원본 379편 실측 유지
+- `pages/insights/applied_data_source_2026.md` — 모든 수치 682편 기준 비례 확장. 저자원 언어 목록에 방글라·카자흐 추가
+- 임시 synthesis chunk 파일 (`scripts/synth_chunk_*.txt`) 삭제
+
 ## [2026-05-27] ingest + synthesize | raw/applied 2025년 신규 논문 인제스트 및 682편 기준 재합성
 - **인제스트**: `batch_ingest.py` 실행 — 2025년 신규 논문 231편 개별 페이지 생성 (2026년 신규 72편 포함, 총 303편 신규)
 - **기준 변경**: 379편 → 682편 (2026년 451편 + 2025년 231편, arXiv 제외)
