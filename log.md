@@ -1,5 +1,63 @@
 ﻿# 위키 로그
 
+## [2026-05-27] schema | methods 페이지 목적 명시 — 제품 기획 검토 자료
+- `SCHEMA.md` — methods/ 폴더 설명 갱신: NetMiner 기능 목록([[pages/tools/netminer]])을 기준으로 ① 신규 기능 후보(❌) ② 기존 기능 개선 근거(⚠️) 두 가지 용도 명시
+- `index.md` — Methods 섹션 헤더에 기준선(NetMiner 현재 기능 요약) 및 용도 주석 추가
+
+## [2026-05-27] synthesize | method 페이지 분리 및 텍스트 분류 신규 추가
+- `pages/methods/ml_gnn.md` → 삭제 후 3개로 분리
+  - `pages/methods/ml.md` (신규) — 전통 ML / 앙상블: SVM·RF·XGBoost·K-Means·SHAP/XAI
+  - `pages/methods/gnn.md` (신규) — GNN: GCN·GAT·지식 그래프·GraphRAG, SNA 학술지 사용 사례 포함
+  - `pages/methods/text_classification.md` (신규) — 텍스트 분류 (~76편, 20%, 응용 3위): BERT 파인튜닝·제로샷·앙상블
+- `index.md`, `applied_method_frequency_2026.md`, `topic_modeling.md`, `bayesian_network_model.md` 링크 갱신
+
+## [2026-05-27] synthesize | applied 논문 arXiv 제외 후 재합성 완료 — 379편 전체
+- arXiv 제외 후 남은 개별 페이지 379편, 탐색 에이전트 10개 × 38편 (chunks 0–9, 100% 커버)
+- **업데이트 파일**:
+  - `pages/insights/applied_method_frequency_2026.md` — 분석 기준 379편으로 갱신, 수치 재조정 (LLM 40%·감성 30%·토픽 18%·SNA 10%)
+  - `pages/insights/applied_domain_venue_2026.md` — 379편, arXiv 게재 학술지 행 제거, 분야별 편수 재조정
+  - `pages/insights/applied_data_source_2026.md` — 379편 기준 데이터 소스 비율 재조정
+  - `overview.md` — Part 3 제목·수치 갱신 (100% 커버, arXiv 제외)
+  - `index.md` — applied 현황 379편으로 갱신
+- 주요 발견 (청크 8·9 추가 반영): 토픽+감성 복합, GNN/RAG 적용 확산, 도메인: 법률·의료·관광 등 다양화 확인
+
+## [2026-05-27] synthesize | sna 데이터 소스 insight 추가
+- `pages/insights/sna_data_source.md` (신규) — 설문/에고넷 56%, 종단 28%, 표준 데이터셋(Add Health·SSND·BHPS 등), 응용 분야 데이터 소스와 대조 테이블
+
+## [2026-05-27] synthesize | applied 신규 method·insight 페이지 추가
+- `pages/methods/llm_nlp.md` (신규) — LLM/GPT 활용, 응용 분야 1위(~186편), ❌ NetMiner
+- `pages/methods/sentiment_analysis.md` (신규) — 감성 분석, 응용 분야 2위(~140편), ⚠️ 부분 지원, ABSA 심화 포함
+- `pages/insights/applied_data_source_2026.md` (신규) — Twitter/X 1위, 소셜미디어 40%·뉴스 16%·리뷰 14%, 다국어 NLP 15–20%, 고객 세그먼트별 데이터 소스 정리
+
+## [2026-05-27] synthesize | applied 응용 분야 논문 지식 합성 완료 — 592편
+- 대상: `pages/papers/applied/` 개별 페이지 459편 (에이전트 8개 × 74편 = 592편 분석)
+- 에이전트 실패: chunks 8–9 (141편, 세션 한도) — 약 80% 커버
+- **생성/업데이트 파일**:
+  - `pages/insights/applied_domain_venue_2026.md` (신규) — 7개 분야 분포, 261개 학술지
+  - `pages/insights/applied_method_frequency_2026.md` (신규) — LLM 31%·감성 24%·토픽 14%·SNA 8%
+  - `pages/methods/topic_modeling.md` — 응용 분야 섹션 추가 (LDA 55편, BERTopic 18편, 조합 패턴)
+  - `pages/methods/ml_gnn.md` — 응용 분야 섹션 추가 (Transformer 120편, GPT 60편, XGBoost 30편)
+  - `pages/methods/semantic_network_analysis.md` — 응용 분야 섹션 추가 (공출현 18편, Textom 경쟁 언급)
+  - `pages/concepts/mixed_methods.md` — 패턴 6 (토픽+감성), 패턴 7 (텍스트+SNA) 추가
+  - `pages/tools/other_tools.md` — BERTopic, Textom, Sometrend, Orange, Hugging Face 추가
+  - `overview.md` — Part 3 (응용 분야 인사이트 + NetMiner 시사점) 추가
+- 핵심 발견: LLM 방법론 도구화 급증, BERTopic이 LDA 잠식 중, SNA+텍스트 결합이 응용 분야 표준 패턴, Textom이 국내 직접 경쟁자로 부상
+
+## [2026-05-26] update | 폴더 구조 재편 — raw/sna/, pages/papers/sna/ 신설
+- `raw/*.md` (667개) → `raw/sna/` 이동
+- `pages/papers/*.md` (265개, 개별 258편 + catalog 7개) → `pages/papers/sna/` 이동
+- wikilink 업데이트: index.md + concepts 4개 + methods 9개 + tools 1개 (총 17개 파일)
+- SCHEMA.md, overview.md 경로 표기 갱신
+- batch_ingest.py 경로 상수 갱신 (RAW_DIR, PAGES_DIR → sna/ 하위)
+
+## [2026-05-26] ingest | 응용 분야 논문 (유형 C) 최초 인제스트 — 973편
+- 수집 스크립트: `fetch_applied.py` — "social network" + "text analysis" 키워드, cited_by_count:desc 정렬, 쿼리당 최대 500건
+- 수집 기간: 2026년 (--from-date 2026-01-01 --to-date 2026-12-31)
+- 제외 학술지: Social Networks / Network Science / Connections (유형 B와 중복 방지)
+- 인제스트 결과: 개별 페이지 733편 (`pages/papers/applied/`) + 카탈로그 240편 (`pages/papers/applied/catalog_2026.md`)
+- 번역: 미적용 (--no-translate). 필요 시 소급 번역 가능
+- 총 페이지: 291 → 1,025
+
 > append-only. 인제스트·쿼리·린트 이력.
 > 파싱 팁: `grep "^## \[" log.md | tail -10` → 최근 10개 항목
 

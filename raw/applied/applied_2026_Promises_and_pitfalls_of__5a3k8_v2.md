@@ -1,0 +1,42 @@
+---
+title: "Promises and pitfalls of using LLMs to identify actor stances in political discourse"
+authors: ['Viviane Walker', 'Mario Angst']
+year: 2026
+publication_date: 2026-02-06
+venue: ""
+volume: "None"
+issue: "None"
+pages: ""
+doi: "https://doi.org/10.31235/osf.io/5a3k8_v2"
+oa_status: "gold"
+openalex_id: "https://openalex.org/W7128043108"
+query_keyword: "text analysis"
+tags: ['Computational and Text Analysis Methods', 'Sentiment Analysis and Opinion Mining', 'Discourse Analysis in Language Studies']
+keywords: ['Normative', 'Newspaper', 'Context (archaeology)', 'Politics', 'Task (project management)', 'Variety (cybernetics)', 'Strengths and weaknesses']
+source: openalex-keyword
+---
+
+# Promises and pitfalls of using LLMs to identify actor stances in political discourse
+
+**저자**: Viviane Walker; Mario Angst
+**출처**: 
+**발행일**: 2026-02-06
+**DOI**: https://doi.org/10.31235/osf.io/5a3k8_v2
+**수집 키워드**: text analysis
+
+## 초록
+
+Empirical research in the social sciences is often interested in understanding actor stances; the positions that social actors take regarding normative statements in societal discourse. In automated text analysis applications, the classification task of stance detection remains challenging. Stance detection is especially difficult due to semantic challenges such as implicitness or missing context but also due to the general nature of the task. In this paper, we explore the potential of Large Language Models (LLMs) to enable stance detection in a generalized (non-domain, non-statement specific) form. Specifically, we test a variety of different general prompt chains for zero-shot stance classifications.Our evaluation data consists of textual data from a real-world empirical research project in the domain of sustainable urban transport. For 1710 German newspaper paragraphs, each containing an organizational entity, we annotated the stance of the entity toward one of five normative statements. A comparison of four publicly available LLMs show that they can improve upon existing approaches and achieve adequate performance. However, results heavily depend on the prompt chain method, LLM, and vary by statement. Our findings have implications for computational linguistics methodology and political discourse analysis, as they offer a deeper understanding of the strengths and weaknesses of LLMs in performing the complex semantic task of stance detection. We strongly emphasise the necessity of domain-specific evaluation data for evaluating LLMs and considering trade-offs between model complexity and performance.
+
+## 키워드
+
+Normative, Newspaper, Context (archaeology), Politics, Task (project management), Variety (cybernetics), Strengths and weaknesses
+
+## 주제 분류 (OpenAlex Topics)
+
+- Computational and Text Analysis Methods (score: 0.806)
+- Sentiment Analysis and Opinion Mining (score: 0.019)
+- Discourse Analysis in Language Studies (score: 0.016)
+
+## 메모
+

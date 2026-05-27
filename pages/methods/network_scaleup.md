@@ -1,4 +1,4 @@
----
+﻿---
 title: "Network Scale-Up / ARD (네트워크 규모 추정 방법)"
 tags: [network-scale-up, nsum, ard, hidden-population, respondent-driven, hard-to-reach]
 netminer_support: "❌ 미지원"
@@ -37,11 +37,11 @@ NSUM 과정에서 수집되는 집계된 관계 데이터. ARD에서 개인 네�
 
 | 논문 | 적용 방식 | 핵심 발견 |
 |------|-----------|-----------|
-| [[pages/papers/2026_lubbers_nsm_ard\|Lubbers 외 (2026)]] | NSUM·ARD의 발전 역사와 응용 분야 종합 리뷰 — 은닉 집단 추정에서 사회 구조 파악까지 | ARD가 단순 규모 추정을 넘어 네트워크 구조 연구 도구로 진화 |
-| [[pages/papers/2026_arevalillo_network_scaleup_methods\|Arevalillo 외 (2026)]] | ARD로 스페인 총선 투표 의향 간접 추정 — 다양한 NSUM 기법 비교 | 주요 여론조사 기관과 유사한 정확도; 민감 정보 노출 위험 낮은 대안 |
-| [[pages/papers/2026_feld_estimating_unknown_populations\|Feld & McGail (2026)]] | NSUM 기준 집단과 포획-재포획 결합 하이브리드 추정 — 페이스북 데이터로 신입생 규모 추정 검증 | 중복 보고로 외생 정보 없이 추정치 보정 가능; 가시성 차이 있는 집단에 적합 |
-| [[pages/papers/2025_vlker_whos_your_extended\|Völker 외 (2025)]] | 네덜란드 2021년 NSUM으로 성인 확장 지인 네트워크 규모(중앙값 446명)·동질성 분석 | 취업 상태·가구원 수·나이·소득이 더 큰 네트워크와 연관; 성별·교육 분리 확인 |
-| [[pages/papers/2026_almquist_homelessness_personal_network\|Almquist 외 (2026)]] | RDS 표집으로 킹 카운티 노숙 경험자 3,000명+ ARD 수집 — 퍼스널 네트워크 3년 종단 분석 | 친밀 우정 네트워크 감소(4.9→4.19), 가족 동거 증가 — 고립 심화 신호 |
+| [[pages/papers/sna/2026_lubbers_nsm_ard\|Lubbers 외 (2026)]] | NSUM·ARD의 발전 역사와 응용 분야 종합 리뷰 — 은닉 집단 추정에서 사회 구조 파악까지 | ARD가 단순 규모 추정을 넘어 네트워크 구조 연구 도구로 진화 |
+| [[pages/papers/sna/2026_arevalillo_network_scaleup_methods\|Arevalillo 외 (2026)]] | ARD로 스페인 총선 투표 의향 간접 추정 — 다양한 NSUM 기법 비교 | 주요 여론조사 기관과 유사한 정확도; 민감 정보 노출 위험 낮은 대안 |
+| [[pages/papers/sna/2026_feld_estimating_unknown_populations\|Feld & McGail (2026)]] | NSUM 기준 집단과 포획-재포획 결합 하이브리드 추정 — 페이스북 데이터로 신입생 규모 추정 검증 | 중복 보고로 외생 정보 없이 추정치 보정 가능; 가시성 차이 있는 집단에 적합 |
+| [[pages/papers/sna/2025_vlker_whos_your_extended\|Völker 외 (2025)]] | 네덜란드 2021년 NSUM으로 성인 확장 지인 네트워크 규모(중앙값 446명)·동질성 분석 | 취업 상태·가구원 수·나이·소득이 더 큰 네트워크와 연관; 성별·교육 분리 확인 |
+| [[pages/papers/sna/2026_almquist_homelessness_personal_network\|Almquist 외 (2026)]] | RDS 표집으로 킹 카운티 노숙 경험자 3,000명+ ARD 수집 — 퍼스널 네트워크 3년 종단 분석 | 친밀 우정 네트워크 감소(4.9→4.19), 가족 동거 증가 — 고립 심화 신호 |
 
 ## NetMiner 지원 현황
 

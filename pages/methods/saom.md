@@ -1,4 +1,4 @@
----
+﻿---
 title: "SAOM / RSiena (확률적 행위자 지향 모형)"
 tags: [saom, rsiena, stochastic-actor-oriented, longitudinal, coevolution]
 netminer_support: "❌ 미지원"
@@ -31,14 +31,14 @@ SAOM의 핵심 아이디어는 행위자가 소규모 변화(유대 추가·삭�
 
 | 논문 | 적용 방식 | 핵심 발견 |
 |------|-----------|-----------|
-| [[pages/papers/2025_kruidhof_the_coevolution_informal\|Kruidhof 외 (2025)]] | 3파 종단 연구에서 SAOM으로 비공식 지위와 가십 삼자 관계 공진화 분석 | 낮은 지위 직원이 가십 수신 多 → 지위 향상; 가십 전송은 지위에 영향 없음 |
-| [[pages/papers/2023_espinosara_coevolution_sociocognitive\|Espinosa-Rada 외 (2023)]] | 1모드·2모드 네트워크용 SAOM으로 천문학자 인용·협력·기관 네트워크 공진화 분석 | 사회적 관계(협력·기관 근접성)가 인지 기반보다 인용 공진화를 더 잘 설명 |
-| [[pages/papers/2022_hachen_generators_diffusers_examining\|Hachen 외 (2022)]] | 이원 네트워크용 SAOM으로 동아리·음악 장르·수강 과목 등 초점 유형별 역할 비교 | 동아리=유대 생성자, 음악 장르=취향 확산자, 수강 과목=혼합 |
-| [[pages/papers/2022_leifeld_the_stochastic_actororiented_m\|Leifeld & Cranmer (2022)]] | SAOM의 이론적 성격 재검토 — TERGM과 모형 비교 방법론 논쟁 | SAOM은 방법론인 동시에 이론이며, 내재 이론 검증이 시급한 과제 |
+| [[pages/papers/sna/2025_kruidhof_the_coevolution_informal\|Kruidhof 외 (2025)]] | 3파 종단 연구에서 SAOM으로 비공식 지위와 가십 삼자 관계 공진화 분석 | 낮은 지위 직원이 가십 수신 多 → 지위 향상; 가십 전송은 지위에 영향 없음 |
+| [[pages/papers/sna/2023_espinosara_coevolution_sociocognitive\|Espinosa-Rada 외 (2023)]] | 1모드·2모드 네트워크용 SAOM으로 천문학자 인용·협력·기관 네트워크 공진화 분석 | 사회적 관계(협력·기관 근접성)가 인지 기반보다 인용 공진화를 더 잘 설명 |
+| [[pages/papers/sna/2022_hachen_generators_diffusers_examining\|Hachen 외 (2022)]] | 이원 네트워크용 SAOM으로 동아리·음악 장르·수강 과목 등 초점 유형별 역할 비교 | 동아리=유대 생성자, 음악 장르=취향 확산자, 수강 과목=혼합 |
+| [[pages/papers/sna/2022_leifeld_the_stochastic_actororiented_m\|Leifeld & Cranmer (2022)]] | SAOM의 이론적 성격 재검토 — TERGM과 모형 비교 방법론 논쟁 | SAOM은 방법론인 동시에 이론이며, 내재 이론 검증이 시급한 과제 |
 
 ### 확장 모형: 랜덤 효과 SAOM
 
-[[pages/papers/2024_ceoldo_stochastic_actor_oriented_mode\|Ceoldo 외 (2024)]]는 SAOM에 랜덤 효과를 도입하여 행위자 간 이질성을 포착하는 방법을 제안. 기존 고정 효과 모형 대비 유연성 향상.
+[[pages/papers/sna/2024_ceoldo_stochastic_actor_oriented_mode\|Ceoldo 외 (2024)]]는 SAOM에 랜덤 효과를 도입하여 행위자 간 이질성을 포착하는 방법을 제안. 기존 고정 효과 모형 대비 유연성 향상.
 
 ## NetMiner 지원 현황
 

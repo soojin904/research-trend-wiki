@@ -13,11 +13,15 @@
 | 유형 | raw 경로 | pages 경로 | 수집 방식 | 활용 목적 |
 |------|----------|-----------|----------|----------|
 | **A. NetMiner 사용 논문** | `raw/netminer/` | `pages/papers/netminer/` | PDF 직접 수집 | 제품 마케팅·사례 연구 |
-| **B. SNA 학계 트렌드 논문** | `raw/*.md` (root) | `pages/papers/` | OpenAlex API 수집 (Social Networks 등 SNA 전문지) | 학계 트렌드 파악, 제품 기획 방향 |
-| **C. 응용 분야 논문** | `raw/applied/` | `pages/papers/applied/` | 수동 큐레이션 | SNA 방법론이 타 분야에서 어떻게 쓰이는지 파악. 신규 시장·세그먼트 발굴 |
+| **B. SNA 학계 트렌드 논문** | `raw/sna/` | `pages/papers/sna/` | OpenAlex API 수집 (Social Networks 등 SNA 전문지) | 학계 트렌드 파악, 제품 기획 방향 |
+| **C. 응용 분야 논문** | `raw/applied/` | `pages/papers/applied/` | `fetch_applied.py` — 키워드 검색 (OpenAlex, 전 저널) | SNA·텍스트마이닝의 응용 분야 파악. 신규 고객 세그먼트 발굴 |
 
-- **유형 C 특징**: SNA 학술지 외 분야(마케팅, 보건학, 경영학, 커뮤니케이션 등)에서 SNA·텍스트마이닝을 응용한 논문. 수동 선별이므로 전량 개별 페이지 생성 (관련도 임계값 없음).
-- 유형 A·C는 파일명 규칙이 자유로우나 가능하면 `YYYY_저자_키워드.md` 형식 권장.
+- **유형 C 특징**:
+  - 수집 키워드: `"social network"` (SNA 전문 학술지 제외) / `"text analysis"` (topic ID t10028·t13910·t10664 포함, SNA 전문 학술지 제외)
+  - 정렬: 인용 수 내림차순 (`cited_by_count:desc`), 쿼리당 최대 500건
+  - NetMiner 사용 여부·SNA 전문지 여부와 무관 — 응용 분야 전반 포괄
+  - 인제스트 시 관련도 점수 기반 분류: 점수 ≥ 임계값 → 개별 페이지, 미달 → `catalog_YYYY.md`
+- 유형 C 파일명 규칙: `applied_YYYY_제목슬러그_DOI슬러그.md` (`fetch_applied.py` 자동 생성)
 
 ---
 
@@ -34,17 +38,16 @@ wiki/
 │   ├── assets/        ← 다운로드된 이미지
 │   ├── netminer/      ← [유형 A] NetMiner 사용 논문 PDF
 │   ├── applied/       ← [유형 C] 응용 분야 논문 (타 분야 SNA 응용, 수동 큐레이션)
-│   └── *.md           ← [유형 B] OpenAlex 수집 SNA 학술지 논문
+│   └── sna/           ← [유형 B] OpenAlex 수집 SNA 학술지 논문
 │
 └── pages/
     ├── concepts/      ← 연구 설계 패턴·프레임워크 (SNA 전반, 에고넷 연구 설계, 인과추론, 복합방법론 등)
-    ├── methods/       ← 구체적 분석 기법·알고리즘 (중심성, 토픽모델링, ERGM, SAOM 등 — NetMiner 미지원 신규 기법 우선)
+    ├── methods/       ← 구체적 분석 기법·알고리즘. **NetMiner 기능 검토용 자료**: (1) NetMiner에 없는 방법 → 신규 기능 후보, (2) NetMiner에 있어도 개선 여지가 있는 방법 → 업그레이드 항목 근거. 기준선: [[pages/tools/netminer]]
     ├── insights/      ← 쿼리 결과·누적 분석 정보 (방법론 빈도, NetMiner 트렌드 인사이트 등)
     ├── papers/
     │   ├── netminer/  ← [유형 A] NetMiner 사용 논문 요약
-    │   ├── applied/   ← [유형 C] 응용 분야 논문 요약 (전량 개별 페이지)
-    │   ├── catalog_YYYY.md ← [유형 B] 관련도 하위 논문 연도별 목록
-    │   └── *.md       ← [유형 B] 고관련도 논문 개별 요약
+    │   ├── sna/       ← [유형 B] SNA 학술지 논문 (개별 페이지 + catalog_YYYY.md)
+    │   └── applied/   ← [유형 C] 응용 분야 논문 (개별 페이지 + catalog_YYYY.md)
     └── tools/         ← 소프트웨어·라이브러리 페이지
 ```
 
@@ -59,7 +62,10 @@ wiki/
 | `concepts/` | 연구 설계 패턴·프레임워크 | SNA 개요, 에고넷 연구 설계, 인과 추론 설계, 복합 방법론, SLR |
 | `methods/` | 구체적 분석 기법·알고리즘 | 중심성 측정, 토픽모델링(LDA/BERTopic), 의미연결망, ERGM, SAOM |
 | `insights/` | 쿼리 결과·누적 분석 정보 | 방법론 빈도 집계, NetMiner 트렌드 분석, 시장 기회 정리 |
-- `methods/`에는 **NetMiner 미지원·신규 기법**을 우선적으로 정리 (기존 지원 기법도 포함 가능하며, 제품 개선점 위주로)
+- `methods/` 페이지의 **핵심 용도**: [[pages/tools/netminer]]의 현재 기능 목록을 기준으로 두 가지 검토
+  - **신규 기능 후보**: NetMiner에 없는 방법론 (예: LLM/RAG, SAOM, 텍스트 분류 Transformer)
+  - **기존 기능 개선 근거**: NetMiner에 있지만 학술 트렌드와 격차가 있는 방법론 (예: 감성 분석 Lab → ABSA 미지원, BERTopic → 지원하지만 홍보 부족)
+  - 각 방법론 페이지에는 반드시 `NetMiner 지원 현황` 섹션을 포함하고, ✅/⚠️/❌ 기호로 명시
 - `insights/`는 wiki:query 결과나 분석 요약을 저장 — raw 데이터가 아닌 합성된 인사이트
 
 ### 개념 페이지 (`pages/concepts/`)
@@ -67,8 +73,15 @@ wiki/
 - 내용: 연구 설계 패턴 설명, 적용 맥락, 관련 논문, NetMiner 연관성
 
 ### 방법론 페이지 (`pages/methods/`)
-- 파일명: `방법명_영문.md` (예: `ergm.md`, `bertopic.md`)
-- 내용: 알고리즘·기법 설명, 수식(필요시), 대표 논문, NetMiner 지원 현황, 적용 사례
+- 파일명: `방법명_영문.md` (예: `ergm.md`, `sentiment_analysis.md`)
+- 내용: 알고리즘·기법 설명, 수식(필요시), 대표 논문, **NetMiner 지원 현황**, 적용 사례
+- **NetMiner 지원 현황 섹션 필수 포함**: [[pages/tools/netminer]] 기능 목록 기준으로
+  - ✅ 지원: NetMiner 메뉴에 존재, 실사용 사례 있음
+  - ⚠️ 부분: 기능 있으나 학술 트렌드 대비 커버 범위 제한 (개선 기회)
+  - ❌ 미지원: NetMiner에 없음 (신규 기능 후보)
+- 방법론 페이지 생성 기준:
+  1. 응용 분야(유형 C) 또는 SNA 학술지(유형 B) 논문에서 빈도 높은 방법론
+  2. NetMiner 기능과의 격차가 제품 기획에 의미 있는 방법론
 
 ### 인사이트 페이지 (`pages/insights/`)
 - 파일명: 자유 (예: `sna_method_frequency.md`, `netminer_trend_insight.md`)

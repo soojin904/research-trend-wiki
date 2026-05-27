@@ -1,4 +1,4 @@
----
+﻿---
 title: "인과 추론과 네트워크 (Causal Inference in Networks)"
 tags: [causal-inference, spillover, rct, network-position]
 ---
@@ -25,9 +25,9 @@ tags: [causal-inference, spillover, rct, network-position]
 
 ## 관련 연구 (Social Networks 2026)
 
-- [[pages/papers/2026_omalley_spillover_rct|O'Malley 외]] — stepped-wedge RCT에서 의사 네트워크 spillover 추정
-- [[pages/papers/2026_mcmillan_network_rct_causal|McMillan 외]] — RCT 참여자 네트워크 위치 차이와 인과 추론 위협
-- [[pages/papers/2026_an_peer_influence_multilayer|An 외]] — 다층 네트워크에서 동료 영향 추정 (내생성 문제)
+- [[pages/papers/sna/2026_omalley_spillover_rct|O'Malley 외]] — stepped-wedge RCT에서 의사 네트워크 spillover 추정
+- [[pages/papers/sna/2026_mcmillan_network_rct_causal|McMillan 외]] — RCT 참여자 네트워크 위치 차이와 인과 추론 위협
+- [[pages/papers/sna/2026_an_peer_influence_multilayer|An 외]] — 다층 네트워크에서 동료 영향 추정 (내생성 문제)
 
 ## NetMiner 연관성
 

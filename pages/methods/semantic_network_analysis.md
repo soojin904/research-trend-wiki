@@ -1,4 +1,4 @@
----
+﻿---
 title: "의미연결망 분석 (Semantic Network Analysis)"
 tags: [semantic-network, keyword-network, co-occurrence, text-network]
 netminer_support: "✅ 지원"
@@ -28,9 +28,31 @@ netminer_support: "✅ 지원"
 
 | 논문 | 적용 방식 | 핵심 발견 |
 |------|-----------|-----------|
-| [[pages/papers/2022_suitner_the_rise_climateaction\|Suitner 외 (2022)]] | 트위터 기후변화 담론 2017–2019 시계열 의미 네트워크 + 커뮤니티 탐지 알고리즘 | FridaysForFuture 이후 집합행동 수사 강화, 인그룹 미래 투영 표현 증가 |
-| [[pages/papers/2026_almquist_search_common\|Almquist 외 (2026)]] | 키워드 보조 토픽 모델로 가치 네트워크 추출 → 국가별 협상 구조 분석 | "공정성·권력"에서 "환경·성취" 중심 가치로 전환 |
-| [[pages/papers/2023_koskinen_analysing_networks_networks\|Koskinen 외 (2023)]] | 개별 의미 구조를 사회적 유대로 연결하는 다층 네트워크 분석 프레임 | 라인 그래프 변환으로 의미 네트워크의 네트워크 분석 가능 |
+| [[pages/papers/sna/2022_suitner_the_rise_climateaction\|Suitner 외 (2022)]] | 트위터 기후변화 담론 2017–2019 시계열 의미 네트워크 + 커뮤니티 탐지 알고리즘 | FridaysForFuture 이후 집합행동 수사 강화, 인그룹 미래 투영 표현 증가 |
+| [[pages/papers/sna/2026_almquist_search_common\|Almquist 외 (2026)]] | 키워드 보조 토픽 모델로 가치 네트워크 추출 → 국가별 협상 구조 분석 | "공정성·권력"에서 "환경·성취" 중심 가치로 전환 |
+| [[pages/papers/sna/2023_koskinen_analysing_networks_networks\|Koskinen 외 (2023)]] | 개별 의미 구조를 사회적 유대로 연결하는 다층 네트워크 분석 프레임 | 라인 그래프 변환으로 의미 네트워크의 네트워크 분석 가능 |
+
+## 응용 분야 사용 패턴 (2026, 키워드 수집 459편 기반)
+
+응용 분야에서 SNA·네트워크 분석은 전체 5위(~45편, ~8%)이며, 그 중 의미연결망(공출현 네트워크)이 약 40%(~18편)를 차지한다.
+
+| 세부 유형 | 편수 | 주요 분야 |
+|-----------|------|-----------|
+| **키워드 공출현 / 의미연결망** | ~18 | ESG 담론, 서지계량, 정책 문서 |
+| **중심성 분석** | ~12 | 소셜미디어 영향력, 조직 협업망 |
+| **커뮤니티 탐지** | ~8 | 에코챔버, 허위정보, 온라인 커뮤니티 |
+| **정보 확산** | ~5 | 허위정보 전파, 영향력 최대화 |
+| **다층/에고 네트워크** | ~4 | 멀티플렉스 소셜 네트워크 |
+| **종단/동적 네트워크** | ~3 | 협업 혁신 네트워크, SAOM |
+
+**응용 분야 반복 패턴**:
+- ESG·정책 문서 → 키워드 공출현 행렬 → SNA 중심성 분석
+- 서지계량(SLR) → 저자/키워드 네트워크 → VOSviewer 또는 NetMiner 시각화
+- 소셜미디어 텍스트 → 의미연결망 → 에코챔버·허위정보 구조 분석
+
+> **경쟁 도구 주목**: Textom(한국어 의미연결망 특화, ~2편), VOSviewer(서지계량 특화, ~5편) — NetMiner와 직접 경쟁 관계. 특히 Textom은 국내 연구자의 NetMiner 대안으로 인식되는 추세.
+
+→ 상세: [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]]
 
 ## [[pages/methods/topic_modeling|토픽모델링]]과의 차이
 

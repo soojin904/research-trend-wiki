@@ -37,42 +37,45 @@
 **트렌드 분석 요약**: [[pages/insights/sna_method_frequency|SNA 방법론 빈도 (2021–2026)]] · [[pages/insights/netminer_trend_insight|NetMiner 기능-트렌드 인사이트]]
 
 #### 2026년 주요 논문 (개별 페이지)
-- [[pages/papers/2026_omalley_spillover_rct|O'Malley 외 (2026)]] — Stepped-wedge RCT 의사 네트워크 spillover 인과 추론 (#causal-inference #spillover)
-- [[pages/papers/2026_haapanen_coalition_sna_design|Haapanen 외 (2026)]] — 다중 조직 연합의 다층 구조와 SNA 설계 (#coalition #multilevel)
-- [[pages/papers/2026_mcmillan_network_rct_causal|McMillan 외 (2026)]] — 네트워크 위치 차이가 RCT 인과 추론에 미치는 위협 (#causal-inference #saom)
-- [[pages/papers/2026_zhang_egocentric_csa|Zhang & Wang (2026)]] — 에고중심 네트워크와 CSA 소비자 반응 (#egocentric #csa)
-- [[pages/papers/2026_almquist_homelessness_personal_network|Almquist 외 (2026)]] — 노숙 경험자 퍼스널 네트워크 (3,000명+, 종단) (#personal-network)
-- [[pages/papers/2026_schafer_personal_network_loneliness|Schafer 외 (2026)]] — 동반 관계와 외로움: 퍼스널 네트워크 재평가 (#personal-network #loneliness)
-- [[pages/papers/2026_gebhard_intervention_dementia|Gebhard & Ellinger (2026)]] — 치매 환자 개입과 네트워크 변화 (#intervention #dementia)
-- [[pages/papers/2026_nishi_wellbeing_experimental_network|Nishi 외 (2026)]] — 동료 웰빙 가시화와 협력 네트워크 (#experimental-network #wellbeing)
-- [[pages/papers/2026_lubbers_nsm_ard|Lubbers 외 (2026)]] — Network Scale-Up Method & ARD 발전 리뷰 (#nsum #ard)
-- [[pages/papers/2026_fluer_multiplex_survey|Fluer 외 (2026)]] — 설문 → 멀티플렉스 모델 (#multiplex #interlayer)
-- [[pages/papers/2026_an_peer_influence_multilayer|An 외 (2026)]] — 다층 네트워크에서 동료 영향 추정 (#multilayer #peer-influence)
-- [[pages/papers/2026_kreager_mixed_methods_lifecourse|Kreager 외 (2026)]] — 생애 과정 전환의 혼합 방법론 설계 (#mixed-methods #network-dynamics)
-- [[pages/papers/2026_qiao_ecommerce_rural_china|Qiao & Qiu (2026)]] — 농촌 중국 e-커머스 창업의 소셜 영향 (#social-influence)
-- [[pages/papers/2026_fancello_sociability_space|Fancello 외 (2026)]] — 소셜 네트워크를 지리 공간에 배치 (#spatial-network)
+- [[pages/papers/sna/2026_omalley_spillover_rct|O'Malley 외 (2026)]] — Stepped-wedge RCT 의사 네트워크 spillover 인과 추론 (#causal-inference #spillover)
+- [[pages/papers/sna/2026_haapanen_coalition_sna_design|Haapanen 외 (2026)]] — 다중 조직 연합의 다층 구조와 SNA 설계 (#coalition #multilevel)
+- [[pages/papers/sna/2026_mcmillan_network_rct_causal|McMillan 외 (2026)]] — 네트워크 위치 차이가 RCT 인과 추론에 미치는 위협 (#causal-inference #saom)
+- [[pages/papers/sna/2026_zhang_egocentric_csa|Zhang & Wang (2026)]] — 에고중심 네트워크와 CSA 소비자 반응 (#egocentric #csa)
+- [[pages/papers/sna/2026_almquist_homelessness_personal_network|Almquist 외 (2026)]] — 노숙 경험자 퍼스널 네트워크 (3,000명+, 종단) (#personal-network)
+- [[pages/papers/sna/2026_schafer_personal_network_loneliness|Schafer 외 (2026)]] — 동반 관계와 외로움: 퍼스널 네트워크 재평가 (#personal-network #loneliness)
+- [[pages/papers/sna/2026_gebhard_intervention_dementia|Gebhard & Ellinger (2026)]] — 치매 환자 개입과 네트워크 변화 (#intervention #dementia)
+- [[pages/papers/sna/2026_nishi_wellbeing_experimental_network|Nishi 외 (2026)]] — 동료 웰빙 가시화와 협력 네트워크 (#experimental-network #wellbeing)
+- [[pages/papers/sna/2026_lubbers_nsm_ard|Lubbers 외 (2026)]] — Network Scale-Up Method & ARD 발전 리뷰 (#nsum #ard)
+- [[pages/papers/sna/2026_fluer_multiplex_survey|Fluer 외 (2026)]] — 설문 → 멀티플렉스 모델 (#multiplex #interlayer)
+- [[pages/papers/sna/2026_an_peer_influence_multilayer|An 외 (2026)]] — 다층 네트워크에서 동료 영향 추정 (#multilayer #peer-influence)
+- [[pages/papers/sna/2026_kreager_mixed_methods_lifecourse|Kreager 외 (2026)]] — 생애 과정 전환의 혼합 방법론 설계 (#mixed-methods #network-dynamics)
+- [[pages/papers/sna/2026_qiao_ecommerce_rural_china|Qiao & Qiu (2026)]] — 농촌 중국 e-커머스 창업의 소셜 영향 (#social-influence)
+- [[pages/papers/sna/2026_fancello_sociability_space|Fancello 외 (2026)]] — 소셜 네트워크를 지리 공간에 배치 (#spatial-network)
 
 #### 2020–2026년 고관련도 논문 (개별 페이지 258편)
-`pages/papers/` 폴더 직접 탐색 또는 `/wiki:query`로 검색
+`pages/papers/sna/` 폴더 직접 탐색 또는 `/wiki:query`로 검색
 
 #### 연도별 카탈로그 (관련도 하위 논문 목록)
-- [[pages/papers/catalog_2020|2020년 카탈로그]] — 85편
-- [[pages/papers/catalog_2021|2021년 카탈로그]] — 80편
-- [[pages/papers/catalog_2022|2022년 카탈로그]] — 87편
-- [[pages/papers/catalog_2023|2023년 카탈로그]] — 44편
-- [[pages/papers/catalog_2024|2024년 카탈로그]] — 26편
-- [[pages/papers/catalog_2025|2025년 카탈로그]] — 39편
-- [[pages/papers/catalog_2026|2026년 카탈로그 (추가분)]] — 16편
+- [[pages/papers/sna/catalog_2020|2020년 카탈로그]] — 85편
+- [[pages/papers/sna/catalog_2021|2021년 카탈로그]] — 80편
+- [[pages/papers/sna/catalog_2022|2022년 카탈로그]] — 87편
+- [[pages/papers/sna/catalog_2023|2023년 카탈로그]] — 44편
+- [[pages/papers/sna/catalog_2024|2024년 카탈로그]] — 26편
+- [[pages/papers/sna/catalog_2025|2025년 카탈로그]] — 39편
+- [[pages/papers/sna/catalog_2026|2026년 카탈로그 (추가분)]] — 16편
 
 ---
 
-### C. 응용 분야 논문 (수동 큐레이션, `raw/applied/`)
+### C. 응용 분야 논문 (키워드 수집, `raw/applied/`)
 
-> SNA 학술지 외 분야(마케팅·보건학·경영학·커뮤니케이션 등)에서 SNA·텍스트마이닝을 응용한 논문.
-> 수동 선별 수집 → 전량 개별 페이지 (`pages/papers/applied/`).
-> 신규 시장·세그먼트 발굴 및 NetMiner 활용 가능성 탐색 목적.
+> **수집 범위**: SNA 전문 학술지(Social Networks·Network Science·Connections) 외 전 저널·분야.
+> **수집 방식**: `fetch_applied.py` — "social network" 또는 "text analysis" 키워드로 OpenAlex 검색, 인용 수 상위 500건/쿼리.
+> **성격**: NetMiner 사용 여부와 무관. SNA·텍스트마이닝이 마케팅·보건학·경영학·커뮤니케이션 등 응용 분야에서 어떻게 쓰이는지 파악하고 신규 고객 세그먼트를 발굴하는 목적.
+> **인제스트**: `batch_ingest.py` → 관련도 점수 기반 분류 (개별 페이지: `pages/papers/applied/`, 카탈로그: `pages/papers/applied/catalog_YYYY.md`).
 
-*(수집 예정 — `raw/applied/`에 파일 추가 후 인제스트)*
+**현황**: 973편 수집 (2026년) — 개별 페이지 379편 (`pages/papers/applied/`, arXiv ~80편 제외) · 카탈로그 240편 (`pages/papers/applied/catalog_2026.md`)
+
+`pages/papers/applied/` 폴더 직접 탐색 또는 `/wiki:query`로 검색
 
 ---
 
@@ -91,7 +94,11 @@
 
 ## Methods (구체적 분석 기법)
 
-> 구체적 알고리즘·측정 방법. NetMiner 미지원·신규 기법 우선 정리.
+> **용도**: [[pages/tools/netminer]] 기능 목록을 기준선으로, 두 가지 제품 기획 질문에 답하기 위한 자료.
+> 1. **신규 기능 후보** — NetMiner에 없는 방법론 (❌ 표시)
+> 2. **기존 기능 개선 근거** — NetMiner에 있지만 학술 트렌드와 격차가 있는 방법론 (⚠️ 표시)
+>
+> NetMiner 현재 기능 요약: LDA·BERTopic ✅ / GCN·GAT·GraphSAGE ✅ / 감성분석(Lab, 7개 언어) ✅ / 지식그래프(Lab) ✅ / SHAP·Classical ML ✅ / ERGM ✅ | SAOM·LLM·RAG·텍스트분류(Transformer) ❌
 
 ### 기존 (유형 A → B 보강)
 - [[pages/methods/centrality|Centrality (중심성)]] — degree/closeness/betweenness 등 중심성 지표 (24편, 4위) ✅
@@ -105,8 +112,14 @@
 - [[pages/methods/community_detection|커뮤니티 탐지]] — 모듈성·블록모델·코어-퍼리퍼리 (11편, 공동10위) ✅
 - [[pages/methods/bayesian_network_model|Bayesian / 잠재공간 모델]] — LPCM·LSPCM·MCMC 추론 (14편, 9위) ❌
 - [[pages/methods/diffusion_propagation|확산/전파/면역화]] — SIR 모형·면역화 전략·WIP 중심성 (11편, 공동10위) ❌
-- [[pages/methods/ml_gnn|ML/딥러닝/GNN]] — 링크 예측·노드 분류·그래프 임베딩 (15편, 8위) ✅
+- [[pages/methods/ml|전통 ML / 앙상블]] — 링크 예측·노드 분류·SVM·RF·XGBoost (15편, 8위) ✅
+- [[pages/methods/gnn|GNN (그래프 신경망)]] — GCN·GAT·지식 그래프·GraphRAG (~19편) ✅
 - [[pages/methods/network_scaleup|Network Scale-Up / ARD]] — 은닉 집단 규모 추정·RDS (7편, 13위) ❌
+
+### 신규 (유형 C 응용 분야 기반)
+- [[pages/methods/llm_nlp|LLM / GPT 활용]] — 파인튜닝·RAG·자동 코딩, 응용 분야 1위 (~150편, 40%) ❌
+- [[pages/methods/sentiment_analysis|감성 분석 (Sentiment Analysis)]] — BERT·VADER·ABSA, 응용 분야 2위 (~115편, 30%) ⚠️ 기본
+- [[pages/methods/text_classification|텍스트 분류 (Text Classification)]] — BERT 파인튜닝·제로샷·앙상블, 응용 분야 3위 (~76편, 20%) ⚠️ 부분
 
 ---
 
@@ -116,6 +129,10 @@
 
 - [[pages/insights/sna_method_frequency|SNA 방법론 사용 빈도 (2020–2026)]] — 181편 집계, 트렌드 순위
 - [[pages/insights/netminer_trend_insight|NetMiner 기능-트렌드 인사이트]] — ERGM 즉시홍보·GNN/BERTopic 미래선점·SAOM공백, 우선순위 정리
+- [[pages/insights/applied_domain_venue_2026|응용 분야 도메인 및 학술지 분포 (2026)]] — 379편 (arXiv 제외), 7개 분야, 181개 학술지 분포
+- [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]] — 379편 전체 집계, LLM 40%·감성분석 30%·토픽 18%·SNA 10%, NetMiner 시사점
+- [[pages/insights/applied_data_source_2026|응용 분야 주요 데이터 소스 (2026)]] — Twitter/X 1위, 소셜미디어 40%·뉴스 16%·리뷰 14%, 다국어 NLP 15–20%
+- [[pages/insights/sna_data_source|SNA 학술지 주요 데이터 소스 (2020–2026)]] — 설문/에고넷 인터뷰 56%, 종단 28%, 응용 분야와 수집 방식 대조 정리
 
 ---
 
@@ -128,8 +145,9 @@
 
 ## 통계
 
-- 총 페이지: 291 (papers 270 · concepts 6 · methods 11 · insights 2 · tools 2)
-- 최근 업데이트: 2026-05-26
+- 총 페이지: 767 (papers 740 · concepts 6 · methods 13 · insights 6 · tools 2)
+- 최근 업데이트: 2026-05-27 (applied 합성 완료 — methods 2개, insights 1개 추가)
 - NetMiner 사용 논문: 5편 (PDF, `pages/papers/netminer/`)
 - 학계 트렌드 논문: 635편 (OpenAlex, 2020–2026) — 개별 페이지 258편 + 카탈로그 7개(377편)
-- 수집 학술지: Social Networks (ISSN 0378-8733), Network Science (ISSN 2050-1250), Connections (ISSN 2816-4245, INSNA)
+- 응용 분야 논문: 699편 (키워드 수집, 2026) — 개별 페이지 459편 + 카탈로그 1개(240편)
+- 수집 학술지 (유형 B): Social Networks (ISSN 0378-8733), Network Science (ISSN 2050-1250), Connections (ISSN 2816-4245, INSNA)

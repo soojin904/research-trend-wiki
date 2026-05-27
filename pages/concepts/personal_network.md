@@ -1,4 +1,4 @@
----
+﻿---
 title: "퍼스널 네트워크 (Personal Network / Egocentric Network)"
 tags: [personal-network, egocentric-network, alter, ego]
 ---
@@ -31,10 +31,10 @@ tags: [personal-network, egocentric-network, alter, ego]
 
 ## 관련 연구 (Social Networks 2026)
 
-- [[pages/papers/2026_almquist_homelessness_personal_network|Almquist 외]] — 노숙 경험자 퍼스널 네트워크 (3,000명+, 종단)
-- [[pages/papers/2026_schafer_personal_network_loneliness|Schafer 외]] — 동반 관계와 외로움: 청년·노년 비교
-- [[pages/papers/2026_gebhard_intervention_dementia|Gebhard & Ellinger]] — 치매 환자 개입과 네트워크 변화
-- [[pages/papers/2026_zhang_egocentric_csa|Zhang & Wang]] — 에고중심 네트워크와 CSA 소비자 반응
+- [[pages/papers/sna/2026_almquist_homelessness_personal_network|Almquist 외]] — 노숙 경험자 퍼스널 네트워크 (3,000명+, 종단)
+- [[pages/papers/sna/2026_schafer_personal_network_loneliness|Schafer 외]] — 동반 관계와 외로움: 청년·노년 비교
+- [[pages/papers/sna/2026_gebhard_intervention_dementia|Gebhard & Ellinger]] — 치매 환자 개입과 네트워크 변화
+- [[pages/papers/sna/2026_zhang_egocentric_csa|Zhang & Wang]] — 에고중심 네트워크와 CSA 소비자 반응
 
 ## NetMiner 연관성
 

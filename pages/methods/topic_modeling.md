@@ -1,4 +1,4 @@
----
+﻿---
 title: "토픽모델링 (Topic Modeling)"
 tags: [topic-modeling, LDA, BERTopic, text-analysis, keyword-assisted]
 netminer_support: "✅ 지원"
@@ -29,8 +29,8 @@ netminer_support: "✅ 지원"
 
 | 논문 | 적용 방식 | 핵심 발견 |
 |------|-----------|-----------|
-| [[pages/papers/2026_almquist_search_common\|Almquist 외 (2026)]] | COP 16–28 기후협상 발언문에 키워드 보조 토픽 모델 적용 → 가치 네트워크 추출 | "공정성·권력" 중심에서 "환경·성취" 중심으로 가치 이동 |
-| [[pages/papers/2021_keuchenius_adoption_and_adaptation\|Keuchenius 외 (2021)]] | 그라노베터 인용 확산 네트워크에 토픽 모델링 적용 → 학문 공동체별 해석 차이 분석 | 확산은 단순 전달이 아닌 적응·변형 과정; 중심 학자가 공동체 브로커로 기능 |
+| [[pages/papers/sna/2026_almquist_search_common\|Almquist 외 (2026)]] | COP 16–28 기후협상 발언문에 키워드 보조 토픽 모델 적용 → 가치 네트워크 추출 | "공정성·권력" 중심에서 "환경·성취" 중심으로 가치 이동 |
+| [[pages/papers/sna/2021_keuchenius_adoption_and_adaptation\|Keuchenius 외 (2021)]] | 그라노베터 인용 확산 네트워크에 토픽 모델링 적용 → 학문 공동체별 해석 차이 분석 | 확산은 단순 전달이 아닌 적응·변형 과정; 중심 학자가 공동체 브로커로 기능 |
 
 ### 텍스트+네트워크 복합 활용 패턴
 
@@ -38,6 +38,26 @@ netminer_support: "✅ 지원"
 - 텍스트 → 토픽 → 토픽 네트워크 구성 → 중심성·커뮤니티 분석
 - 가치 추출 → 국가 간 가치 네트워크 → 협상 구조 해석 (Almquist 2026)
 - 인용 확산 → 토픽 공동체 → 아이디어 번역 추적 (Keuchenius 2021)
+
+## 응용 분야 사용 패턴 (2026, 키워드 수집 459편 기반)
+
+응용 분야에서 토픽모델링은 전체 방법론 중 4위(~84편, ~14%)를 차지하며, 마케팅·커뮤니케이션·보건 분야에서 광범위하게 활용된다.
+
+| 방법 | 응용 편수 | 주요 분야 | 비고 |
+|------|----------|-----------|------|
+| **LDA** | ~55 | 마케팅(리뷰 분석), ESG 담론, 정치 텍스트 | 여전히 지배적 — 감소 추세 |
+| **BERTopic** | ~18 | CS 방법론 논문, 소셜미디어 | LDA 대비 급성장; BERTopic+LDA 비교 논문 다수 |
+| **STM** (Structural Topic Model) | ~6 | 정치학, 사회과학 | 공변량과 결합 용이 |
+| **TopicGPT·FASTopic 등** | ~5 | CS 방법론 | LLM 기반 신규 방법론 |
+
+> **핵심 트렌드**: BERTopic이 LDA를 대체하는 흐름 진행 중. "LDA+BERTopic 비교" 논문이 복수 분야에서 등장 — BERTopic이 점차 표준 대안으로 인정받는 중.
+
+**응용 분야 결합 패턴**:
+- **토픽모델링 + 감성분석** (~30편): 소비자 리뷰, 소셜미디어 담론, 보건 SNS 텍스트
+- **토픽모델링 + SNA(키워드 공출현)** (~18편): ESG 담론, 서지계량, 정책 문서 분석
+- **토픽모델링 + LLM** (~15편): GPT 기반 토픽 레이블링, 자동 분류
+
+→ 상세: [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]]
 
 ## [[pages/methods/semantic_network_analysis|의미연결망]]과의 결합
 
@@ -61,4 +81,4 @@ netminer_support: "✅ 지원"
 
 - [[pages/insights/sna_method_frequency|방법론 빈도 분석]]
 - [[pages/methods/semantic_network_analysis|의미연결망 분석]]
-- [[pages/methods/ml_gnn|ML/딥러닝/GNN]] (임베딩 기반 토픽 방법론과의 경계)
+- [[pages/methods/gnn|GNN]] (임베딩 기반 토픽 방법론과의 경계)

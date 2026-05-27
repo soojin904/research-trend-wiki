@@ -1,4 +1,4 @@
----
+﻿---
 title: "커뮤니티 탐지 (Community Detection)"
 tags: [community-detection, modularity, core-periphery, clustering, blockmodel]
 netminer_support: "✅ 지원"
@@ -30,11 +30,11 @@ netminer_support: "✅ 지원"
 
 | 논문 | 적용 방식 | 핵심 발견 |
 |------|-----------|-----------|
-| [[pages/papers/2020_dao_community_structure_comparativ\|Dao 외 (2020)]] | 수백 개 네트워크에서 주요 커뮤니티 탐지 방법 대규모 비교 평가 | 방법에 따라 생성되는 커뮤니티 유형이 크게 다름; 실용적 선택 가이드 제공 |
-| [[pages/papers/2021_kamiski_artificial_benchmark_for_commu\|Kamiński 외 (2021)]] | LFR 벤치마크 대안으로 ABCD 합성 그래프 모델 제안 | LFR 대비 속도·단순성·확장성 우수; 혼합 파라미터 ξ로 직관적 커뮤니티 강도 조절 |
-| [[pages/papers/2023_reittu_network_community_detection\|Reittu 외 (2023)]] | 다층 레이어와 노드 속성 데이터를 통합하는 데이터 행렬 기반 커뮤니티 탐지 | 차수를 열로 추가하면 계층적 스케일프리 네트워크 구조와 잘 일치 |
-| [[pages/papers/2022_suitner_the_rise_climateaction\|Suitner 외 (2022)]] | 의미 네트워크에 커뮤니티 탐지 알고리즘 적용 → 의미 커뮤니티 시계열 비교 | FridaysForFuture 이후 기후변화 담론의 의미 커뮤니티 구조 변화 확인 |
-| [[pages/papers/2022_mayajarieg_use_hierarchical\|Maya-Jariego & González-Tinoco (2022)]] | 반복적 betweenness 노드 제거로 퍼스널 네트워크 내 중첩 하위 집단 계층 탐색 | 밀한 네트워크가 해체에 강인; 명확한 하위 집단은 해체 속도 빠름 |
+| [[pages/papers/sna/2020_dao_community_structure_comparativ\|Dao 외 (2020)]] | 수백 개 네트워크에서 주요 커뮤니티 탐지 방법 대규모 비교 평가 | 방법에 따라 생성되는 커뮤니티 유형이 크게 다름; 실용적 선택 가이드 제공 |
+| [[pages/papers/sna/2021_kamiski_artificial_benchmark_for_commu\|Kamiński 외 (2021)]] | LFR 벤치마크 대안으로 ABCD 합성 그래프 모델 제안 | LFR 대비 속도·단순성·확장성 우수; 혼합 파라미터 ξ로 직관적 커뮤니티 강도 조절 |
+| [[pages/papers/sna/2023_reittu_network_community_detection\|Reittu 외 (2023)]] | 다층 레이어와 노드 속성 데이터를 통합하는 데이터 행렬 기반 커뮤니티 탐지 | 차수를 열로 추가하면 계층적 스케일프리 네트워크 구조와 잘 일치 |
+| [[pages/papers/sna/2022_suitner_the_rise_climateaction\|Suitner 외 (2022)]] | 의미 네트워크에 커뮤니티 탐지 알고리즘 적용 → 의미 커뮤니티 시계열 비교 | FridaysForFuture 이후 기후변화 담론의 의미 커뮤니티 구조 변화 확인 |
+| [[pages/papers/sna/2022_mayajarieg_use_hierarchical\|Maya-Jariego & González-Tinoco (2022)]] | 반복적 betweenness 노드 제거로 퍼스널 네트워크 내 중첩 하위 집단 계층 탐색 | 밀한 네트워크가 해체에 강인; 명확한 하위 집단은 해체 속도 빠름 |
 
 ## NetMiner 지원 현황
 

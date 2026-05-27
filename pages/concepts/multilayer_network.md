@@ -1,4 +1,4 @@
----
+﻿---
 title: "다층·멀티플렉스 네트워크 (Multilayer / Multiplex Network)"
 tags: [multilayer-network, multiplex, interlayer, network-structure]
 ---
@@ -23,9 +23,9 @@ tags: [multilayer-network, multiplex, interlayer, network-structure]
 
 ## 연구 동향 (Social Networks 2026)
 
-- [[pages/papers/2026_an_peer_influence_multilayer|An 외]] — 다층 네트워크에서 동료 영향 추정 (내생성 처리)
-- [[pages/papers/2026_fluer_multiplex_survey|Fluer 외]] — 설문 데이터 → 멀티플렉스 모델 (레이어 간 상관 포함)
-- [[pages/papers/2026_haapanen_coalition_sna_design|Haapanen 외]] — 연합의 다층 구조(개인간 + 조직간)와 SNA 설계
+- [[pages/papers/sna/2026_an_peer_influence_multilayer|An 외]] — 다층 네트워크에서 동료 영향 추정 (내생성 처리)
+- [[pages/papers/sna/2026_fluer_multiplex_survey|Fluer 외]] — 설문 데이터 → 멀티플렉스 모델 (레이어 간 상관 포함)
+- [[pages/papers/sna/2026_haapanen_coalition_sna_design|Haapanen 외]] — 연합의 다층 구조(개인간 + 조직간)와 SNA 설계
 
 ## NetMiner 연관성
 

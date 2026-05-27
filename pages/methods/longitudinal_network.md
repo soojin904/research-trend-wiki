@@ -1,4 +1,4 @@
----
+﻿---
 title: "종단/동적 네트워크 분석 (Longitudinal & Dynamic Network Analysis)"
 tags: [longitudinal, dynamic-network, temporal, panel-data, tergm, time-series]
 netminer_support: "⚠️ 부분 지원"
@@ -34,10 +34,10 @@ netminer_support: "⚠️ 부분 지원"
 
 | 논문 | 적용 방식 | 핵심 발견 |
 |------|-----------|-----------|
-| [[pages/papers/2020_jaramillo_social_cohesion_emerging_from\|Jaramillo 외 (2020)]] | Facebook 프로필 네트워크 2008–2016 시간 윈도우 알고리즘으로 종단 추적 | 신체활동 강사가 허브; 사용자당 1.73개 새 우정으로 초선형 사회 응집 성장 |
-| [[pages/papers/2024_bu_algorithmic_aspects_temporal\|Buß 외 (2024)]] | 시간 그래프에서 최단·최선도·최속 경로 기반 시간 매개 중심성 알고리즘 개발 | 최선도·최속 경로 집계는 #P-hard; 최단 경로 기반 다항 시간 알고리즘 제시 |
-| [[pages/papers/2023_bright_offence_versatility_among_coof\|Bright 외 (2023)]] | 관계적 하이퍼이벤트 모형(RHEM)으로 2모드 공동 범죄 네트워크 동적 분석 | 공동 범죄자가 단독 범죄자보다 다중 범죄 유형 관여 확률 높음; 사회학습 효과 |
-| [[pages/papers/2024_filippimaz_modeling_nonlinear_effects_wit\|Filippi-Mazzola & Wit (2024)]] | DREAM(신경망 기반 관계 이벤트 가산 모형)으로 특허 인용 동적 네트워크 분석 | 비선형 효과 포착 가능; 약 800만 노드·1억 이벤트 대규모 네트워크 처리 |
+| [[pages/papers/sna/2020_jaramillo_social_cohesion_emerging_from\|Jaramillo 외 (2020)]] | Facebook 프로필 네트워크 2008–2016 시간 윈도우 알고리즘으로 종단 추적 | 신체활동 강사가 허브; 사용자당 1.73개 새 우정으로 초선형 사회 응집 성장 |
+| [[pages/papers/sna/2024_bu_algorithmic_aspects_temporal\|Buß 외 (2024)]] | 시간 그래프에서 최단·최선도·최속 경로 기반 시간 매개 중심성 알고리즘 개발 | 최선도·최속 경로 집계는 #P-hard; 최단 경로 기반 다항 시간 알고리즘 제시 |
+| [[pages/papers/sna/2023_bright_offence_versatility_among_coof\|Bright 외 (2023)]] | 관계적 하이퍼이벤트 모형(RHEM)으로 2모드 공동 범죄 네트워크 동적 분석 | 공동 범죄자가 단독 범죄자보다 다중 범죄 유형 관여 확률 높음; 사회학습 효과 |
+| [[pages/papers/sna/2024_filippimaz_modeling_nonlinear_effects_wit\|Filippi-Mazzola & Wit (2024)]] | DREAM(신경망 기반 관계 이벤트 가산 모형)으로 특허 인용 동적 네트워크 분석 | 비선형 효과 포착 가능; 약 800만 노드·1억 이벤트 대규모 네트워크 처리 |
 
 ## NetMiner 지원 현황
 

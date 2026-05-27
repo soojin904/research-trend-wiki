@@ -1,4 +1,4 @@
----
+﻿---
 title: "확산/전파/면역화 (Diffusion, Contagion & Immunization)"
 tags: [diffusion, contagion, spread, immunization, influence, sir-model, epidemic]
 netminer_support: "❌ 미지원 (시뮬레이션)"
@@ -31,10 +31,10 @@ netminer_support: "❌ 미지원 (시뮬레이션)"
 
 | 논문 | 적용 방식 | 핵심 발견 |
 |------|-----------|-----------|
-| [[pages/papers/2026_asil_immunization_method_using\|Asil & Khansari (2026)]] | 멀티플렉스 네트워크에서 SIR-UA 모형 + MCPR 지표(PageRank+근접 중심성 결합)로 면역화 전략 비교 | 10% 면역화 시 홍역 2.2%, 천연두 7% 유행 규모 감소; 파라미터 최적화로 최대 9.5% 추가 개선 |
-| [[pages/papers/2024_browne_evaluating_disease_surveillanc\|Browne 외 (2024)]] | 뉴욕시 680만 명 에이전트 기반 시뮬레이션으로 5가지 감시 전략 비교 — COVID형 발병 조기 탐지 | Random Chain 전략이 사전 네트워크 지식 없이도 안정적 조기 경보 제공 |
-| [[pages/papers/2024_king_walkindependence_probabilities\|King (2024)]] | 포함-배제 원리 기반 보행 독립 확률(WIP) 공식으로 정확한 노드-노드 확산 확률 계산 | 기존 확산 중심성의 과대 추정 문제 해결; WIP 중심성·차단 중심성 신규 지표 도출 |
-| [[pages/papers/2020_young_modeling_the_dynamism\|Young 외 (2020)]] | 노숙 청소년 다중 네트워크에서 HIV 정보 확산 동적 시뮬레이션 | 네트워크 역동성이 확산에 유의한 영향; 정적 네트워크 가정 시 효과 과대·과소 추정 |
+| [[pages/papers/sna/2026_asil_immunization_method_using\|Asil & Khansari (2026)]] | 멀티플렉스 네트워크에서 SIR-UA 모형 + MCPR 지표(PageRank+근접 중심성 결합)로 면역화 전략 비교 | 10% 면역화 시 홍역 2.2%, 천연두 7% 유행 규모 감소; 파라미터 최적화로 최대 9.5% 추가 개선 |
+| [[pages/papers/sna/2024_browne_evaluating_disease_surveillanc\|Browne 외 (2024)]] | 뉴욕시 680만 명 에이전트 기반 시뮬레이션으로 5가지 감시 전략 비교 — COVID형 발병 조기 탐지 | Random Chain 전략이 사전 네트워크 지식 없이도 안정적 조기 경보 제공 |
+| [[pages/papers/sna/2024_king_walkindependence_probabilities\|King (2024)]] | 포함-배제 원리 기반 보행 독립 확률(WIP) 공식으로 정확한 노드-노드 확산 확률 계산 | 기존 확산 중심성의 과대 추정 문제 해결; WIP 중심성·차단 중심성 신규 지표 도출 |
+| [[pages/papers/sna/2020_young_modeling_the_dynamism\|Young 외 (2020)]] | 노숙 청소년 다중 네트워크에서 HIV 정보 확산 동적 시뮬레이션 | 네트워크 역동성이 확산에 유의한 영향; 정적 네트워크 가정 시 효과 과대·과소 추정 |
 
 ## NetMiner 지원 현황
 

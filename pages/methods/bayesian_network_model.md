@@ -1,4 +1,4 @@
----
+﻿---
 title: "Bayesian / 잠재공간 모델 (Bayesian & Latent Space Models)"
 tags: [bayesian, latent-space, mcmc, latent-position, mixture-model, probabilistic]
 netminer_support: "❌ 미지원"
@@ -34,10 +34,10 @@ $$P(y_{ij}=1) = \text{logit}^{-1}(\alpha - ||z_i - z_j||)$$
 
 | 논문 | 적용 방식 | 핵심 발견 |
 |------|-----------|-----------|
-| [[pages/papers/2026_lu_zeroinflated_poisson_latent\|Lu 외 (2026)]] | 결측 데이터+가중치 동시 처리하는 Zero-Inflated Poisson LPCM에 MFM + 부분 붕괴 MCMC 적용 | 절단 absorb-eject 이동이 MFM 샘플러 효율 대폭 향상; 군집 수 자동 결정 |
-| [[pages/papers/2025_gwee_modelbased_clustering_for_netw\|Gwee 외 (2025)]] | LSPCM으로 잠재 공간 차원수와 군집 수 동시 자동 추론 — Twitter 네트워크 적용 | 모형 비교 없이 최적 차원과 군집 수 추론 가능; 스포츠·정치 맥락 검증 |
-| [[pages/papers/2023_rastelli_continuous_latent_position_mod\|Rastelli & Corneli (2023)]] | 노드가 잠재 공간에서 연속 이동하는 궤적 모형으로 이메일·전화 순간 상호작용 분석 | 타이밍·빈도 동시 모형화; 동적 네트워크 분석의 연속 시간 확장 |
-| [[pages/papers/2022_agneessens_network_formation_organization\|Agneessens 외 (2022)]] | 베이지안 계층적 ERGM으로 다중 소집단 조직 네트워크 동시 분석 | 팀 수준 맥락 변수와 개인 수준 과정의 동시 추정 |
+| [[pages/papers/sna/2026_lu_zeroinflated_poisson_latent\|Lu 외 (2026)]] | 결측 데이터+가중치 동시 처리하는 Zero-Inflated Poisson LPCM에 MFM + 부분 붕괴 MCMC 적용 | 절단 absorb-eject 이동이 MFM 샘플러 효율 대폭 향상; 군집 수 자동 결정 |
+| [[pages/papers/sna/2025_gwee_modelbased_clustering_for_netw\|Gwee 외 (2025)]] | LSPCM으로 잠재 공간 차원수와 군집 수 동시 자동 추론 — Twitter 네트워크 적용 | 모형 비교 없이 최적 차원과 군집 수 추론 가능; 스포츠·정치 맥락 검증 |
+| [[pages/papers/sna/2023_rastelli_continuous_latent_position_mod\|Rastelli & Corneli (2023)]] | 노드가 잠재 공간에서 연속 이동하는 궤적 모형으로 이메일·전화 순간 상호작용 분석 | 타이밍·빈도 동시 모형화; 동적 네트워크 분석의 연속 시간 확장 |
+| [[pages/papers/sna/2022_agneessens_network_formation_organization\|Agneessens 외 (2022)]] | 베이지안 계층적 ERGM으로 다중 소집단 조직 네트워크 동시 분석 | 팀 수준 맥락 변수와 개인 수준 과정의 동시 추정 |
 
 ## NetMiner 지원 현황
 
@@ -56,5 +56,6 @@ $$P(y_{ij}=1) = \text{logit}^{-1}(\alpha - ||z_i - z_j||)$$
 - [[pages/insights/sna_method_frequency|방법론 빈도 분석]]
 - [[pages/methods/ergm|ERGM]] (Bayesian ERGM 변형)
 - [[pages/methods/community_detection|커뮤니티 탐지]] (잠재 공간 군집화와 연결)
-- [[pages/methods/ml_gnn|ML/딥러닝/GNN]] (임베딩 방법론과의 경계)
+- [[pages/methods/gnn|GNN]] (임베딩 방법론과의 경계)
+- [[pages/methods/ml|전통 ML]] (분류·회귀 방법론과의 경계)
 - [[pages/tools/other_tools|Other Tools (ERGM·SAOM 지원 도구)]]

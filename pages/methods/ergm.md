@@ -1,4 +1,4 @@
----
+﻿---
 title: "ERGM (지수 랜덤 그래프 모형)"
 tags: [ergm, stergm, ergmito, statistical-network-model, exponential-random-graph]
 netminer_support: "✅ 지원 (기본 ERGM; 변형은 부분 지원)"
@@ -30,10 +30,10 @@ netminer_support: "✅ 지원 (기본 ERGM; 변형은 부분 지원)"
 
 | 논문 | 적용 방식 | 핵심 발견 |
 |------|-----------|-----------|
-| [[pages/papers/2021_ingold_the_roles_actors_play\|Ingold 외 (2021)]] | t1 중심성을 독립변수로 포함한 ERGM으로 t2 행위자 활동성·인기도 예측 | 소수 행위자만 시간에 걸쳐 중심 위치 유지; 국가 기관이 이익집단보다 안정적 |
-| [[pages/papers/2022_agneessens_network_formation_organization\|Agneessens 외 (2022)]] | 베이지안 계층적 ERGM으로 다중 소집단 네트워크 동시 분석 | 상호성·동종 선호가 소집단 네트워크 형성에 핵심; 팀 수준 맥락 변수 추가 효과 확인 |
-| [[pages/papers/2022_bohnett_resilience_and_fragmentation\|Bohnett 외 (2022)]] | ERGM으로 의료 연합 조직 간 네트워크에서 자원 기여 → 중심성 예측 | 자원 기여도 높은 조직이 더 중심적 위치 차지 |
-| [[pages/papers/2024_pattison_exponential_random_graph_model\|Pattison 외 (2024)]] | 의존 구조 위계 프레임워크에 펜던트 삼각형 통계량 추가 | 경계·교량 형성 과정 모델링에서 모형 적합도 현저히 개선 |
+| [[pages/papers/sna/2021_ingold_the_roles_actors_play\|Ingold 외 (2021)]] | t1 중심성을 독립변수로 포함한 ERGM으로 t2 행위자 활동성·인기도 예측 | 소수 행위자만 시간에 걸쳐 중심 위치 유지; 국가 기관이 이익집단보다 안정적 |
+| [[pages/papers/sna/2022_agneessens_network_formation_organization\|Agneessens 외 (2022)]] | 베이지안 계층적 ERGM으로 다중 소집단 네트워크 동시 분석 | 상호성·동종 선호가 소집단 네트워크 형성에 핵심; 팀 수준 맥락 변수 추가 효과 확인 |
+| [[pages/papers/sna/2022_bohnett_resilience_and_fragmentation\|Bohnett 외 (2022)]] | ERGM으로 의료 연합 조직 간 네트워크에서 자원 기여 → 중심성 예측 | 자원 기여도 높은 조직이 더 중심적 위치 차지 |
+| [[pages/papers/sna/2024_pattison_exponential_random_graph_model\|Pattison 외 (2024)]] | 의존 구조 위계 프레임워크에 펜던트 삼각형 통계량 추가 | 경계·교량 형성 과정 모델링에서 모형 적합도 현저히 개선 |
 
 ## NetMiner 지원 현황
 

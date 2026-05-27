@@ -1,4 +1,4 @@
----
+﻿---
 title: "중심성 분석 (Centrality)"
 tags: [centrality, degree, betweenness, eigenvector, closeness, structural-measure]
 netminer_support: "✅ 지원"
@@ -28,11 +28,11 @@ SNA에서 네트워크 내 노드의 중요도를 수치화하는 지표군. 소
 
 | 논문 | 적용 방식 | 핵심 발견 |
 |------|-----------|-----------|
-| [[pages/papers/2025_fernandez_centrality_and_social_domains\|Fernandez (2025)]] | 퍼스널 네트워크의 알터 중심성 → 언어 유사성 인식 예측 (다수준 로지스틱 회귀) | 지지 네트워크 중심 알터는 유사성 인식 ↑, 갈등 네트워크는 ↓ |
-| [[pages/papers/2022_tasselli_network_centrality_bias\|Tasselli 외 (2022)]] | 직장 네트워크에서 에고의 in-degree 변화 추적 (종단 2개 연구 종합) | 공동 동기 높은 동료가 중심 인물에 유대 형성 → 중심성 편향 발생 |
-| [[pages/papers/2023_kim_adolescent_network_positions_a\|Kim & Kim (2023)]] | 사회계측 네트워크 중심성·인기도 → 성인기 기억 수행 예측 (형제 고정 효과 모형) | 청소년기 중심 위치가 성인기 인지 능력과 유의하게 연관 |
-| [[pages/papers/2024_neal_methodological_moderators_aver\|Neal (2024)]] | 아동·청소년 우정 네트워크 71편 메타분석 — outdegree centrality 추정치 조절 변수 검토 | 명칭 생성기 방식·선택 횟수 제한이 추정치에 유의미한 영향 |
-| [[pages/papers/2026_asil_immunization_method_using\|Asil & Khansari (2026)]] | 멀티플렉스 네트워크에서 PageRank·근접 중심성 결합 MCPR 지표로 면역화 전략 설계 | 10% 면역화 시 홍역 2.2%, 천연두 7% 유행 규모 감소 |
+| [[pages/papers/sna/2025_fernandez_centrality_and_social_domains\|Fernandez (2025)]] | 퍼스널 네트워크의 알터 중심성 → 언어 유사성 인식 예측 (다수준 로지스틱 회귀) | 지지 네트워크 중심 알터는 유사성 인식 ↑, 갈등 네트워크는 ↓ |
+| [[pages/papers/sna/2022_tasselli_network_centrality_bias\|Tasselli 외 (2022)]] | 직장 네트워크에서 에고의 in-degree 변화 추적 (종단 2개 연구 종합) | 공동 동기 높은 동료가 중심 인물에 유대 형성 → 중심성 편향 발생 |
+| [[pages/papers/sna/2023_kim_adolescent_network_positions_a\|Kim & Kim (2023)]] | 사회계측 네트워크 중심성·인기도 → 성인기 기억 수행 예측 (형제 고정 효과 모형) | 청소년기 중심 위치가 성인기 인지 능력과 유의하게 연관 |
+| [[pages/papers/sna/2024_neal_methodological_moderators_aver\|Neal (2024)]] | 아동·청소년 우정 네트워크 71편 메타분석 — outdegree centrality 추정치 조절 변수 검토 | 명칭 생성기 방식·선택 횟수 제한이 추정치에 유의미한 영향 |
+| [[pages/papers/sna/2026_asil_immunization_method_using\|Asil & Khansari (2026)]] | 멀티플렉스 네트워크에서 PageRank·근접 중심성 결합 MCPR 지표로 면역화 전략 설계 | 10% 면역화 시 홍역 2.2%, 천연두 7% 유행 규모 감소 |
 
 ## 해석 주의사항
 
