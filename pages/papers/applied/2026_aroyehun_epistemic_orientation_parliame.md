@@ -9,6 +9,11 @@ source: raw/applied/applied_2026_Epistemic_orientation_in__nodoi.md
 
 # Epistemic orientation in parliamentary discourse is associated with deliberative democracy
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Segun Aroyehun; Stephan Lewandowsky; David Garcia
 **출처**: ArXiv.org, Vol.None
 **발행일**: 2026-04-21

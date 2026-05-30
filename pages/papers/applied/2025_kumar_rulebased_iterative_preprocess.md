@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_RULEBASED_ITERATIVE_PREPR_afts_2025_1834_833.md
 
 # RULE-BASED ITERATIVE PREPROCESSING WITH DEEP SIAMESE GRU–BILSTM FOR EFFICIENT DOCUMENT STREAMING
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: K. Durga Hemanth Kumar
 **출처**: Archives for Technical Sciences, Vol.34, pp.833-849
 **발행일**: 2025-12-30

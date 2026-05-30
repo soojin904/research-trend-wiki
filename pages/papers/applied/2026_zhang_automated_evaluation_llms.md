@@ -9,6 +9,11 @@ source: raw/applied/applied_2026_Automated_evaluation_of_L_nodoi.md
 
 # Automated evaluation of LLMs for effective machine translation of Mandarin Chinese to English
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Yue Zhang; Rodney Beard; John Hawkins; Rohitash Chandra
 **출처**: arXiv (Cornell University), Vol.None
 **발행일**: 2026-02-15

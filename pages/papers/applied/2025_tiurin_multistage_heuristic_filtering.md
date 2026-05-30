@@ -9,6 +9,23 @@ source: raw/applied/applied_2025_A_MultiStage_Heuristic_Fi_languesparole_153.md
 
 # A Multi-Stage Heuristic Filtering Pipeline for Refining a Spanish Legal Corpus for Natural Language Processing
 
+**제목(한글)**: 자연어 처리(Natural Language Processing)를 위한 스페인어 법률 말뭉치(Corpus) 정제를 위한 다단계 휴리스틱 필터링 파이프라인
+
+## 한국어 요약
+
+**연구질문**: 자연어 처리 작업을 위해 잡음이 많은 스페인어 법률 말뭉치를 어떻게 효과적으로 정제할 수 있는가?
+
+**방법론**:
+- 다단계 휴리스틱 파이프라인 (Multi-Stage Heuristic Pipeline)
+- 텍스트 정규화 (Text Normalization): 문자 단위 오류 수정 및 하이픈 교정
+- 정량적 측정 기반 필터링 (Filtering based on Quantifiable Metrics): 개행 문자 비율, 비알파벳 문자 수, 오타 단어 비율 등 활용
+- 결합 경계 점수 (Combined Borderline Score, CBS)를 통한 한계 세그먼트 식별 및 제거
+
+**주요 결과**:
+- OCR 오류 및 비텍스트 요소 등 잡음이 제거된, 현저히 더 깨끗한 스페인어 법률 텍스트 말뭉치 생성.
+- 자동 텍스트 단순화(automatic text simplification)와 같은 모델 훈련을 위한 고품질 기반 제공.
+- 다른 크고 다양한 법률 텍스트를 정제하는 데 재사용 가능한 방법론 제시.
+
 **저자**: Nikolai Tiurin; Xavier Blanco
 **출처**: Langues & Parole, Vol.10, pp.37-56
 **발행일**: 2025-12-17

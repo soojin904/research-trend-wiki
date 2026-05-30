@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_AIPowered_Multimodal_Syst_electronics14244921.m
 
 # AI-Powered Multimodal System for Haiku Appreciation Based on Intelligent Data Analysis: Validation and Cross-Cultural Extension Potential
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Renjie Fan; Yuanyuan Wang
 **출처**: Electronics, Vol.14, pp.4921-4921
 **발행일**: 2025-12-15

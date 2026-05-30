@@ -9,6 +9,24 @@ source: raw/applied/applied_2025_A_NOVEL_TRANSFER_DEEP_LEA_afts_2025_1834_632.md
 
 # A NOVEL TRANSFER DEEP LEARNING FRAMEWORK WITH CROSS-LINGUAL EMBEDDINGS FOR HIGHRESOURCE AND LOW RESOURCE LANGUAGES FOR SENTIMENT ANALYSIS
 
+**제목(한글)**: 고자원 및 저자원 언어 감성 분석을 위한 교차 언어 임베딩 기반의 새로운 전이 딥러닝 프레임워크
+
+## 한국어 요약
+
+**연구질문**: 고자원 및 저자원 언어 모두에서 감성 분석(Sentiment Analysis) 성능을 향상시키고, 특히 저자원 언어의 데이터 부족 문제를 완화하기 위해 교차 언어 임베딩(Cross-lingual Embeddings)을 활용한 새로운 전이 딥러닝(Transfer Deep Learning) 프레임워크가 효과적인가?
+
+**방법론**:
+- 전이 딥러닝 (Transfer Deep Learning)
+- 교차 언어 임베딩 (Cross-lingual Embeddings)
+- 하이브리드 딥러닝 모델 (Hybrid Deep Learning Model)
+- 다국어 및 트위터 데이터셋을 활용한 성능 평가
+
+**주요 결과**:
+- 제안된 방법론이 기존 모델보다 감성 분석에서 더 효과적임을 입증했다.
+- 96.42%의 정확도를 달성하여 Bi-LSTM(91.45%) 및 Bi-GRU(88.57%)보다 높은 성능을 보였다.
+- 저자원 언어 감성 분석에서 제안 방법론의 효율성을 확인했다.
+- 전이 학습(Transfer Learning)을 통해 다국어 감성 분석을 크게 확장할 수 있음을 시사한다.
+
 **저자**: Jayaprakash Vattikundala; M. Siva Ganga Prasad
 **출처**: Archives for Technical Sciences, Vol.34, pp.632-647
 **발행일**: 2025-12-30

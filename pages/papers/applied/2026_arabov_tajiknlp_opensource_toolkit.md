@@ -9,6 +9,24 @@ source: raw/applied/applied_2026_TajikNLP_An_OpenSource_To_nodoi.md
 
 # TajikNLP: An Open-Source Toolkit for Comprehensive Text Processing of Tajik (Cyrillic Script)
 
+**제목(한글)**: TajikNLP: 타지크어(키릴 문자) 종합 텍스트 처리를 위한 오픈소스 툴킷
+
+## 한국어 요약
+
+**연구질문**: 타지크어(키릴 문자)의 언어 연구 및 응용 개발을 저해하는 NLP 툴킷 부족 문제를 어떻게 해결할 수 있는가?
+
+**방법론**:
+- 오픈소스 Python 라이브러리(TajikNLP) 개발
+- 통합 Doc 객체 기반의 모듈식 텍스트 처리 파이프라인 구현
+- 새로운 통합 형태소 분석 엔진 도입
+- 어휘 기반 감성 분석 및 사전 학습된 임베딩(Word2Vec/FastText) 활용
+
+**주요 결과**:
+- 타지크어(키릴 문자) 텍스트 처리를 위한 최초의 포괄적인 파이프라인 제공
+- 타지크어의 복잡한 형태론적 특성(교착적 명사 및 동사 굴절) 처리 능력 대폭 개선
+- 연구 재현성 및 활용을 위한 4가지 언어학적 데이터셋(POS 태그 코퍼스, 감성 어휘집 등) 공개
+- 저자원 키릴 문자 환경에서 타지크어 NLP의 학술 및 산업적 적용 장벽 완화 및 기반 기술 인프라 구축
+
 **저자**: Mullosharaf K. Arabov
 **출처**: ArXiv.org, Vol.None
 **발행일**: 2026-05-06

@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_LLMBased_MultiAgent_Syste_preprints202512_1105_
 
 # LLM-Based Multi-Agent Systems for Mathematical Problem Solving: A Comprehensive Literature Review
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Bektur Toktobekov; Burul Shambetova
 **출처**: Preprints.org, Vol.None
 **발행일**: 2025-12-12

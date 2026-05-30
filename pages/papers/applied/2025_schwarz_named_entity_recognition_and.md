@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_89Named_entity_recognitio_9783112208212_005.md
 
 # 89Named entity recognition and entity linking
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Pia Schwarz
 **출처**: , Vol.None, pp.89-114
 **발행일**: 2025-12-01

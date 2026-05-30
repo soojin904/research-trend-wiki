@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_COMPARATIVE_MACHINE_LEARN_jri_v8i1_470.md
 
 # COMPARATIVE MACHINE LEARNING ALGORITHMS FOR YOUTUBE SENTIMENT ANALYSIS ON DPR DEMONSTRATION 2025 USING LEXICON
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Syafri Samsudin; Ahmad Abdul Chamid; Ahmad Jazuli
 **출처**: Jurnal Riset Informatika, Vol.8, pp.74-85
 **발행일**: 2025-12-15

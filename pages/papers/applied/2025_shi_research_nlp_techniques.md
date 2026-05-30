@@ -9,6 +9,23 @@ source: raw/applied/applied_2025_Research_on_NLP_Technique_ybdxaa41.md
 
 # Research on NLP Techniques for Analyzing Social Media User Behavior
 
+**제목(한글)**: 소셜 미디어 사용자 행동 분석을 위한 자연어 처리(NLP) 기술 연구
+
+## 한국어 요약
+
+**연구질문**: 이 논문은 소셜 미디어 사용자 행동 분석에 활용되는 자연어 처리 기술의 체계적인 프레임워크와 주요 발전 사항을 검토한다.
+
+**방법론**:
+- 텍스트 특징 추출: Bag-of-words에서 Word2Vec, GloVe, FastText와 같은 워드 벡터 모델로 발전하는 과정 비교
+- 감성 분석: Aspect-Based Sentiment Analysis(ABSA), Emotion Cause Extraction(ECE) 등 세분화된 감성 분석 방법론 평가
+- 행동 분류: SVM, LSTM 같은 전통적인 모델과 BERT 모델의 성능 비교 및 BERT의 양방향 문맥 활용 장점 분석
+
+**주요 결과**:
+- 텍스트 특징 추출 방법론은 시맨틱 표현 능력, 처리 능력, OOV(어휘집 외 단어) 처리 측면에서 발전해왔다.
+- 세분화된 감성 분석 방법론(ABSA, ECE)은 기존의 광범위한 감성 분석의 한계를 극복한다.
+- BERT 모델은 양방향 문맥을 활용하여 소셜 미디어 사용자 행동 분류에서 기존 모델 대비 향상된 성능을 보여준다.
+- 본 연구는 소셜 미디어 사용자 행동 분석을 위한 텍스트 특징 추출, 감성 분석, 행동 분류를 포함하는 체계적인 기술 접근법을 제시한다.
+
 **저자**: Yufan Shi
 **출처**: Science and Technology of Engineering Chemistry and Environmental Protection, Vol.1
 **발행일**: 2025-12-19

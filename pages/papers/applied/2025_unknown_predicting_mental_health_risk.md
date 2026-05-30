@@ -9,6 +9,22 @@ source: raw/applied/applied_2025_Predicting_Mental_Health__irjmets84237.md
 
 # Predicting Mental Health Risk Using Social Media Data and NLP
 
+**제목(한글)**: 소셜 미디어 데이터와 자연어 처리를 활용한 정신 건강 위험 예측
+
+## 한국어 요약
+
+**연구질문**: 트위터·레딧 등 소셜 미디어에 게시된 텍스트를 NLP로 분석하여 정신 건강 위험에 처한 개인을 얼마나 정확하게 식별하고 분류할 수 있는가?
+
+**방법론**:
+- 트위터(Twitter)와 레딧(Reddit)에서 수집한 사용자 텍스트를 대상으로 언어적 특징, 감성 패턴, 문맥 단서 추출
+- 전통적 기계학습 기법과 BERT·RoBERTa 등 트랜스포머(Transformer) 기반 딥러닝 아키텍처 비교 적용
+- 데이터 불균형, 어노테이션 신뢰성, 모델 해석 가능성 등 주요 도전 과제를 함께 검토
+
+**주요 결과**:
+- NLP 기반 접근법이 비정형 소셜 미디어 텍스트에서 우울증·불안·자살 충동 등 정신 건강 신호를 유의미하게 추출하는 데 유망한 성능을 보임
+- 트랜스포머 모델(BERT, RoBERTa)이 기존 기계학습 방법 대비 높은 민감도(Sensitivity)로 정신 건강 상태 분류에 효과적임을 확인
+- 데이터 불균형 및 윤리적 이슈(프라이버시, 낙인 효과)가 실제 적용에서 해결해야 할 핵심 과제로 남아 있음
+
 **저자**: 
 **출처**: International Research Journal of Modernization in Engineering Technology and Science, Vol.None
 **발행일**: 2025-12-01

@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_Manual_annotation_based_s_s41598_025_28799_5.md
 
 # Manual annotation based sentiment analysis of user feedback in health and wellness app reviews
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Linda Varghese; Rajesh R. Pai; G. Savitha; S. Girisha; Naganna Chetty
 **출처**: Scientific Reports, Vol.15, pp.44766-44766
 **발행일**: 2025-12-29

@@ -8,6 +8,21 @@ source: raw/applied/applied_2025_Narrative_Economics_in_th_jcasc_v10i4_2842.md
 ---
 
 # Narrative Economics in the Digital Age: The Power of Stories in Shaping Economic Behavior and Policy
+**제목(한글)**: 디지털 시대의 서사 경제학: 경제 행동과 정책을 형성하는 이야기의 힘
+
+## 한국어 요약
+
+**연구질문**: 디지털 플랫폼을 통해 확산되는 경제적 서사(narrative)가 시장 기대, 집단 행동, 정책 효과에 어떤 방식으로 영향을 미치는가?
+
+**방법론**:
+- 암호화폐(2016–2022), 코로나 이후 인플레이션(2020–2023), 2021년 밈 주식(meme stocks) 사례 분석
+- 텍스트, 미디어, 소셜 네트워크 데이터를 활용한 서사 확산 분석
+- 교차 이론(crossing theory)과 경험적 사례 결합
+
+**주요 결과**:
+- 서사는 경제적 펀더멘털을 주도하거나 증폭, 때로는 일시적으로 압도하며 피드백 루프와 시장 불안을 유발
+- 디지털 플랫폼이 감정적으로 공명하는 이야기의 확산을 가속
+- 경제 연구에 서사 분석을 통합하고 정책 입안자들이 서사 기반 효과를 예측·관리할 필요성 제시
 
 **저자**: Christos Christodoulou-Volos
 **출처**: Journal of Cultural Analysis and Social Change, Vol.None, pp.383-397

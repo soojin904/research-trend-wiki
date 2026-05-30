@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_MoMA_a_mixtureofmultimoda_s41746_025_02219_4.md
 
 # MoMA: a mixture-of-multimodal-agents architecture for enhancing clinical prediction modelling
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Jifan Gao; Md Mahmudur Rahman; John Caskey; Madeline Oguss; Ann P. O’Rourke; Randall Brown; Anne M. Stey; Anoop Mayampurath; Matthew M. Churpek; Guanhua Chen; Majid Afshar
 **출처**: npj Digital Medicine, Vol.9, pp.46-46
 **발행일**: 2025-12-09

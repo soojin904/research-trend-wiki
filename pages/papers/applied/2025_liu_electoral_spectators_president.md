@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_Electoral_Spectators_2024_apsa_2025_48xp3.md
 
 # Electoral Spectators: 2024 US Presidential Election and Online Political Discourse in China
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Muzhi Liu
 **출처**: , Vol.None
 **발행일**: 2025-12-15

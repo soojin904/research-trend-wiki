@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_From_data_to_diagnosis_a_2782_5280_2025_4_4_204
 
 # From data to diagnosis: a scoping review of NLP-based medical text summarisation methods
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Karthigesu Dilani
 **출처**: Информатика Экономика Управление - Informatics Economics Management, Vol.4, pp.2048-2055
 **발행일**: 2025-12-29

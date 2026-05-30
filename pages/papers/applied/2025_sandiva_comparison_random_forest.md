@@ -9,6 +9,22 @@ source: raw/applied/applied_2025_Comparison_of_Random_Fore_komtekinfo_v12i4_669.
 
 # Comparison of Random Forest and Support Vector Machine Learning Algorithms in Sentiment Analysis of Gojek User Reviews
 
+**제목(한글)**: Gojek 사용자 리뷰 감성 분석에서 랜덤 포레스트와 서포트 벡터 머신 알고리즘 비교
+
+## 한국어 요약
+
+**연구질문**: 온라인 라이드헤일링 플랫폼(Gojek) 사용자 리뷰의 감성 분류에서 랜덤 포레스트(Random Forest)와 지지 벡터 머신(Support Vector Machine, SVM) 중 어느 알고리즘이 더 우수한 성능을 보이는가?
+
+**방법론**:
+- 플레이스토어에서 Gojek 고객 리뷰 10,000건 수집 및 긍정·중립·부정 감성 레이블링
+- 랜덤 포레스트(Random Forest)와 SVM(Support Vector Machine) 두 알고리즘으로 감성 분류 모델 구축 및 성능 비교
+- 정확도(Accuracy)를 주요 평가 지표로 사용
+
+**주요 결과**:
+- 전체 10,000건 중 부정 리뷰(6,295건, 63%)가 가장 많고, 긍정(2,057건), 중립(1,135건) 순으로 나타남
+- 랜덤 포레스트가 91% 정확도로 SVM(89%) 대비 우수한 성능 달성
+- 리뷰 텍스트 내 단어 분포 처리에 있어 랜덤 포레스트가 SVM보다 효과적임을 확인
+
 **저자**: Tesa Vausia Sandiva; Arip Kristiyanto
 **출처**: Jurnal KomtekInfo, Vol.None, pp.239-245
 **발행일**: 2025-12-30

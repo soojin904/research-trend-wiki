@@ -9,6 +9,23 @@ source: raw/applied/applied_2025_pyBiblioNet_a_Python_libr_s11192_025_05458_0.md
 
 # pyBiblioNet: a Python library for a comprehensive network-based bibliometric analysis
 
+**제목(한글)**: pyBiblioNet: 네트워크 기반 종합 서지계량 분석을 위한 파이썬 라이브러리
+
+## 한국어 요약
+
+**연구질문**: 기존 서지계량 분석 방법의 한계를 극복하고, 인용 네트워크·공저 네트워크·키워드 공출현 네트워크를 통합적으로 분석할 수 있는 오픈소스 도구를 어떻게 설계할 수 있는가?
+
+**방법론**:
+- OpenAlex API와 연동하여 서지 데이터를 자동 수집 및 전처리
+- 인용 네트워크(Citation Network), 공저 네트워크(Co-authorship Network), 키워드 공출현 네트워크(Keyword Co-occurrence Network) 구축
+- 네트워크 중심성(Centrality), 군집화(Clustering), 커뮤니티 탐지(Community Detection) 알고리즘 적용
+- NLP 기법을 활용한 핵심 토픽 및 개념 분석
+
+**주요 결과**:
+- pyBiblioNet 라이브러리를 통해 서지계량 분석 전 과정(데이터 수집→전처리→시각화→분석)을 통합 수행 가능
+- '15분 도시(15-minute city)' 패러다임 사례 분석으로 숨겨진 패턴과 신흥 연구 트렌드 도출
+- 연구자·사서·정책입안자를 위한 데이터 기반 의사결정 지원 도구로서의 실용성 확인
+
 **저자**: Mirko Lai; Salvatore Vilella; Federica Cena; Giancarlo Ruffo
 **출처**: Scientometrics, Vol.130, pp.7139-7190
 **발행일**: 2025-12-01

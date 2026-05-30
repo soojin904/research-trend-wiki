@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_Large_Language_Model_Agen_preprints202512_2119_
 
 # Large Language Model Agents: A Comprehensive Survey on Architectures, Capabilities, and Applications
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Yiming Lei; Jiawei Xu; Chia Xin Liang; Ziqian Bi; Xiaoming Li; Danyang Zhang; Junhao Song; Zhenyu Yu
 **출처**: Preprints.org, Vol.None
 **발행일**: 2025-12-24

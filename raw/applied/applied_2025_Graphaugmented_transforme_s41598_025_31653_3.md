@@ -1,0 +1,42 @@
+---
+title: "Graph-augmented transformer ensemble framework for robust and scalable fake news detection in social media ecosystems"
+authors: ['Chanchal Kumar', 'Mani Bansal', 'Mohd Anas Khan', 'Vinay Kaushik', 'Md. Arquam', 'Abdulatif Alabdultif']
+year: 2025
+publication_date: 2025-12-11
+venue: "Scientific Reports"
+volume: "16"
+issue: "1"
+pages: "2001-2001"
+doi: "https://doi.org/10.1038/s41598-025-31653-3"
+oa_status: "gold"
+openalex_id: "https://openalex.org/W4417215976"
+query_keyword: "social network"
+tags: ['Misinformation and Its Impacts', 'Spam and Phishing Detection', 'Big Data and Digital Economy']
+keywords: ['Scalability', 'Social media', 'Benchmarking', 'Language model', 'Convolutional neural network', 'Transformer', 'Automatic summarization', 'Testbed']
+source: openalex-keyword
+---
+
+# Graph-augmented transformer ensemble framework for robust and scalable fake news detection in social media ecosystems
+
+**저자**: Chanchal Kumar; Mani Bansal; Mohd Anas Khan; Vinay Kaushik; Md. Arquam; Abdulatif Alabdultif
+**출처**: Scientific Reports, Vol.16 No.1, pp.2001-2001
+**발행일**: 2025-12-11
+**DOI**: https://doi.org/10.1038/s41598-025-31653-3
+**수집 키워드**: social network
+
+## 초록
+
+The recent boom in the spread of false information on social media and web platforms has emerged as a worldwide threat to public opinion, social coherence, and democratic establishments. Traditional fact checking strategies are not sufficient to address the scale and speed of disinformation spreading. So, scalable, automatic, and intelligent fake news detection systems are now in high demand. In this paper, we present a new hybrid model named Graph-Augmented Transformer Ensemble (GETE) for efficient and scalable fake news detection. The primary objective of GETE is to leverage both linguistic and relational features of news spreading by integrating transformer-based language models with graph neural networks (GNNs) with a meta-learned ensemble strategy. The proposed architecture combines the semantic strength of transformer-based models such as BERT (Bidirectional Encoder Representations from Transformers) and RoBERTa (Robustly Optimized BERT Pretraining Approach) with the structure understanding provided by GNNs constructed from user-news interactions and source credibility graphs. The fusion module based on meta-learning is used to train the fusion of these heterogeneous modalities to allow dynamic weighting based on the characteristics of the input data. The combination of deep contextual language understanding and graph-based relational modeling produces synergistic advantages in detection accuracy and generalization. Experimental evaluations on benchmarking datasets FakeNewsNet and LIAR demonstrate GETE's better performance than existing state-of-the-art methods. Specifically, GETE achieves 96.5% accuracy, 96.5% F1-score, and ROC-AUC of 97.3%, boosting F1-score by 4.2% and AUC by 5.6% over high-performing baseline methods. Additionally, proposed model demonstrates enhanced scalability, explainable predictions, and robustness across diversified domains and source distributions. The integration of the meta-ensemble module facilitates adaptive decision-making, hence enabling enhanced detection performance in real-world noisy situations. "With its high performance, explainability, and scalability, the GETE framework presents a solid foundation for the next generation of reliable and adaptive fake news detection systems.
+
+## 키워드
+
+Scalability, Social media, Benchmarking, Language model, Convolutional neural network, Transformer, Automatic summarization, Testbed, Robustness (evolution), Boosting (machine learning)
+
+## 주제 분류 (OpenAlex Topics)
+
+- Misinformation and Its Impacts (score: 0.996)
+- Spam and Phishing Detection (score: 0.001)
+- Big Data and Digital Economy (score: 0.000)
+
+## 메모
+

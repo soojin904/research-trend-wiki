@@ -1,0 +1,42 @@
+---
+title: "Quantitative and Qualitative Content Analysis of Text and Images"
+authors: ['Sophia Kochalski', 'Fanny Barz', 'Pablo Pita', 'Hannah L. Harrison']
+year: 2025
+publication_date: 2025-12-14
+venue: "Fish & fisheries series/Fish and fisheries series (Print)"
+volume: "None"
+issue: "None"
+pages: "507-532"
+doi: "https://doi.org/10.1007/978-3-031-99739-6_17"
+oa_status: "hybrid"
+openalex_id: "https://openalex.org/W4417302723"
+query_keyword: "text analysis"
+tags: ['Computational and Text Analysis Methods', 'Data Visualization and Analytics', 'Creative Drama in Education']
+keywords: ['Variety (cybernetics)', 'Discipline', 'Recreation', 'Content analysis', 'Software', 'Coding (social sciences)', 'Qualitative analysis', 'Visualization']
+source: openalex-keyword
+---
+
+# Quantitative and Qualitative Content Analysis of Text and Images
+
+**저자**: Sophia Kochalski; Fanny Barz; Pablo Pita; Hannah L. Harrison
+**출처**: Fish & fisheries series/Fish and fisheries series (Print), pp.507-532
+**발행일**: 2025-12-14
+**DOI**: https://doi.org/10.1007/978-3-031-99739-6_17
+**수집 키워드**: text analysis
+
+## 초록
+
+Abstract Content analysis is a research technique that allows recreational-fisheries researchers to draw conclusions about the world from images and textual data. In this chapter, we present detailed guidance for content analysis, ranging from formulating the research question to visualizing the results, and including quantitative and qualitative approaches to coding, analysis, and interpretation. Drawing from a rich pool of over 20 studies from recreational fishing research, we find that the method has many applications in human dimensions and beyond. It is used to describe and explain opinions, arguments, and the behaviour of recreational fishers. Because content analysis can be applied to a variety of different data sources, the approach is particularly suitable for interdisciplinary research that bridges disciplinary boundaries and enables a holistic view of complex systems and behaviours. Popular applications in recreational fisheries include comparative and longitudinal studies, using diverse data sources such as transcripts of interviews, policy documents, and media excerpts. While highlighting the method’s strengths, we also illuminate instances where it may not be the optimal choice, elucidate challenges when coding certain material, such as images, and give an overview of helpful programming languages and software applications. Future developments promise exciting opportunities, propelled by technological advancements and evolving research paradigms.
+
+## 키워드
+
+Variety (cybernetics), Discipline, Recreation, Content analysis, Software, Coding (social sciences), Qualitative analysis, Visualization
+
+## 주제 분류 (OpenAlex Topics)
+
+- Computational and Text Analysis Methods (score: 0.387)
+- Data Visualization and Analytics (score: 0.032)
+- Creative Drama in Education (score: 0.019)
+
+## 메모
+

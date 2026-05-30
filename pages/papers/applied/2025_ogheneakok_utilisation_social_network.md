@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_Utilisation_of_Social_Net_1.md
 
 # Utilisation of Social Network Sites and Social Studies Undergraduates' Scholarly Performance
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Edore Clifford Ogheneakoke; Onyenka Destiny Ukor; Sunday Obro; Shashikant Nishant Sharma; Williams P. Akpochafo
 **출처**: St Theresa Journal of Humanities and Social Sciences, Vol.2, pp.178-178
 **발행일**: 2025-12-15

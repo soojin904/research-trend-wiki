@@ -9,6 +9,11 @@ source: raw/applied/applied_2026_Detecting_Basic_Values_in_nodoi.md
 
 # Detecting Basic Values in A Noisy Russian Social Media Text Data: A Multi-Stage Classification Framework
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Maria Milkova; Maksim Rudnev
 **출처**: ArXiv.org, Vol.None
 **발행일**: 2026-03-19

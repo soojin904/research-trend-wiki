@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_Comparative_Performance_o_jaic_v9i6_11385.md
 
 # Comparative Performance of SVM and BERT-Base Using Hybrid Preprocessing for Fast Fashion Sentiment Analysis
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Restu Lestari Mulianingrum; Erwin Yudi Hidayat
 **출처**: Journal of Applied Informatics and Computing, Vol.9, pp.3464-3478
 **발행일**: 2025-12-07

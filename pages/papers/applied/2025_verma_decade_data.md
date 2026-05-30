@@ -9,6 +9,24 @@ source: raw/applied/applied_2025_A_decade_of_data_science_s44248_025_00097_5.md
 
 # A decade of data science research: insights from a bibliometric study
 
+**제목(한글)**: 데이터 과학 연구 10년: 문헌 계량학 연구를 통한 통찰
+
+## 한국어 요약
+
+**연구질문**: 이 논문은 2015년부터 2025년까지의 데이터 과학 연구 동향을 지도화하고 분석하며, 주요 기여자, 주제 동향, 협력 패턴을 파악하고자 한다.
+
+**방법론**:
+- 문헌 계량학적 접근 (Scientometric approach)
+- Scopus 데이터베이스를 활용한 데이터 수집
+- 로트카의 법칙 및 브래드포드의 법칙 적용
+- Biblioshiny 및 VOSviewer를 이용한 분석
+
+**주요 결과**:
+- 데이터 과학 출판물 수의 강력한 상승세와 함께 미국, 중국, 인도가 글로벌 연구 산출을 주도함.
+- "기계 학습"과 "인공 지능"이 지배적인 연구 주제였음.
+- Zhang, Yilong 및 Wang, Jianyu가 다작 저자로 나타남.
+- 협력 네트워크는 국제화가 증가하고 있으나, 글로벌 참여에는 불균형이 남아있음.
+
 **저자**: Reetu Verma; Ashok Kumar; Kavita Pabreja; Amit Kumar
 **출처**: Discover Data, Vol.3
 **발행일**: 2025-12-30

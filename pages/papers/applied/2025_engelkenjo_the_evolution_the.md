@@ -9,6 +9,23 @@ source: raw/applied/applied_2025_The_Evolution_of_the_Parl_rips_24_2_10511.md
 
 # The Evolution of the Parliamentary Debate on Political Violence in the Basque Country, 1980 – 2011
 
+**제목(한글)**: 바스크 지방의 정치적 폭력에 대한 의회 논쟁의 진화, 1980-2011
+
+## 한국어 요약
+
+**연구질문**: 바스크 의회 내 정당들 사이에서 정치적 폭력에 대한 논쟁이 1980년부터 2011년까지 어떻게 진화했는가?
+
+**방법론**:
+- 구조적 토픽 모델 (Structural Topic Model)
+- 비지도 기계 학습 기법 (unsupervised machine learning technique)
+- 의회 토론 기록 전사본 분석 (transcripts of parliamentary debates analysis)
+
+**주요 결과**:
+- 1980-1987년, 1987-1998년, 1998-2011년의 세 가지 주요 논쟁 기간이 구분되며, 1987년과 1998년이 전환점이었다.
+- 1987년, 바스크 민족주의당은 정치적 폭력에 대한 시각을 "정치적으로 동기 부여된 이상주의자 및 잘못된 자유 투사"의 결과에서 "불관용과 반민주적 태도"의 결과로 변경하여 비민족주의 정당들의 입장과 수렴했다.
+- 1998년, 정치적 폭력이 감소했음에도 논쟁은 두 블록으로 양극화되었으나, 대부분의 담론은 폭력을 불관용의 결과이자 자유에 반대되는 것으로 보았고 피해자들에게 특별한 위치를 부여했다.
+- 정치적 폭력에 대한 견해를 조직한 것은 좌파/우파 분열이 아니라 민족주의/비민족주의 분열이었다.
+
 **저자**: Marcos Engelken-Jorge
 **출처**: RIPS Revista de Investigaciones Políticas y Sociológicas, Vol.24
 **발행일**: 2025-12-05

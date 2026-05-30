@@ -9,6 +9,25 @@ source: raw/applied/applied_2025_Using_ChatGPT_for_Quantit_icair_5_1_4336.md
 
 # Using ChatGPT for Quantitative Content Analysis: Opportunities and Challenges in Construction and Sustainability Research
 
+**제목(한글)**: ChatGPT를 활용한 정량적 내용 분석: 건설 및 지속가능성 연구에서의 기회와 과제
+
+## 한국어 요약
+
+**연구질문**: ChatGPT가 주요 주제를 신뢰할 수 있게 찾을 수 있는지, 원본 녹취록과 요약본 간의 결과 차이, 그리고 실제 연구 상황에서 ChatGPT 사용 시의 실질적인 장점과 문제점은 무엇인지 파악한다.
+
+**방법론**:
+- 전처리 (텍스트 분할, 불용어 제거, 어간 추출)
+- 키워드 추출
+- 5가지 범주의 주제 코딩 (Thematic coding)
+- 간단한 감성 분석 (Sentiment analysis)
+
+**주요 결과**:
+- 디지털 기술 및 지속가능성이 가장 강력한 주제였으며, 교육/훈련, 이점, 장벽이 그 뒤를 이었다.
+- 감성 분석 결과는 두 데이터셋 모두에서 약간 긍정적인 값을 보였다.
+- 상세 수준에서 녹취록은 기술적 용어를, 요약본은 일반적인 용어를 포함하여 빈도수가 더 높았다.
+- 무료 ChatGPT 사용 시 중단, 출력 스타일 변경, 차트/테이블 내보내기 어려움 등 재현성을 저해하는 실질적인 문제점들이 발견되었다.
+- ChatGPT는 정량적 내용 분석(QCA)의 초기 단계 및 초기 코딩 시간 절약에 유용하나, 최종 분석에는 불충분하다.
+
 **저자**: Mona Foroozanfar; Frédéric Bonneaud; Dominique Laffly
 **출처**: Proceedings of the International Conference on AI Research., Vol.5, pp.572-578
 **발행일**: 2025-12-04

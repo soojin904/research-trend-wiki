@@ -9,6 +9,20 @@ source: raw/applied/applied_2025_A_Big_DataDriven_Topical__jktc_2025_12_28_4_45.
 
 # A Big Data–Driven Topical Landscape Analysis of Academic Research on K-POP Idols
 
+**제목(한글)**: K-POP 아이돌 학술 연구의 빅데이터 기반 토픽 지형 분석
+
+## 한국어 요약
+
+**연구질문**: K-POP 아이돌 관련 국내 학술 연구의 토픽 지형은 무엇이며, 그 안에서 미용 및 패션 관련 논의는 어떻게 위치하는가?
+
+**방법론**:
+- 국내 K-POP 아이돌 학술 연구에 대한 정량적 텍스트 마이닝 분석 (quantitative text-mining analysis) 수행
+- 2008년부터 2025년 11월까지 RISS(Research Information Sharing Service)에서 'K-POP 아이돌' 관련 용어가 제목 또는 초록에 포함된 학술 논문 수집
+- 메타데이터가 불완전한 문헌 제외 후, 최종 326편의 논문 분석 대상으로 확정
+
+**주요 결과**:
+- (제공된 초록의 첫 부분에는 주요 결과가 명시되어 있지 않습니다.)
+
 **저자**: Yeun-Jeong Kim; Yeon-A Kim
 **출처**: Journal of Korean Traditional Costume, Vol.28, pp.45-56
 **발행일**: 2025-12-31

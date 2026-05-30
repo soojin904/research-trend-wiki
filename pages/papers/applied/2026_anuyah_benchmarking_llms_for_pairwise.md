@@ -9,6 +9,23 @@ source: raw/applied/applied_2026_Benchmarking_LLMs_for_Pai_nodoi.md
 
 # Benchmarking LLMs for Pairwise Causal Discovery in Biomedical and Multi-Domain Contexts
 
+**제목(한글)**: 생물의학 및 다중 도메인 맥락에서 쌍별 인과 관계 발견을 위한 LLM 벤치마킹
+
+## 한국어 요약
+
+**연구질문**: 대규모 언어 모델(LLM)이 생물의학 및 다중 도메인 텍스트에서 쌍별 인과 관계 발견(PCD)이라는 근본적인 작업을 얼마나 잘 수행하며, 그 인과적 추론 능력은 어느 정도인가?
+
+**방법론**:
+- 13개의 오픈소스 LLM을 대상으로 테스트 진행
+- 12개 데이터셋 기반의 벤치마크를 활용하여 인과 관계 탐지(Causal Detection) 및 인과 관계 추출(Causal Extraction) 능력 평가
+- 제로샷(zero-shot), CoT(Chain-of-Thought), FICL(Few-shot In-Context Learning) 등 다양한 프롬프트 기법 사용
+- 높은 주석자 간 일치도($κ\ge 0.758$)로 검증된 데이터셋 기반의 통합 평가 프레임워크 구축
+
+**주요 결과**:
+- 현재 LLM 모델들의 인과적 추론 능력에 심각한 결함이 발견됨. 인과 관계 탐지 및 추출 최고 모델은 각각 49.57%, 47.12%의 평균 점수를 기록.
+- 모델은 단순하고 명시적이며 단일 문장으로 된 관계에서 가장 좋은 성능을 보임.
+- 암묵적 관계, 다중 문장에 걸친 연결, 여러 인과 쌍을 포함하는 텍스트 등 복잡한 경우 성능이 급격히 저하됨.
+
 **저자**: Sydney Anuyah; Sneha Shajee-Mohan; Ankit-Singh Chauhan; Sunandan Chakraborty
 **출처**: ArXiv.org, Vol.None
 **발행일**: 2026-01-21

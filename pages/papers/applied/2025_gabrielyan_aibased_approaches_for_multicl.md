@@ -9,6 +9,23 @@ source: raw/applied/applied_2025_AIBased_Approaches_for_Mu_etasr_14303.md
 
 # AI-Based Approaches for Multi-Class Text Classification in Social Media: A Comparative Study
 
+**제목(한글)**: 소셜 미디어에서의 다중 클래스 텍스트 분류를 위한 AI 기반 접근법: 비교 연구
+
+## 한국어 요약
+
+**연구질문**: VKontakte에서 수집된 실세계 소셜 미디어 데이터에서 LSTM, DeBERTa, AutoML 세 가지 텍스트 분류 접근법은 클래스 불균형과 범주 중첩 조건하에서 각각 어떤 성능을 보이는가?
+
+**방법론**:
+- VKontakte에서 "영웅(hero)"이라는 단어의 의미 범주별로 레이블링된 데이터셋 구성
+- LSTM(장단기 기억 네트워크), DeBERTa(트랜스포머 기반), LightAutoML(AutoML) 세 모델 비교
+- 클래스 균형화 및 레이블 정제 실험으로 소수 클래스 분류 성능 개선 시도
+
+**주요 결과**:
+- DeBERTa가 매크로 F1 점수 0.32로 균형 잡힌 최우수 성능 달성
+- AutoML(LightAutoML)은 낮은 자원 요구량으로 최고 원시 정확도 약 65% 기록
+- LSTM은 데이터셋 규모와 복잡성으로 인해 제한적 효과 확인
+- 클래스 균형화 및 레이블 정제 시 소수 클래스 분류 성능 향상 확인
+
 **저자**: Oleg Gabrielyan; Mikhail Gasparyan; Ivan Kravchenko; Milada Krapivina
 **출처**: Engineering Technology & Applied Science Research, Vol.15, pp.29833-29839
 **발행일**: 2025-12-08

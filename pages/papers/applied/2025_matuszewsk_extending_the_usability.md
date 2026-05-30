@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_Extending_the_Usability_o_jcdl67857_2025_00060.
 
 # Extending the Usability of Digital Music Libraries with Analytical Interfaces Case Study – traditional music collections
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Anna Maria Matuszewska
 **출처**: , Vol.None, pp.336-339
 **발행일**: 2025-12-15

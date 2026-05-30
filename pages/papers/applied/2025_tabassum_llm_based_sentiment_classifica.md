@@ -9,6 +9,21 @@ source: raw/applied/applied_2025_LLM_Based_Sentiment_Class_iccit68739_2025_11491
 
 # LLM Based Sentiment Classification from Bangladesh E-Commerce Reviews
 
+**제목(한글)**: LLM 기반 방글라데시 전자상거래 리뷰 감성 분류
+
+## 한국어 요약
+
+**연구질문**: 본 연구는 방글라데시 전자상거래 리뷰에 대한 감성 분석을 위해 트랜스포머(transformer) 기반 BERT 모델 및 기타 대규모 언어 모델(LLM)의 활용 가능성을 탐구한다.
+
+**방법론**:
+- 방글라데시 전자상거래 리뷰 원본 데이터셋에서 벵골어 및 영어 고객 리뷰 4000개 샘플을 추출하여 모델 미세 조정(fine-tuning)에 활용함.
+- Llama-3.1-8B, Phi-3.5-mini-instruct, Mistral-7B-v0.1, DistilBERT-multilingual, mBERT, XLM-R-base 등 다양한 LLM 및 BERT 기반 모델을 미세 조정함.
+- LoRA 및 PEFT와 같은 파라미터 효율적인 미세 조정 기법을 사용하여 계산 오버헤드(computational overhead)를 줄이고 자원 제약적인 환경에 적합하도록 함.
+
+**주요 결과**:
+- 미세 조정된 Llama-3.1-8B 모델이 다른 미세 조정 모델(Phi-3.5-mini-instruct, Mistral-7B-v0.1, DistilBERT-multilingual, mBERT, XLM-R-base)보다 우수한 성능을 보였으며, 종합 정확도(accuracy) 95.5%, 정밀도(precision) 93%, 재현율(recall) 88%, F1 점수 90%를 기록함.
+- 본 연구는 LLM이 저자원 언어(low-resource languages)의 감성 분석 발전에 기여할 수 있음을 보여줌.
+
 **저자**: Sumaiya Tabassum
 **출처**: , Vol.None, pp.281-286
 **발행일**: 2025-12-19

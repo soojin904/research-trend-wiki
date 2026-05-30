@@ -9,6 +9,23 @@ source: raw/applied/applied_2025_OratorIAUA_A_Virtual_Assi_creativity_9_30406.md
 
 # OratorIA-UA: A Virtual Assistant for the Study, Research and Teaching of Rhetoric
 
+**제목(한글)**: OratorIA-UA: 수사학 연구, 탐구 및 교육을 위한 가상 비서
+
+## 한국어 요약
+
+**연구질문**: AI 시대에 수사학의 연구, 탐구 및 교육을 재평가하고 지원하기 위해 가상 비서(virtual assistant)를 어떻게 개발하고 활용할 수 있는가?
+
+**방법론**:
+- 인공지능 비서(OratorIA-UA) 개발
+- 인공지능 비서 구성 전문가 자문 및 훈련
+- 비서의 적절한 작동을 위한 명령어(프롬프트) 구성 및 명세화
+- 수사학적 조작 및 이론 시스템 구성 개념 정의 및 설명
+
+**주요 결과**:
+- 수사학 연구, 탐구, 교육을 전문으로 하는 AI 비서 'OratorIA-UA' 개발
+- 학생, 교사, 연구자 세 가지 사용자 프로필에 대한 비서의 유용성 강조
+- 가상 비서 사용 시의 장점, 단점 및 필요한 주의사항 논의
+
 **저자**: Francisco Chico-Rico; Jorge O. Gallor Guarín; Raquel Martínez Ballestrín
 **출처**: Creativity and Educational Innovation Review, Vol.None, pp.55-78
 **발행일**: 2025-12-22

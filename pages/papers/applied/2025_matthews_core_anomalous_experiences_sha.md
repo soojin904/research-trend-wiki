@@ -9,6 +9,21 @@ source: raw/applied/applied_2025_Core_Anomalous_Experience_20253629.md
 
 # Core Anomalous Experiences Shared Across Diverse Citizen Science Datasets
 
+**제목(한글)**: 다양한 시민 과학 데이터셋에서 공유되는 핵심 변칙적 경험
+
+## 한국어 요약
+
+**연구질문**: 정량적 어휘 분석을 통해 다양한 변칙적 사건 데이터베이스 전반에 걸쳐 공유되는 핵심 변칙적 경험을 추출할 수 있는가?
+
+**방법론**:
+- 역사적 분석
+- 현대 기계 학습 (Machine Learning) 및 인공지능 (Artificial Intelligence) 도구
+- 정량적 어휘 분석 (quantitative lexical analysis)
+
+**주요 결과**:
+- 분석을 통해 다양한 저작 출처에서 나온 문서들의 클러스터가 식별되었다.
+- 이 문서 클러스터는 이전 질적 분석에서 핵심 변칙적 경험의 일부로 제안된 많은 주제들이 더 높은 빈도로 나타나는 것으로 보인다.
+
 **저자**: Luke J. Matthews
 **출처**: Journal of Scientific Exploration, Vol.39, pp.516-537
 **발행일**: 2025-12-18

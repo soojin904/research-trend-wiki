@@ -9,6 +9,22 @@ source: raw/applied/applied_2026_Clash_of_the_models_Compa_arxiv_2603_26156.md
 
 # Clash of the models: Comparing performance of BERT-based variants for generic news frame detection
 
+**제목(한글)**: 모델들의 대결: 일반 뉴스 프레임 탐지를 위한 BERT 기반 변형 모델 성능 비교
+
+## 한국어 요약
+
+**연구질문**: 다양한 BERT 기반 변형 모델들이 일반 뉴스 프레임 탐지 분류 작업에서 서로 어떻게 비교되는가?
+
+**방법론**:
+- BERT 기반 변형 모델(BERT, RoBERTa, DeBERTa, DistilBERT, ALBERT) 간 성능 비교
+- 파인튜닝된(fine-tuned) 모델 활용
+- 스위스 선거 맥락 기반의 뉴스 프레임 라벨링 데이터셋 구축
+
+**주요 결과**:
+- 정치 커뮤니케이션 연구를 위해 BERT 기반 5가지 모델의 일반 뉴스 프레임 탐지 성능 비교 및 최적 활용 방안 논의에 기여.
+- 일반 뉴스 프레임 탐지를 안정적으로 수행하는 다양한 파인튜닝(fine-tuned) 모델 제시.
+- 스위스 선거 맥락 기반의 라벨링된 뉴스 프레임 데이터셋을 제공하여, 프레이밍 분석의 맥락적 강건성(contextual robustness) 테스트에 기여.
+
 **저자**: Vihang Jumle
 **출처**: arXiv (Cornell University), Vol.None
 **발행일**: 2026-03-27

@@ -9,6 +9,22 @@ source: raw/applied/applied_2025_A_swarmbased_multiobjecti_s00500_025_10971_8.md
 
 # A swarm-based multi-objective approach for sentiment-oriented generic summarization: application to tweets
 
+**제목(한글)**: 군집 기반 다목적 감성 지향 일반 요약 기법: 트윗 적용 사례
+
+## 한국어 요약
+
+**연구질문**: 감성 분석 및 오피니언 마이닝 환경에서 저자의 감성을 반영하고, 주요 내용을 포함하며, 중복을 최소화하는 감성 지향 요약을 효과적으로 생성하는 방법은 무엇인가?
+
+**방법론**:
+- 군집 기반 다목적 벌집 알고리즘 (SODBA, Sentiment-Oriented Dominance-based Bee Algorithm) 개발 및 적용
+- Document Understanding Conferences (DUC) 데이터셋 활용 실험
+- ROUGE (Recall-Oriented Understudy for Gisting Evaluation) 지표 및 피어슨 상관 계수(Pearson correlation coefficient)를 이용한 평가
+- COVID-19 팬데믹 관련 트윗에 대한 감성 요약 적용
+
+**주요 결과**:
+- ROUGE 지표 측면에서 기존 문헌 대비 우수한 성능 달성
+- COVID-19 팬데믹 관련 트윗에 SODBA를 적용하여 가장 긍정적 및 부정적 감성의 요약을 성공적으로 도출
+
 **저자**: Jesús M. Sánchez-Gómez; Miguel Á. Vega-Rodríguez; Carlos J. Pérez
 **출처**: Soft Computing, Vol.30, pp.365-383
 **발행일**: 2025-12-20

@@ -9,6 +9,11 @@ source: raw/applied/applied_2026_MultiLevel_Narrative_Eval_nodoi.md
 
 # Multi-Level Narrative Evaluation Outperforms Lexical Features for Mental Health
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Yuxi Ma; Jieming Cui; Muyang Li; Ye Zhao; Yu Li; Yixuan Wang; Chi Zhang; Yinyin Zang; Yixin Zhu
 **출처**: ArXiv.org, Vol.None
 **발행일**: 2026-04-30

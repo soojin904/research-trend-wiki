@@ -9,6 +9,11 @@ source: raw/applied/applied_2026_LLMbench_A_Comparative_Cl_nodoi.md
 
 # LLMbench: A Comparative Close Reading Workbench for Large Language Models
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: David M. Berry
 **출처**: ArXiv.org, Vol.None
 **발행일**: 2026-04-16

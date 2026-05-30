@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_Identifying_and_character_journal_pone_0338318.
 
 # Identifying and characterizing ideologically homogeneous clusters on Twitter and Parler during the 2020 election
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Daniel Verdear; Ashley Hemm; Zuoyu Tian; Sara El Oud; Sandra Kübler; John Funchion; Michelle I. Seelig; Amanda B. Diekman; Manohar N. Murthi; Kamal Premaratne; Neil F. Johnson; Stefan Wuchty
 **출처**: PLoS ONE, Vol.20, pp.e0338318-e0338318
 **발행일**: 2025-12-10

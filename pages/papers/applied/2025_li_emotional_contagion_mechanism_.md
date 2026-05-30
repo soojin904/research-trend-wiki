@@ -9,6 +9,22 @@ source: raw/applied/applied_2025_Emotional_Contagion_Mecha_systems14010001.md
 
 # Emotional Contagion Mechanism and Response Strategy Simulation of Corporate Crises from the Perspective of Online Collective Action
 
+**제목(한글)**: 온라인 집단 행동 관점에서 기업 위기 시 감정 전염 메커니즘 및 대응 전략 시뮬레이션
+
+## 한국어 요약
+
+**연구질문**: 온라인 집단 행동 관점에서 기업 위기 시 감정 전염 메커니즘은 무엇이며, 온라인 집단 행동의 발발 및 개입에 대한 대응 전략은 어떻게 시뮬레이션될 수 있는가?
+
+**방법론**:
+- 스케일-프리(BA) 특성을 가진 온라인 소셜 네트워크 구축
+- SIR 모델 기반의 개별 속성 및 상호작용 규칙 정의
+- 온라인 집단 행동의 발발 및 개입 시뮬레이션
+
+**주요 결과**:
+- 유사한 인지 성향을 가진 네티즌들이 감정 유발, 감정 표현, 감정 동원 과정을 거쳐 대규모 온라인 집단 행동으로 발전함.
+- 오피니언 리더(Opinion Leaders)에 의해 시작된 집단 행동은 더 광범위하고, 갑작스러우며, 지속적인 경향을 보임.
+- 기업은 핵심 사건 정보의 투명성을 강화하고, 행동 그룹의 요구를 신속히 해결하며, 여론을 진정시키고, 사회적 우려에 대응하며, 오피니언 리더에 대한 공론장 지도를 강화해야 함.
+
 **저자**: Shuang Li; Jiajia Hao; Yining Chai; Yuxin Liu; Tianying Feng; Xiaoxia Zhu
 **출처**: Systems, Vol.14, pp.1-1
 **발행일**: 2025-12-19

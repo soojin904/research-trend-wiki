@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_Optimizing_influence_spre_j_physa_2025_131203.m
 
 # Optimizing influence spread in multilayer networks: A layer-weighted budget allocation and community-based local dominance approach
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Jianxin Tang; Lijun Liu; Chenshuo Li; Xin Wang; Ping Wang
 **출처**: Physica A Statistical Mechanics and its Applications, Vol.683, pp.131203-131203
 **발행일**: 2025-12-16

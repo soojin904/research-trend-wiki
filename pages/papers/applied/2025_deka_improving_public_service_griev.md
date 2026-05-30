@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_Improving_Public_Service__jitcai_2025_v2_i3_031
 
 # Improving Public Service Grievance Analysis: A Comparative Study of Topic Modelling Techniques with a Multi-Metric Data Cleaning Framework
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Rahul Deka; Reetesh Kumar Srivastava
 **출처**: Journal of information technology, cybersecurity, and artificial intelligence., Vol.2, pp.41-53
 **발행일**: 2025-12-25

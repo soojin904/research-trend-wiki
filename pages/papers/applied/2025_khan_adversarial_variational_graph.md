@@ -9,10 +9,41 @@ source: raw/applied/applied_2025_An_adversarial_variationa_s40537_025_01342_z.md
 
 # An adversarial variational graph autoencoder with contrastive learning for robust anomaly detection in large scale attributed networks
 
+**제목(한글)**: 대규모 속성 네트워크에서 강건한 이상 탐지를 위한 대조 학습 기반 적대적 변분 그래프 오토인코더
+
+## 한국어 요약
+
+**연구질문**: 대규모 속성 네트워크에서 복잡한 구조적 관계와 고차원 노드 속성을 동시에 고려하여 강건하게 이상을 탐지하고, 데이터 불균형 문제를 해결할 수 있는 효과적인 방법은 무엇인가?
+
+**방법론**:
+- 적대적 변분 그래프 오토인코더 (Adversarial Variational Graph Autoencoder, VGAE)
+- 어텐션 기반 잔차 모델링 (Attention-based Residual Modeling)
+- 대조 학습 (Contrastive Learning)
+- 적대적 훈련 (Adversarial Training)
+
+**주요 결과**:
+- 어텐션 기반 잔차 모델링을 통해 노드 임베딩을 강화하고 구조적 세부 정보를 보존하여 이상 탐지 성능을 향상시킴.
+- 적대적 훈련은 임베딩의 과적합을 방지하고 정상/이상 노드를 더욱 명확하게 분리하여 강건성을 확보함.
+- 대조 학습을 도입하여 지역적(하위 커뮤니티) 수준에서도 이상 탐지가 가능하도록 임베딩을 개선함.
+- 불균형 데이터 문제에 효과적으로 대처하며, 다양한 실제 데이터셋에서 기존 최신 이상 탐지 기술보다 우수한 AUC 및 평균 정밀도 성능을 달성함.
+
+**저자**: < >
+
+## ѱ 
+
+****: <>
+
+****:
+- <׸>
+
+**ֿ **:
+- <׸>
+
+
 **저자**: Wasim Khan; Nadhem Ebrahim; Mohammad Ishrat; Hasan Alkahtani; Theyazn H. H. Aldhyani
-**출처**: Journal Of Big Data, Vol.13
-**발행일**: 2025-12-14
-**DOI**: https://doi.org/10.1186/s40537-025-01342-z
+**저자**: Journal Of Big Data, Vol.13
+**저자**: 2025-12-14
+**저자**: https://doi.org/10.1186/s40537-025-01342-z
 
 ## 초록 (원문)
 
@@ -27,4 +58,5 @@ Overfitting, Anomaly detection, Autoencoder, Adversarial system, Residual, Node 
 - [[pages/concepts/social_network_analysis|SNA]]
 
 ## 메모
+
 

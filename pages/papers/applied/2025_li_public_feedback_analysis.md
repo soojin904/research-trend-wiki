@@ -9,6 +9,24 @@ source: raw/applied/applied_2025_Public_feedback_analysis__s41598_025_30319_4.md
 
 # Public feedback analysis on multi-stage emergency management policies using BERTopic-SKEP integrated model
 
+**제목(한글)**: BERTopic-SKEP 통합 모델을 활용한 다단계 재난 관리 정책에 대한 공중 피드백 분석
+
+## 한국어 요약
+
+**연구질문**: 2023년 베이징 폭우 사태를 사례로, 재난 관리의 단계별(예방·대비·대응·복구) 공중 반응과 감성 패턴을 어떻게 정량적으로 포착할 수 있는가?
+
+**방법론**:
+- BERTopic 토픽 모델링(Topic Modeling)과 SKEP 감성 분석(Sentiment Analysis)을 결합한 딥러닝 프레임워크 구축
+- 소셜 미디어 게시물 50,015건을 대상으로 4단계 재난 관리 생애주기에 따라 분석
+- 서사 정책 프레임워크(Narrative Policy Framework, NPF)를 적용해 토픽 결과를 정책 서사로 해석
+- 단문 텍스트 처리의 LDA 한계를 극복하기 위해 의미 임베딩(Semantic Embedding) 활용
+
+**주요 결과**:
+- 대응·복구 단계에서 공중 관심이 76% 이상으로 예방·대비 단계(2.5% 미만) 대비 압도적으로 높음
+- 복구 단계의 긍정 감성 비율이 78.18%로 가장 높게 나타남
+- 정부가 '영웅/계획자' 역할로 인식되는 서사 구조 확인
+- 제안 프레임워크가 정책 정당성 및 운영 효율성 개선을 위한 실행 가능한 인사이트 제공
+
 **저자**: Cui Li; Qiyu Tian; Lei Gao; Hao Liu
 **출처**: Scientific Reports, Vol.16, pp.684-684
 **발행일**: 2025-12-01

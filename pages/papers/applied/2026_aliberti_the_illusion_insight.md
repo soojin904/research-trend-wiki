@@ -9,6 +9,11 @@ source: raw/applied/applied_2026_The_Illusion_of_Insight_i_nodoi.md
 
 # The Illusion of Insight in Reasoning Models
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Aliberti", 
 **출처**: arXiv (Cornell University), Vol.None
 **발행일**: 2026-01-02

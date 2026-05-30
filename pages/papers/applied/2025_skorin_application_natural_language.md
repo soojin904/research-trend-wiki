@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_APPLICATION_OF_NATURAL_LA_sis_3__02__5.md
 
 # APPLICATION OF NATURAL LANGUAGE PROCESSING TO AUTOMATE THE ANALYSIS OF USER FEEDBACK
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Yuriy Skorin; Bogdan Petrenko
 **출처**: Смарт-економіка підприємництво та безпека, Vol.3, pp.44-57
 **발행일**: 2025-12-15

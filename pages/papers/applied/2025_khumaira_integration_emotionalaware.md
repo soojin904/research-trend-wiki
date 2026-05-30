@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_Integration_of_an_Emotion_icicyta68677_2025_113
 
 # Integration of an Emotional-Aware Recommender System Based on SBERT and Aspect-Based Sentiment Analysis for Korean Skincare Product Recommendations
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Khairunida Khumaira; Z.K.A. Baizal
 **출처**: , Vol.None, pp.551-556
 **발행일**: 2025-12-17

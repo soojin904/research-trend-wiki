@@ -9,6 +9,23 @@ source: raw/applied/applied_2025_A_COMPUTATIONAL_PIPELINE__1998_6688_2025_22_4_2
 
 # A COMPUTATIONAL PIPELINE FOR LEXICAL AND THEMATIC ANALYSIS OF THE CODE OF ADMINISTRATIVE OFFENSES OF THE REPUBLIC OF KAZAKHSTAN
 
+**제목(한글)**: 카자흐스탄 행정범죄법 어휘·주제 분석을 위한 전산 파이프라인
+
+## 한국어 요약
+
+**연구질문**: 법률 텍스트의 언어적·구조적 특성을 자동화된 방법으로 분석하여 입법 언어의 패턴과 잠재적 주제를 어떻게 도출할 수 있는가?
+
+**방법론**:
+- 데이터 수집→텍스트 전처리→토큰화→키워드 추출→의미 군집화→시각화로 이어지는 NLP 파이프라인 구축
+- 어휘 빈도 분포, 의미장(Semantic Field), 잠재 토픽(Latent Topic) 분석 통합 적용
+- 빈도 히스토그램, 주제 히트맵, 토픽 맵 등 시각화 기법 활용
+- 카자흐스탄 행정범죄법(CAO RK) 전체 코퍼스(조항·장·절 계층 구조)에 적용
+
+**주요 결과**:
+- 제재·책임 관련 어휘(штраф, ответственность, правонарушение)가 지배적으로 나타나 행정법의 규범-처벌적 성격 확인
+- 경제 및 절차적 위반 규정 장(Chapter)에서 어휘 밀도가 높게 집중
+- 파이프라인이 비교 법률 언어학 및 입법 모니터링 자동화의 확장 가능한 기반으로 활용 가능함을 시사
+
 **저자**: B. Mukhsimbayev; A. Pak; A. Kuralbayev
 **출처**: Herald of Kazakh-British technical university, Vol.22, pp.227-243
 **발행일**: 2025-12-23

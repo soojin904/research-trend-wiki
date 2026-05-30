@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_Social_mobility_and_conta_s40249_025_01378_6.md
 
 # Social, mobility and contact networks in shaping health behaviours and infectious disease dynamics: a scoping review
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Zhifeng Cheng; Nick Ruktanonchai; Amy Wesolowski; Sen Pei; Jianghao Wang; Samantha Cockings; Andrew J. Tatem; Shengjie Lai
 **출처**: Infectious Diseases of Poverty, Vol.14, pp.123-123
 **발행일**: 2025-12-03

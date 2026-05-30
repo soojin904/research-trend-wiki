@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_Disinformation_AI_and_reg_fpos_2025_1624206.md
 
 # Disinformation, AI and regulation in Ecuador’s 2025 presidential election
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Abel Suing
 **출처**: Frontiers in Political Science, Vol.7
 **발행일**: 2025-12-17

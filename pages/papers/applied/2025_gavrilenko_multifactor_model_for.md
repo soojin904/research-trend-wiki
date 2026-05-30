@@ -9,6 +9,24 @@ source: raw/applied/applied_2025_A_multifactor_model_for_d_2786_8729_7_2025_3426
 
 # A multifactor model for detecting propaganda in textual data
 
+**제목(한글)**: 텍스트 데이터에서 선전 탐지를 위한 다요인 모델
+
+## 한국어 요약
+
+**연구질문**: 방대한 텍스트 데이터 내 선전(propaganda) 요소를 객관적이고 효율적으로 탐지하기 위한 방법론은 무엇인가?
+
+**방법론**:
+- 정량적 및 의미론적 텍스트 분석 (quantitative and semantic text analysis)
+- 선형 컨볼루션(linear convolution)을 활용한 다요인 모델 구축
+- 통계 분석, 지능형 데이터 분석, 기계 학습 (machine learning)을 통한 지표 값 계산
+- 유틸리티 함수(utility function) 및 데이터셋 평균 기반의 선전 강도 정량화 및 분류
+
+**주요 결과**:
+- 선전 수준을 결정하는 13가지 어휘적, 구문론적, 의미론적 지표를 포함하는 다요인 모델 제시
+- 각 요인의 영향 수준을 결정하는 알고리즘과 전체 선전 수준을 평가하는 척도 제안
+- 전문가 라벨링 없이 텍스트 자료의 객관적 분류 가능
+- 인간의 주관성을 배제하여 다양한 유형의 텍스트 데이터에서 선전 탐지를 위한 보편적인 분석 도구로서 기능
+
 **저자**: Olena Gavrilenko; Kyryl Feshchenko
 **출처**: Information, computing and intelligent systems, Vol.None, pp.160-179
 **발행일**: 2025-12-27

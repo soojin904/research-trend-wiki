@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_Evolution_of_Natural_Lang_mjret_v7i4_1141.md
 
 # Evolution of Natural Language Processing : Describing basics of NLP to non-basic users
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Ms. Shivani Kamble; Flavia Gonsalves
 **출처**: Multidisciplinary Journal of Research in Engineering and Technology, Vol.7, pp.20-27
 **발행일**: 2025-12-14

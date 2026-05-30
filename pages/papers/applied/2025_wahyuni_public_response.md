@@ -1,5 +1,5 @@
 ---
-title: "Public Response on X to the Revocation of Indonesia’s 3-Kg LPG Retail Ban: A Support Vector Machine Study"
+title: "Public Response on X to the Revocation of Indonesia?s 3-Kg LPG Retail Ban: A Support Vector Machine Study"
 authors: ['Ni Nyoman Asti Sri Wahyuni', 'I Gede Iwan Sudipa', 'Ni Nyoman Ayu J. Sastaparamitha', 'A. Y. Willdahlia', 'I Gusti Ayu Agung Mas Aristamy']
 year: 2025
 venue: "Indonesian Journal of Data and Science"
@@ -7,12 +7,43 @@ tags: ['Hate Speech and Cyberbullying Detection', 'Computational and Text Analys
 source: raw/applied/applied_2025_Public_Response_on_X_to_ijodas_v6i3_349.md
 ---
 
-# Public Response on X to the Revocation of Indonesia’s 3-Kg LPG Retail Ban: A Support Vector Machine Study
+# Public Response on X to the Revocation of Indonesia?s 3-Kg LPG Retail Ban: A Support Vector Machine Study
+
+**제목(한글)**: 인도네시아 3kg LPG 소매 금지 해제에 대한 X(구 트위터)의 대중 반응: 서포트 벡터 머신 연구
+
+## 한국어 요약
+
+**연구질문**: 인도네시아의 3kg LPG 소매 금지 해제에 대한 대중의 X(구 트위터) 반응은 어떠했는가?
+
+**방법론**:
+- 트윗 크롤링을 통한 데이터 수집
+- 텍스트 정제, 토큰화, 정규화, 불용어 제거, 어간 추출
+- 인도네시아 감성 사전(InSet Lexicon)을 이용한 자동 감성 라벨링
+- TF-IDF 기반 텍스트 특징 추출 및 선형 커널 서포트 벡터 머신(SVM) 분류
+
+**주요 결과**:
+- 부정적 트윗(61.2%)이 긍정적 트윗(38.8%)보다 많았다.
+- 분류 모델은 84%의 전체 정확도를 달성했다.
+- 부정적 정서는 LPG 부족과 불충분한 정책 소통에 대한 비판이 주를 이뤘고, 긍정적 정서는 공급 회복에 대한 안도와 공정한 분배에 대한 기대를 반영했다.
+- 금지 해제가 대중의 인식을 완전히 회복시키지 못했으며, 효과적인 정책 홍보와 엄격한 LPG 유통 모니터링이 필요함을 시사한다.
+
+**저자**: < >
+
+## ѱ 
+
+****: <>
+
+****:
+- <׸>
+
+**ֿ **:
+- <׸>
+
 
 **저자**: Ni Nyoman Asti Sri Wahyuni; I Gede Iwan Sudipa; Ni Nyoman Ayu J. Sastaparamitha; A. Y. Willdahlia; I Gusti Ayu Agung Mas Aristamy
-**출처**: Indonesian Journal of Data and Science, Vol.6, pp.412-425
-**발행일**: 2025-12-31
-**DOI**: https://doi.org/10.56705/ijodas.v6i3.349
+**저자**: Indonesian Journal of Data and Science, Vol.6, pp.412-425
+**저자**: 2025-12-31
+**저자**: https://doi.org/10.56705/ijodas.v6i3.349
 
 ## 초록 (원문)
 
@@ -27,4 +58,5 @@ Public opinion, Revocation, Sentiment analysis, Economic shortage, Crawling, Sup
 - [[pages/concepts/social_network_analysis|SNA]]
 
 ## 메모
+
 

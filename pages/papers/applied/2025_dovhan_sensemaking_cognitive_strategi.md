@@ -9,6 +9,22 @@ source: raw/applied/applied_2025_SENSEMAKING_COGNITIVE_STR_udu_nc_series9_2025_3
 
 # SENSE-MAKING COGNITIVE STRATEGIES IN LARGE LANGUAGE MODELS: A CONTRASTIVE ANALYSIS OF GPT AND GEMINI
 
+**제목(한글)**: 거대 언어 모델의 의미 구성 인지 전략: GPT와 Gemini의 대조 분석
+
+## 한국어 요약
+
+**연구질문**: 거대 언어 모델(GPT와 Gemini)은 맥락적, 인지적, 문화적, 현상학적 요인에 대한 민감성을 요구하는 의미와 비의미(nonsense) 범주 구별 작업에서 어떠한 의미 구성 인지 전략을 사용하는가?
+
+**방법론**:
+- 표준화된 프롬프트(standardized prompts) 기반의 실험적 평가
+
+**주요 결과**:
+- 최신 모델들은 구문적(syntactic) 및 통계적 규칙성 감지에는 효과적이나, 논리, 인과적 일관성, 지시적 무결성(referential integrity) 또는 문화적 의미 체계 위반에서 발생하는 비합리성 텍스트 처리에는 불안정함을 보인다.
+- GPT는 의미 상수(sense constant)의 안정성이 더 높고, 암묵성(implicitness)에 대한 민감도가 뛰어나며, 일관되고 논리적인 해석을 제공한다.
+- Gemini는 표면적 단서에 의존하며, 문자적 해석(literalism), 과잉 일반화, 파편화된 의미 구성 경향을 보인다.
+- 프롬프트 엔지니어링(prompt engineering)은 의미 분류 정확도를 6~12% 향상시켜, LLM의 의미 구성이 제어 가능함을 시사한다.
+- 의미와 비의미 구별은 순수하게 계산론적 패러다임(computational paradigm) 내에서 해결될 수 없으며, 응용 언어학, 인지 의미론, 현상학 및 신경망 모델링의 통합이 필요하다.
+
 **저자**: Oleksii V. Dovhan
 **출처**: Scientific Journal of National Pedagogical Dragomanov University Series 9 Current Trends in Language Development, Vol.30
 **발행일**: 2025-12-30

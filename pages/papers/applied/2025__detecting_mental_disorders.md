@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_Detecting_Mental_Disorder_2025_12_16_25342390.m
 
 # Detecting Mental Disorders in Social Media Using a Transformer-Based Ensemble of Binary Classifiers
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: О. В. Овчарук; Olexander Mazurets; МАРИНА МОЛЧАНОВА; Alexander Kirpich; Pavel Skums; Олена Собко; Olexander Barmak; Юрий Крак; Sergiy Yakovlev
 **출처**: medRxiv, Vol.None
 **발행일**: 2025-12-18

@@ -9,6 +9,23 @@ source: raw/applied/applied_2025_Emotion_Detection_and_Sen_brilliance_v5i2_7411.
 
 # Emotion Detection and Sentiment Analysis of Women’s E-Commerce Clothing Reviews Using DistilBERT Transformer
 
+**제목(한글)**: DistilBERT 트랜스포머를 이용한 여성 이커머스 의류 리뷰의 감정 탐지 및 감성 분석
+
+## 한국어 요약
+
+**연구질문**: 기존 연구의 감성 극성 분류 한계를 넘어, 여성 이커머스 의류 리뷰에서 고객 경험을 포괄적으로 반영하는 심층적인 감정 패턴을 효과적으로 탐지할 수 있는가?
+
+**방법론**:
+- 사전 학습된 DistilBERT 트랜스포머 모델 및 감정 분류기 활용
+- 자연어 처리(NLP) 접근법 적용
+- 데이터 정제, 특징 공학, 탐색적 텍스트 분석 워크플로우
+
+**주요 결과**:
+- 긍정적 감정(기쁨, 감탄)이 고객 피드백을 지배하며, 제품 적합성 및 품질에 대한 높은 만족도를 나타냄.
+- 부정적 감정(분노, 슬픔)은 사이즈 불일치, 직물 문제, 기대 불충족 리뷰에서 더 자주 나타남.
+- 감성 맥락, 감정 톤 및 특징 공학의 조합이 감성 극성 분석만으로는 얻기 어려운 고객 행동에 대한 심층적인 이해를 제공함.
+- 감정 인식 분석은 이커머스 비즈니스의 제품 개발, 고객 경험 향상, 데이터 기반 마케팅 전략 수립에 기여할 잠재력이 있음.
+
 **저자**: Muhammad Muflih; Erfan Karyadiputra
 **출처**: Brilliance Research of Artificial Intelligence, Vol.5, pp.1207-1214
 **발행일**: 2025-12-22

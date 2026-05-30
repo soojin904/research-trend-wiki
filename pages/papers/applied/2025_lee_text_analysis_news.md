@@ -9,6 +9,24 @@ source: raw/applied/applied_2025_Text_Analysis_of_News_Med_jfoys_2025_22_4_297.m
 
 # Text Analysis of News Media and Legal Texts Concerning Children, Adolescents, and Youth
 
+**제목(한글)**: 아동·청소년·청년 관련 뉴스 미디어 및 법률 텍스트의 텍스트 분석
+
+## 한국어 요약
+
+**연구질문**: 국내 아동·청소년·청년 관련 법령의 연령 규정 불일치로 인한 정책적 혼선이 언론 담론을 통해 어떻게 구성되며, 이것이 입법 과정에 어떤 영향을 미치는가?
+
+**방법론**:
+- 네이버 뉴스에서 2015~2024년 관련 기사 16,457건 수집 및 형태소 분석·불용어 처리
+- 의미연결망 분석(Semantic Network Analysis) 및 중심성 분석(Centrality Analysis) 적용
+- CONCOR 클러스터링(CONCOR Clustering)으로 담론 구조 분류
+- TF-IDF와 시계열 분석으로 주요 이슈 및 담론 변화 추적
+
+**주요 결과**:
+- 아동학대·보호·복지 프레임이 가장 강한 중심성을 보이며, 청년은 고용·주거 중심의 두 클러스터로 구분됨
+- 청소년은 뚜렷한 클러스터가 형성되지 않아 정책 담론에서 상대적 주변성 확인
+- 시계열 분석에서 정책 담론이 아동 중심에서 청년 중심으로 이동하는 흐름 포착
+- 언론 담론의 내용 중심 프레임이 입법 변화에 직접적 영향을 미침을 시사
+
 **저자**: YoonJoo Lee
 **출처**: Future Oriented Youth Society, Vol.22, pp.297-316
 **발행일**: 2025-12-31

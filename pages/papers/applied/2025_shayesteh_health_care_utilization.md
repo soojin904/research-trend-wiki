@@ -9,6 +9,24 @@ source: raw/applied/applied_2025_Health_Care_Utilization_i_85183.md
 
 # Health Care Utilization in Patients With Atopic Dermatitis Experiencing Topical Steroid Withdrawal: Observational Cross-Sectional Social Media Questionnaire Study
 
+**제목(한글)**: 국소 스테로이드 금단(Topical Steroid Withdrawal)을 경험하는 아토피 피부염 환자의 의료 이용: 관찰 횡단면 소셜 미디어 설문 연구
+
+## 한국어 요약
+
+**연구질문**: 아토피 피부염(Atopic Dermatitis, AD) 환자 중 국소 스테로이드 금단(Topical Steroid Withdrawal, TSW)을 경험하는 이들의 의료 이용 현황, 의료진에게 요청하는 사항, 그리고 TSW 관련 정보 출처를 조사한다.
+
+**방법론**:
+-   연구 설계: 관찰 횡단면 연구(observational cross-sectional study)
+-   대상: TSW 증상을 경험하는 성인 아토피 피부염(AD) 환자 82명.
+-   데이터 수집: 스웨덴 TSW 주제 페이스북 그룹에 4주간 온라인 설문지 게시.
+-   분석 방법: 기술 통계(descriptive statistics) 및 개방형 질문에 대한 주제별 텍스트 분석(topical text analysis).
+
+**주요 결과**:
+-   TSW 증상에 대한 가장 빈번한 의료기관 접촉은 피부과 의사(50%), 일반의(49%), 보완대체 의학(Complementary and Alternative Medicine, CAM) 종사자(39%) 순이었다.
+-   그러나 현재 TSW 증상을 겪는 환자(n=68) 중 현재 의료기관에 지속적으로 방문하는 비율은 일반의(10%), 피부과 의사(22%), CAM 종사자(13%)로 낮게 나타났다.
+-   AD 증상에 대한 의료기관 접촉은 더 빈번했으며, 거의 모든 참가자(일반의 99%, 피부과 의사 93%)가 한 번 이상 도움을 구했고, 많은 이들이 CAM 종사자(72%)를 방문했다.
+-   참가자들이 의료진에게 요청한 주요 사항은 TSW로 인한 어려움에 대한 이해 및 확인(56%), 증상 치료(32%), TSW에 대한 인식 및 정보 증진(26%)이었다.
+
 **저자**: Alexander Shayesteh; Maja af Klinteberg; Sophie Vrang; Gunnthorunn Sigurdardottir; MariHelen Sandström Falk; Mikael Alsterholm
 **출처**: JMIR Formative Research, Vol.9, pp.e85183-e85183
 **발행일**: 2025-12-31

@@ -9,6 +9,11 @@ source: raw/applied/applied_2025_Decoding_Gendered_Symboli_dhss_v1i1_2323.md
 
 # Decoding Gendered Symbolism and Motifs in Penina Muhando’s Nguzo Mama: A Computational Literary Analysis
 
+## 한국어 요약
+
+[내용을 작성하십시오.]
+
+
 **저자**: Godfrey Wandwi; Felistas Mahonge
 **출처**: Digital Humanities and Society Studies, Vol.1, pp.50-70
 **발행일**: 2025-12-15

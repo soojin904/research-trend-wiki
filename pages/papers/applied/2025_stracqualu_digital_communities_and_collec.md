@@ -9,10 +9,41 @@ source: raw/applied/applied_2025_Digital_Communities_and_C_9791254777169.md
 
 # Digital Communities and Collective Behaviour
 
+**제목(한글)**: 디지털 커뮤니티와 집단 행동
+
+## 한국어 요약
+
+**연구질문**: 디지털 커뮤니티에서 생성된 데이터를 활용하여 사회 현상 및 동태를 실시간으로 이해하는 방법과 그 과정에서 직면하는 주요 도전 과제는 무엇인가?
+
+**방법론**:
+- 자연어 처리 (Natural Language Processing, NLP)
+- 컴퓨터 비전 (Computer Vision)
+- 고급 신경망 모델 (Advanced Neural Models)
+- 통계적 분석 (Statistical Analysis)
+
+**주요 결과**:
+- 디지털 커뮤니티 데이터의 통계적 분석은 사회 현상 실시간 이해에 전례 없는 기회를 제공함.
+- 적절한 분석 기법을 통해 새로운 트렌드, 여론 변화, 복합적인 사회적 패턴 식별이 가능함.
+- 데이터 수집 및 활용에 중대한 도전 과제가 존재함.
+- 디지털 플랫폼의 제한적인 정책으로 인해 데이터 가용성 및 접근성 문제("post-API era")가 심화되고 있음.
+
+**저자**: < >
+
+## ѱ 
+
+****: <>
+
+****:
+- <׸>
+
+**ֿ **:
+- <׸>
+
+
 **저자**: Luisa Stracqualursi; Patrizia Agati
-**출처**: Fondazione Bologna University Press eBooks, Vol.None
-**발행일**: 2025-12-03
-**DOI**: https://doi.org/10.30682/9791254777169
+**저자**: Fondazione Bologna University Press eBooks, Vol.None
+**저자**: 2025-12-03
+**저자**: https://doi.org/10.30682/9791254777169
 
 ## 초록 (원문)
 
@@ -27,4 +58,5 @@ Bridge (graph theory), Computational sociology, Big Five personality traits, Soc
 - [[pages/concepts/social_network_analysis|SNA]]
 
 ## 메모
+
 

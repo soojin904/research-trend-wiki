@@ -9,6 +9,22 @@ source: raw/applied/applied_2025_Review_of_sentiment_analy_emj_2025_0023.md
 
 # Review of sentiment analysis in new product development: text, audio, visual, and multimodal data
 
+**제목(한글)**: 신제품 개발에서의 감성 분석 검토: 텍스트, 오디오, 시각 및 다중 모달 데이터
+
+## 한국어 요약
+
+**연구질문**: 신제품 개발(NPD) 프로세스에서 감성 분석(SA)의 적용에 대한 문헌 검토를 제공한다.
+
+**방법론**:
+- 체계적인 문헌 검토 방법론을 사용하며, 검토 주제 선택, 관련 논문 검색 및 선택, 문헌 평가 및 종합, 검토서 작성 단계를 포함한다.
+- 텍스트, 오디오, 이미지 및 다중 모달 형식을 포함한 다양한 양식에서 감성 분석을 수행한다.
+
+**주요 결과**:
+- 감성 분석 방법론이 전통적인 방법을 대체하기 위해 신제품 개발 프로세스에 적용되어 왔다.
+- 텍스트 양식은 제품 및 서비스 수명 향상에 사용되었으며, 오디오 및 이미지 양식은 대안적 양식이지만 상대적으로 적은 관심을 받는다.
+- 다중 모달 데이터는 텍스트 양식의 정보 차원을 보강하는 것을 목표로 하며, 주로 딥러닝 모델을 사용하여 실행된다.
+- 이 분야의 향후 연구는 신제품 개발 프로세스를 개선하기 위해 다중 모달 감성 분석을 개선하는 데 집중해야 한다고 제안한다.
+
 **저자**: Randi Eka Sanjaya; Ririn Diar Astanti; The Jin Ai
 **출처**: Engineering Management in Production and Services, Vol.17, pp.1-14
 **발행일**: 2025-12-01

@@ -9,6 +9,22 @@ source: raw/applied/applied_2025_Temporal_Topic_Modeling_o_jds_v1i4_43.md
 
 # Temporal Topic Modeling of Netflix Descriptions Using TF-IDF and NMF to Map the Evolution of Digital Storytelling Themes
 
+**제목(한글)**: TF-IDF 및 NMF를 활용한 넷플릭스 설명의 시계열 토픽 모델링을 통한 디지털 스토리텔링 테마 진화 매핑
+
+## 한국어 요약
+
+**연구질문**: 넷플릭스 글로벌 카탈로그에서 1990년부터 2021년까지 스토리텔링의 주제별 진화는 어떻게 이루어졌으며, 스트리밍 미디어의 디지털 시대정신을 어떻게 반영하는가?
+
+**방법론**:
+- TF-IDF (Term Frequency-Inverse Document Frequency) 벡터화
+- NMF (Non-Negative Matrix Factorization) 토픽 모델링
+- 시계열 집계 및 시각화 (Temporal aggregation and visualization)
+
+**주요 결과**:
+- 30년간 주제적 초점의 명확한 다양화 (diversification)가 나타남
+- 초기에는 범죄 및 국내 드라마가 지배적이었고, 후기에는 다큐멘터리 및 판타지 서사 (narratives)가 부상함
+- 넷플릭스의 콘텐츠 전략이 광범위한 문화적 변화(cultural shifts)를 반영하며, 현실주의, 도피주의, 정서적 친밀감의 균형을 이룸
+
 **저자**: Tri Wahyuningsih
 **출처**: Journal of Digital Society, Vol.1
 **발행일**: 2025-12-01

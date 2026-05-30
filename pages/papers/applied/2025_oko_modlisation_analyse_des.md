@@ -9,6 +9,24 @@ source: raw/applied/applied_2025_Modlisation_et_analyse_de_nodoi.md
 
 # Modélisation et analyse des thèmes dans un corpus documentaire : pour une meilleure exploration et recommandation
 
+**제목(한글)**: 문서 코퍼스 내 주제 모델링 및 분석: 더 나은 탐색 및 추천을 위하여
+
+## 한국어 요약
+
+**연구질문**: 이 논문은 이질적이고, 다국어이며, 대규모 텍스트 코퍼스에서 기존 주제 모델링의 해석 가능성, 파라미터 민감도 및 문맥 표현의 한계를 어떻게 극복할 수 있는가에 대한 방법론적 도전을 탐구한다.
+
+**방법론**:
+- 확률 모델링 (Probabilistic Modeling) 및 의미론적 풍부화(Semantic Enrichment)를 통합한 두 가지 프레임워크 제안
+- SemaTopic: 문맥 인식 주제 모델링(Context-aware topic modeling), 의미론적 클러스터링(Semantic Clustering), 일관성 기반 하이퍼파라미터 최적화(Coherence-driven Hyperparameter Optimization)
+- ARIA: 추출 후 의미론적 정제(Post-extraction semantic refinement), LLM 기반 레이블링, 계층적 조직화, 섹션 레벨 색인화
+- 과학, 도메인별, 다국어 및 단문 텍스트 데이터셋에 대한 종합적인 실험
+
+**주요 결과**:
+- SemaTopic은 20 Newsgroups 데이터셋에서 BERTopic 대비 의미론적 일관성(Semantic Coherence) 6.2% 향상 (C_v = 0.5315 vs. 0.5004)
+- SemaTopic은 이질적이고 다국어 코퍼스 전반에 걸쳐 안정적인 성능 유지
+- ARIA는 주제 일관성(Topic Coherence)을 0.45 수준에서 최대 0.74까지 추가적으로 향상
+- 제안된 통합 프레임워크는 복잡한 텍스트 환경에서 지식 발견을 위한 일관되고 견고하며 적응 가능한 접근 방식을 제공
+
 **저자**: Christian OKO
 **출처**: HAL (Le Centre pour la Communication Scientifique Directe), Vol.None
 **발행일**: 2025-12-03
