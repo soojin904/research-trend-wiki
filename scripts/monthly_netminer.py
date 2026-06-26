@@ -16,8 +16,8 @@ from pathlib import Path
 
 SCRIPTS_DIR = Path(__file__).parent
 WIKI_DIR = SCRIPTS_DIR.parent
-NM_REF_DIR = WIKI_DIR / "nm-reference"
 NETMINER_INFO_DIR = Path("D:/soojin/03_marketing/netminer_info")
+NM_REF_DIR = NETMINER_INFO_DIR / "nm-reference"
 VENV_PYTHON = Path("D:/soojin/.venv/Scripts/python.exe")
 LOG_FILE = SCRIPTS_DIR / "monthly_run.log"
 
@@ -107,14 +107,6 @@ def main():
     if not ok:
         log("중간 단계 실패 — push 건너뜀")
         sys.exit(1)
-
-    # citations.xlsx → netminer_info 복사 후 push
-    import shutil
-    src = NM_REF_DIR / "citations.xlsx"
-    dst = NETMINER_INFO_DIR / "nm-reference" / "citations.xlsx"
-    if not args.dry_run:
-        shutil.copy2(src, dst)
-        log(f"복사: {src} → {dst}")
 
     git = ["git", "-C", str(NETMINER_INFO_DIR)]
     run(git + ["add", "nm-reference/citations.xlsx"], args.dry_run)

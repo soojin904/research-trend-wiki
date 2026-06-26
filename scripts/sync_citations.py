@@ -12,8 +12,8 @@ import openpyxl
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 WIKI_DIR = Path(__file__).parent.parent
-META_PATH = WIKI_DIR / "nm-reference" / "research_metadata.xlsx"
-CITE_PATH = WIKI_DIR / "nm-reference" / "citations.xlsx"
+META_PATH = Path("D:/soojin/03_marketing/netminer_info/nm-reference/research_metadata.xlsx")
+CITE_PATH = Path("D:/soojin/03_marketing/netminer_info/nm-reference/citations.xlsx")
 
 # research_metadata 컬럼 인덱스 (0-based)
 M = {

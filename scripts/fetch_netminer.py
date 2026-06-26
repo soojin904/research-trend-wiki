@@ -36,7 +36,7 @@ except ImportError:
 
 WIKI_DIR = Path(__file__).parent.parent
 NM_RAW_DIR = WIKI_DIR / "raw" / "netminer"
-CITATIONS_PATH = WIKI_DIR / "nm-reference" / "citations.xlsx"
+CITATIONS_PATH = Path("D:/soojin/03_marketing/netminer_info/nm-reference/citations.xlsx")
 
 BASE_URL = "https://api.openalex.org/works"
 USER_AGENT = "wiki-fetcher/1.0 (mailto:netminer@cyram.com)"

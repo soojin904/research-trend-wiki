@@ -14,7 +14,7 @@ import yaml
 
 WIKI_DIR = Path(__file__).parent.parent
 CITATIONS_PATH = WIKI_DIR / "nm-reference" / "citations.xlsx"
-META_PATH = WIKI_DIR / "nm-reference" / "research_metadata.xlsx"
+META_PATH = Path("D:/soojin/03_marketing/netminer_info/nm-reference/research_metadata.xlsx")
 NM_RAW_DIR = WIKI_DIR / "raw" / "netminer"
 
 CITATIONS_COLUMNS = [
