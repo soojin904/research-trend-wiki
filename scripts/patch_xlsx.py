@@ -47,6 +47,10 @@ def normalize_doi(doi: str) -> str:
     return (doi or "").lower().strip()
 
 
+def normalize_title(title: str) -> str:
+    return re.sub(r"[\s\W]+", "", title or "").lower()
+
+
 def parse_frontmatter(text: str) -> dict:
     if not text.startswith("---"):
         return {}
@@ -178,7 +182,7 @@ for row in ws_m.iter_rows(min_row=2, max_row=last_row, values_only=True):
     if doi_cell:
         existing_dois.add(normalize_doi(str(doi_cell)))
     if title_cell:
-        existing_titles.add(str(title_cell).strip().lower())
+        existing_titles.add(normalize_title(str(title_cell)))
 
 papers = load_md_papers()
 print(f"  .md 파일 수: {len(papers)}건")
@@ -187,7 +191,7 @@ added = 0
 skipped = 0
 for p in papers:
     doi_norm = normalize_doi(p["doi"])
-    title_norm = p["title"].strip().lower()
+    title_norm = normalize_title(p["title"])
 
     if (doi_norm and doi_norm in existing_dois) or (title_norm and title_norm in existing_titles):
         print(f"  [skip] {p['title'][:60]}")
