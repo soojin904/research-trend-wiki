@@ -93,15 +93,19 @@ def main():
                      "--from-date", oa_from, "--to-date", oa_to], args.dry_run)
 
     # 3. research_metadata.xlsx 추가
-    log("\n[3/5] research_metadata.xlsx 추가")
+    log("\n[3/6] research_metadata.xlsx 추가")
     ok = ok and run([py, str(SCRIPTS_DIR / "patch_xlsx.py")], args.dry_run)
 
     # 4. 구분 열 '검증필요' 입력
-    log("\n[4/5] 구분='검증필요' 입력")
+    log("\n[4/6] 구분='검증필요' 입력")
     ok = ok and run([py, str(SCRIPTS_DIR / "fix_gubun.py")], args.dry_run)
 
-    # 5. citations.xlsx 동기화
-    log("\n[5/5] citations.xlsx 동기화 및 push")
+    # 5. 기존 논문 인용수 업데이트
+    log("\n[5/6] 인용수 업데이트")
+    ok = ok and run([py, str(SCRIPTS_DIR / "update_citations.py")], args.dry_run)
+
+    # 6. citations.xlsx 동기화
+    log("\n[6/6] citations.xlsx 동기화 및 push")
     ok = ok and run([py, str(SCRIPTS_DIR / "sync_citations.py")], args.dry_run)
 
     if not ok:
@@ -112,6 +116,13 @@ def main():
     run(git + ["add", "nm-reference/citations.xlsx"], args.dry_run)
     msg = f"Auto: NetMiner citations update {oa_from[:7]} (monthly)"
     run(git + ["commit", "-m", msg], args.dry_run)
+
+    token_file = NETMINER_INFO_DIR / "github_nm.txt"
+    if token_file.exists():
+        token = token_file.read_text(encoding="utf-8").strip()
+        remote_url = f"https://netminer-cyram:{token}@github.com/netminer-cyram/resources.git"
+        run(git + ["remote", "set-url", "origin", remote_url], args.dry_run)
+
     run(git + ["push", "origin", "main"], args.dry_run)
 
     log(f"\n=== 완료 ({oa_from} ~ {oa_to}) ===")

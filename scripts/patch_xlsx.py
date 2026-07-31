@@ -5,6 +5,7 @@
 
 import re
 import sys
+from datetime import date
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -36,8 +37,9 @@ META_COLS = {
     "활용": 30, "인용합": 31, "filename": 32,
     "analysis category": 33, "data": 34, "method": 35,
     "비고 작성": 36, "Web of Science Core Collection": 37,
+    "추가일": 38,
 }
-MAX_COL = 37
+MAX_COL = 38
 
 
 def normalize_doi(doi: str) -> str:
@@ -203,6 +205,7 @@ for p in papers:
         val = p.get(field)
         if val is not None and val != "":
             new_row[col_idx - 1] = val
+    new_row[META_COLS["추가일"] - 1] = date.today().strftime("%Y-%m-%d")
 
     # 빈 행 건너뛰고 마지막 데이터 다음에 삽입
     last_row += 1

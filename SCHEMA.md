@@ -12,7 +12,7 @@
 
 | 유형 | raw 경로 | pages 경로 | 수집 방식 | 활용 목적 |
 |------|----------|-----------|----------|----------|
-| **A. NetMiner 사용 논문** | `raw/netminer/` | `pages/papers/netminer/` | PDF 직접 수집 | 제품 마케팅·사례 연구 |
+| **A. NetMiner 사용 논문** | `raw/netminer/` | `pages/papers/netminer/` | 논문 출처 수집 | 제품 마케팅·사례 연구 |
 | **B. SNA 학계 트렌드 논문** | `raw/sna/` | `pages/papers/sna/` | OpenAlex API 수집 (Social Networks 등 SNA 전문지) | 학계 트렌드 파악, 제품 기획 방향 |
 | **C. 응용 분야 논문** | `raw/applied/` | `pages/papers/applied/` | `fetch_applied.py` — 키워드 검색 (OpenAlex, 전 저널) | SNA·텍스트마이닝의 응용 분야 파악. 신규 고객 세그먼트 발굴 |
 
@@ -36,7 +36,7 @@ wiki/
 │
 ├── raw/               ← 원본 소스 (수정 금지)
 │   ├── assets/        ← 다운로드된 이미지
-│   ├── netminer/      ← [유형 A] NetMiner 사용 논문 PDF
+│   ├── netminer/      ← [유형 A] NetMiner 사용 논문
 │   ├── applied/       ← [유형 C] 응용 분야 논문 (타 분야 SNA 응용, 수동 큐레이션)
 │   └── sna/           ← [유형 B] OpenAlex 수집 SNA 학술지 논문
 │

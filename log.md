@@ -1,5 +1,30 @@
 ﻿# 위키 로그
 
+## [2026-07-31] ingest | raw/·raw/applied/ 미등록 파일 일괄 인제스트 (전체 마무리)
+- 대상: index.md에 미등록된 raw/ 전체 (raw/sna, raw/applied, raw/netminer)
+- **sna**: `batch_ingest.py` 실행 → 개별 페이지 7편 신규 (`pages/papers/sna/`), catalog_2026 +1편. 총 개별 페이지 258→318편
+- **applied**: `batch_ingest.py --no-translate` 실행 (raw/applied 2,309개 소스, 게이트 탈락 1,264편) → 개별 페이지 107편 신규(중복 슬러그 3건 제외 실질 순증), catalog_2026 +16편. 총 개별 페이지 682→789편
+- **netminer**: raw/netminer/ 신규 65개 소스(KCI 35 + OpenAlex 30, `monthly_netminer.py` 자동수집분) 병렬 에이전트 3개로 처리 후 수작업 정합성 검증
+  - NetMiner 본문 언급 0건인 13편은 제외 (OpenAlex 키워드 오매칭 — SCHEMA.md 경고 사례와 일치)
+  - KCI/OpenAlex 이중 수집된 동일 논문 7쌍은 중복 제거 (한글 KCI 버전 유지)
+  - 주제 무관 1건(저자명 모호성 해소 LLM 논문) · 근거 불충분 1건(초록 손상) 삭제
+  - 노인학대 뉴스보도 분석 1편은 NetMiner 명시 불확실하나 SNA 방법론(의미연결망+LDA) 근거로 유지, 페이지 내 플래그 처리
+  - 최종 순증 38편 → `pages/papers/netminer/` 5편 → 43편
+- `index.md` Papers A/B/C 섹션 및 통계 갱신 (총 786 → 1,188페이지), `pages/tools/netminer.md` 사용 사례 카운트 갱신
+- raw/ 파일은 전량 읽기만 하고 수정하지 않음
+- **주의**: 병렬 에이전트 동시 작업으로 인해 raw/netminer 처리 과정에서 슬러그 중복·오탐 페이지가 발생했으며, 본 항목에서 수작업으로 정합성 검증 후 정리함 — 향후 대량 파일을 여러 에이전트에 분배할 때는 사전에 동일 논문의 중복 소스(KCI vs OpenAlex 등)를 먼저 걸러내는 것이 필요
+
+## [2026-07-31] ingest | raw/netminer 미등록 21개 소스 → 논문 페이지 19편 생성
+- 대상: KCI 15편 + OpenAlex 6편(raw/netminer/kci_2026_*, netminer_2026_*)
+- 2쌍은 동일 논문의 KCI/OpenAlex 중복 수집본으로 확인되어 1페이지로 병합
+  - 영유아교사 연구(An & Nam) — kci_ART003313264 + netminer_koaece31_1_06
+  - 청소년 우울 연구(Shin & Jeong) — kci_ART003310230 + netminer_jss_11_1_6
+- 2건은 NetMiner 사용 여부가 초록상 확인되지 않아 페이지 내 명시적으로 플래그 처리
+  - 노인학대 뉴스보도 분석(Kim) — BIGKinds 도구만 언급
+  - 저자명 모호성 해소(Zhang 외, arXiv) — NetMiner 무관 가능성 높음 (OpenAlex 오분류 추정)
+  - 수산물 구매행동 비교(Kim & Kim) — 초록 원문 손상으로 확인 불가
+- `index.md` A섹션(NetMiner 사용 논문 목록) 및 통계 갱신 (5편 → 24편, 총 767 → 786페이지)
+
 ## [2026-05-27] update | applied_domain_venue + applied_data_source 682편 기준 업데이트
 - `pages/insights/applied_domain_venue_2026.md` — 379편 → 682편 비례 재추정 (도메인 분포, 언어 분포). 학술지 섹션은 원본 379편 실측 유지
 - `pages/insights/applied_data_source_2026.md` — 모든 수치 682편 기준 비례 확장. 저자원 언어 목록에 방글라·카자흐 추가

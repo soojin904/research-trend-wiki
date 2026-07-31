@@ -21,5 +21,11 @@
     "additionalDirectories": [
       "d:\\soojin\\wiki\\.claude\\plugins\\wiki"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "slack",
+    "gdrive",
+    "notebooklm-mcp",
+    "gemini-cli"
+  ]
 }

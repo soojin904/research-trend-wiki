@@ -70,7 +70,7 @@ def fetch_all(url: str) -> list:
         print(f"  page {page}: {paged_url[:90]}...")
         req = urllib.request.Request(paged_url, headers={"User-Agent": USER_AGENT})
         try:
-            with urllib.request.urlopen(req, timeout=30) as resp:
+            with urllib.request.urlopen(req, timeout=90) as resp:
                 data = json.loads(resp.read().decode())
         except Exception as e:
             print(f"  ERROR: {e}")
@@ -177,7 +177,8 @@ def build_social_network_url(from_date: str, to_date: str, per_page: int = 100) 
         f"{BASE_URL}"
         f'?search=("social+network")'
         f"&filter=from_publication_date:{from_date},to_publication_date:{to_date}{exclude_filter}"
-        f"&sort=cited_by_count:desc"
+        f",type:article|book|book-chapter|preprint|review"
+        f"&sort=publication_date:desc"
         f"&per_page={per_page}"
     )
 
@@ -192,7 +193,8 @@ def build_text_analysis_url(from_date: str, to_date: str, per_page: int = 100) -
         f'?search=("text+analysis")'
         f"&filter=from_publication_date:{from_date},to_publication_date:{to_date}"
         f",topics.id:{topic_filter}{exclude_filter}"
-        f"&sort=cited_by_count:desc"
+        f",type:article|book|book-chapter|preprint|review"
+        f"&sort=publication_date:desc"
         f"&per_page={per_page}"
     )
 

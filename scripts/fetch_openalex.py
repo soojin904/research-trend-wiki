@@ -1,5 +1,5 @@
 """
-OpenAlex에서 논문 서지를 가져와 raw/ 폴더에 마크다운으로 저장한다.
+OpenAlex에서 SNA 관련 저널 논문 서지를 가져와 raw/ 폴더에 마크다운으로 저장한다.
 저장된 파일은 /wiki:ingest로 처리한다.
 
 사용법:
@@ -15,7 +15,7 @@ import sys
 import urllib.request
 from pathlib import Path
 
-RAW_DIR = Path(__file__).parent.parent / "raw"
+RAW_DIR = Path(__file__).parent.parent / "raw" / "sna"
 
 DEFAULT_FROM = "2026-01-01"
 DEFAULT_TO = "2026-12-31"
@@ -25,6 +25,7 @@ DEFAULT_URL = (
     f"https://api.openalex.org/works"
     f"?filter=from_publication_date:{DEFAULT_FROM},to_publication_date:{DEFAULT_TO}"
     f",locations.source.issn:{ISSN}"
+    f",type:article|book|book-chapter|preprint|review"
     f"&sort=publication_date:desc"
     f"&per_page=100"
 )
@@ -172,6 +173,7 @@ def main():
             f"https://api.openalex.org/works"
             f"?filter=from_publication_date:{args.from_date},to_publication_date:{args.to_date}"
             f",locations.source.issn:{ISSN}"
+            f",type:article|book|book-chapter|preprint|review"
             f"&sort=publication_date:desc"
             f"&per_page=100"
         )

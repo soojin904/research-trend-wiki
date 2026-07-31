@@ -6,7 +6,7 @@ tags: [tools, netminer, sna, text-mining, machine-learning]
 # NetMiner
 
 사이람(Cyram Inc.)이 개발한 소셜 네트워크 분석 및 데이터 마이닝 소프트웨어.
-이 위키의 기존 PDF 소스 논문 5편 **전부**에서 사용됨.
+이 위키에 수집된 실사용 논문 43편(PDF 5편 + KCI/OpenAlex 38편)에서 사용됨.
 
 ## 전체 기능 메뉴 (현재 버전)
 
@@ -77,6 +77,9 @@ tags: [tools, netminer, sna, text-mining, machine-learning]
 ---
 
 ## 이 위키의 사용 사례
+
+총 43편 (PDF 원문 5편 + KCI/OpenAlex 메타데이터 수집 38편, 2026-07-31 기준). 대표 사례:
+
 | 논문 | NetMiner 활용 내용 |
 |------|-------------------|
 | [[pages/papers/netminer/2024_jang_happiness_topic_nn|Jang & Nemoto (2024)]] | LDA 토픽모델링 + 머신러닝 |
@@ -84,6 +87,8 @@ tags: [tools, netminer, sna, text-mining, machine-learning]
 | [[pages/papers/netminer/2022_park_digital_healthcare_network|Park 외 (2022)]] | 네트워크 분석 + 중심성 |
 | [[pages/papers/netminer/2022_jeon_social_network_health_elderly|Jeon & Park (2022)]] | SNA + 다중회귀 |
 | [[pages/papers/netminer/2021_kang_csr_ad_semantic_network|강윤지 외 (2021)]] | 의미연결망 + LDA |
+
+전체 목록: [[index|index.md]] "A. NetMiner 사용 논문" 섹션 또는 `pages/papers/netminer/` 폴더 직접 탐색.
 
 ---
 

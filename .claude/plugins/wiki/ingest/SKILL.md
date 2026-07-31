@@ -16,6 +16,43 @@ argument-hint: "[파일명 또는 경로]"
 
 ## 절차
 
+### 0. raw/netminer/ 정리 (인수 없이 전체 실행 시에만)
+
+`D:\soojin\03_marketing\netminer_info\nm-reference\research_metadata.xlsx` 첫 번째 시트의 `title` 컬럼을 기준으로, `raw/netminer/*.md` 중 xlsx에 없는 파일을 삭제한다.
+
+```python
+import re
+import openpyxl
+from pathlib import Path
+
+def normalize(text: str) -> str:
+    return re.sub(r'[\s\W]+', '', (text or '').lower())
+
+xlsx = Path("D:/soojin/03_marketing/netminer_info/nm-reference/research_metadata.xlsx")
+wb = openpyxl.load_workbook(xlsx, read_only=True, data_only=True)
+ws = wb.worksheets[0]
+headers = [c.value for c in next(ws.iter_rows())]
+title_col = headers.index('title')
+xlsx_titles = {normalize(row[title_col].value) for row in ws.iter_rows(min_row=2) if row[title_col].value}
+
+netminer_dir = Path("D:/soojin/wiki/raw/netminer")
+deleted = []
+for md in netminer_dir.glob("*.md"):
+    # frontmatter에서 title 추출
+    text = md.read_text(encoding="utf-8")
+    m = re.search(r'^title:\s*"?(.+?)"?\s*$', text, re.MULTILINE)
+    md_title = normalize(m.group(1)) if m else normalize(md.stem)
+    if md_title not in xlsx_titles:
+        md.unlink()
+        deleted.append(md.name)
+
+print(f"삭제: {len(deleted)}건")
+```
+
+- 가상환경(`D:\soojin\.venv`) 활성화 후 실행 (openpyxl 설치됨)
+- 삭제 전 파일 목록을 출력해 확인한다
+- xlsx에 있는 논문의 md 파일은 유지한다
+
 ### 1. 소스 파악
 - 처리할 파일 목록 확인
 - PDF면 PyMuPDF(fitz)로 텍스트 추출 (가상환경: `D:\soojin\.venv`)

@@ -5,6 +5,7 @@ citations.xlsx 컬럼: title, authors, journal, publisher, year, doi,
   cited_by_count, cite_kci, cite_wos, fwci, 인용합, 구분
 """
 import sys
+from datetime import date
 from pathlib import Path
 
 import openpyxl
@@ -33,6 +34,7 @@ M = {
     "fwci":     26,  # col27
     "인용합":   30,  # col31
     "구분":     29,  # col30
+    "추가일":   37,  # col38
 }
 
 CITE_HEADERS = [
@@ -46,10 +48,15 @@ print("=== research_metadata.xlsx 읽기 ===")
 wb_m = openpyxl.load_workbook(META_PATH, read_only=True, data_only=True)
 ws_m = wb_m.worksheets[0]
 
+MIN_YEAR = date.today().year - 10
+
 rows_out = []
 for row in ws_m.iter_rows(min_row=2, values_only=True):
     title = row[M["title"]]
     if not title:
+        continue
+    year = row[M["year"]]
+    if not (year and str(year).isdigit() and int(year) >= MIN_YEAR):
         continue
     rows_out.append([
         title,
@@ -68,12 +75,22 @@ for row in ws_m.iter_rows(min_row=2, values_only=True):
         row[M["fwci"]],
         row[M["인용합"]],
         row[M["구분"]],
+        row[M["추가일"]] if len(row) > M["추가일"] else None,  # 정렬용
     ])
 
 wb_m.close()
 print(f"  추출: {len(rows_out)}건")
 
-# year(index 4) 기준 내림차순 정렬
+def _date_str(v):
+    if v is None:
+        return ""
+    if hasattr(v, "strftime"):
+        return v.strftime("%Y-%m-%d")
+    return str(v)
+
+# 2차 정렬 먼저 (안정 정렬): 추가일 내림차순, 없으면 뒤로
+rows_out.sort(key=lambda r: _date_str(r[16]), reverse=True)
+# 1차 정렬: 연도 내림차순 (같은 연도 내에서 추가일 순서 유지)
 rows_out.sort(key=lambda r: int(r[4]) if r[4] and str(r[4]).isdigit() else 0, reverse=True)
 
 print("\n=== citations.xlsx 쓰기 ===")
@@ -82,7 +99,7 @@ ws_c = wb_c.active
 ws_c.title = "citations"
 ws_c.append(CITE_HEADERS)
 for r in rows_out:
-    ws_c.append(r)
+    ws_c.append(r[:16])  # 추가일(index 16) 제외
 
 wb_c.save(CITE_PATH)
 print(f"  저장 완료: {CITE_PATH}")
