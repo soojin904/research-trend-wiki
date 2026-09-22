@@ -92,4 +92,5 @@ $$h_v^{(k)} = \text{AGGREGATE}^{(k)}\left(\{h_u^{(k-1)}: u \in \mathcal{N}(v)\}\
 - [[pages/methods/bayesian_network_model|Bayesian / 잠재공간 모델]] — 임베딩 기반 방법과의 경계
 - [[pages/methods/longitudinal_network|종단 / 동적 네트워크]] — 동적 네트워크 GNN (DREAM)
 - [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]]
-- [[pages/insights/sna_method_frequency|SNA 방법론 빈도 (2021–2026)]]
+- [[pages/insights/sna_method_frequency|SNA 방법론 빈도 (318편 전수, 2026-09-22)]] — **SNA 전문지 318편 전수 판독 결과 진짜 GNN 방법론 논문 0편**(OpenAlex GNN 태그 오탐 10편 이상 전수 확인). NetMiner의 GNN 지원 ✅ 사실과는 분리해 서술할 것: 지원은 하되 현재 SNA 학계 수요는 없음 → 미래 선점 포지셔닝 전용
+- [[pages/methods/relational_event_model|관계 사건 모형 (REM)]] — 신경망을 쓰되 GNN이 아닌 사례(비선형 효과 함수 근사)

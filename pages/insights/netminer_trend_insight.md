@@ -11,6 +11,22 @@ query_date: 2026-05-25
 → 원천 데이터: [[pages/insights/sna_method_frequency|SNA 방법론 빈도 분석]]
 → 기능 상세: [[pages/tools/netminer|NetMiner]]
 
+> ⚠️ **2026-09-22 갱신 안내**: 본 문서 본문의 편수는 **139편 표본** 기준이며 더 이상 최신이 아니다. [[pages/insights/sna_method_frequency|방법론 빈도 분석]]이 **318편 전수**로 갱신되었으므로 수치 인용은 그쪽을 사용할 것. 아래 **0절**에 전수 집계로 바뀐 결론을 요약한다.
+
+---
+
+## 0. 318편 전수 집계 반영 (2026-09-22)
+
+| 변경 | 내용 |
+|------|------|
+| 최대 공백의 재정의 | 개별 기능이 아니라 **[[pages/methods/ergm\|ERGM 변형]](40) + [[pages/methods/saom\|SAOM]](29) + [[pages/methods/relational_event_model\|REM/RHEM/DyNAM]](17) = 86편**의 "동적·생성적 통계 네트워크 모형" 계열 전체가 공백. 전체 논문의 27% |
+| 신규 클러스터 | **REM/RHEM/DyNAM 17편** — 2023년 Social Networks 특별호까지 존재하는 성숙 하위 분야. NetMiner ❌. 이벤트 로그라는 **자료구조부터** 미지원 |
+| 신규 클러스터 | **NSUM/ARD 9편** — 단, R/Stan 영역이라 제품 공백으로 환산하지 말 것 |
+| 1위 교체 | 에고넷 연구설계·측정 **46편**이 단일 최대 클러스터 → [[pages/concepts/egocentric_network_design\|에고중심 네트워크 연구설계]]. 저비용 업그레이드 기회(배치 에고넷 구조 유형 자동 분류)가 여기 있음 |
+| GNN 결론 강화 | 진짜 GNN 방법론 논문 **0편 / 318편**(태그 오탐 10편 이상 전수 확인). 아래 2절의 "학술 수요 낮음" 판단이 더 강하게 확증됨 — NetMiner GNN 지원 ✅ 사실과는 분리해 서술할 것 |
+| 중심성 | 기본 7종 ✅이나 신규 변형(temporal betweenness·WIP·distinctiveness) ❌ → [[pages/methods/centrality\|중심성 분석]] |
+| 커뮤니티 탐지 | 실행 알고리즘은 최신(Leiden)까지 보유, **결과 타당성 검정 수단**이 공백 → [[pages/methods/community_detection\|커뮤니티 탐지]] |
+
 ---
 
 ## 1. 예상보다 넓은 지원 범위 — 홍보 기회

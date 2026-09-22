@@ -56,7 +56,8 @@ netminer_support: "⚠️ 부분 지원"
 ## 위키 연관
 
 - [[pages/insights/sna_method_frequency|방법론 빈도 분석]]
-- [[pages/methods/saom|SAOM / RSiena]] (종단 통계 모형의 핵심)
+- [[pages/methods/saom|SAOM / RSiena]] (종단 통계 모형의 핵심, 318편 중 29편)
+- [[pages/methods/relational_event_model|관계 사건 모형 (REM/RHEM/DyNAM)]] (이벤트 로그 기반 연속시간 패러다임, 318편 중 17편 — NetMiner ❌)
 - [[pages/methods/ergm|ERGM]] (STERGM이 이 범주에 속함)
 - [[pages/methods/centrality|중심성 분석]] (시간에 따른 중심성 변화 추적)
 - [[pages/methods/diffusion_propagation|확산/전파]] (동적 네트워크 위의 프로세스)

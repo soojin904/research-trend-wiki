@@ -124,6 +124,7 @@
 
 - [[pages/concepts/social_network_analysis|Social Network Analysis (SNA)]] — SNA 개요, 핵심 분석 유형, 도구 비교
 - [[pages/concepts/personal_network|퍼스널·에고중심 네트워크]] — 개념, 측정, 적용 사례
+- [[pages/concepts/egocentric_network_design|에고네트워크 설계·수집 방법론]] — 이름생성기·수집도구(GENSI/Network Canvas/Trellis)·회상편향·구조유형 자동분류, SNA 318편 중 단일 최대 클러스터(~46편, 2026-09-22 신규)
 - [[pages/concepts/causal_inference_networks|인과 추론과 네트워크]] — spillover·SAOM·RCT 위협 요인
 - [[pages/concepts/multilayer_network|다층·멀티플렉스 네트워크]] — 복수 레이어 구조, 분석 방법
 - [[pages/concepts/mixed_methods|복합 방법론 (Mixed Methods)]] — 텍스트+네트워크 결합 패턴, NetMiner 연관성
@@ -144,21 +145,25 @@
 - [[pages/methods/topic_modeling|Topic Modeling (토픽모델링)]] — LDA·키워드 보조 토픽 모델, 네트워크 연계 패턴 (20편, 6위) ✅
 - [[pages/methods/semantic_network_analysis|Semantic Network Analysis (의미연결망)]] — 키워드 공출현 네트워크, 시계열 담론 분석 ✅
 
-### 신규 (유형 B 기반)
-- [[pages/methods/ergm|ERGM (지수 랜덤 그래프 모형)]] — STERGM·ergmito·Bayesian 변형 포함 (26편, 3위) ✅ 기본 / ⚠️ 변형
-- [[pages/methods/saom|SAOM / RSiena (확률적 행위자 지향 모형)]] — 종단 공진화 모형, NetMiner 이탈 요인 (18편, 7위) ❌
-- [[pages/methods/longitudinal_network|종단/동적 네트워크 분석]] — TERGM·REM·시간 그래프 포함 (30편, 2위) ⚠️ 부분
-- [[pages/methods/community_detection|커뮤니티 탐지]] — 모듈성·블록모델·코어-퍼리퍼리 (11편, 공동10위) ✅
-- [[pages/methods/bayesian_network_model|Bayesian / 잠재공간 모델]] — LPCM·LSPCM·MCMC 추론 (14편, 9위) ❌
-- [[pages/methods/diffusion_propagation|확산/전파/면역화]] — SIR 모형·면역화 전략·WIP 중심성 (11편, 공동10위) ❌
-- [[pages/methods/ml|전통 ML / 앙상블]] — 링크 예측·노드 분류·SVM·RF·XGBoost (15편, 8위) ✅
-- [[pages/methods/gnn|GNN (그래프 신경망)]] — GCN·GAT·지식 그래프·GraphRAG (~19편) ✅
-- [[pages/methods/network_scaleup|Network Scale-Up / ARD]] — 은닉 집단 규모 추정·RDS (7편, 13위) ❌
+### 신규 (유형 B 기반, 2026-09-22 318편 전수 재합성)
+- [[pages/methods/ergm|ERGM (지수 랜덤 그래프 모형)]] — DERGM·다층·Bayesian·이분 변형 포함 (~40편, 2위) ✅ 기본 / ⚠️ 변형
+- [[pages/methods/saom|SAOM / RSiena (확률적 행위자 지향 모형)]] — 종단 공진화 모형, NetMiner 이탈 요인 (~29편, 3위) ❌
+- [[pages/methods/relational_event_model|관계적 사건 모형 (REM/RHEM/DyNAM)]] — 이벤트 단위 동적 네트워크, 2026-09-22 신규 발견 클러스터 (~17편) ❌
+- [[pages/methods/centrality|Centrality (중심성)]] — 기본 7종 + 신규 변형(temporal betweenness·WIP·distinctiveness) (~25편, 4위) ✅ 기본 / ❌ 신규 변형
+- [[pages/methods/community_detection|커뮤니티 탐지]] — 모듈성·블록모델·BMCD·코어-퍼리퍼리 재정의 (~24편, 5위) ✅ 기본 / ❌ 신규 변형
+- [[pages/methods/longitudinal_network|종단/동적 네트워크 분석]] — 다층·이분 포함 (~23편) ⚠️ 부분
+- [[pages/methods/network_scaleup|Network Scale-Up / ARD]] — 은닉 집단 규모 추정, Bayesian/Stan 통합 (9편) ❌
+- [[pages/methods/bayesian_network_model|Bayesian / 잠재공간 모델]] — 계층적 잠재공간·텐서 구조 (~6편) ❌
+- [[pages/methods/gnn|GNN (그래프 신경망)]] — 지원은 되나 318편 중 진짜 GNN 실사용 **0건**(태그 오탐 10건+ 확인) ✅ 지원 / 수요 없음
+- [[pages/methods/ml|전통 ML / 앙상블]] — 링크 예측·노드 분류·SVM·RF·XGBoost ✅
+- [[pages/methods/diffusion_propagation|확산/전파/면역화]] — SIR 모형·면역화 전략 ❌
 
-### 신규 (유형 C 응용 분야 기반)
-- [[pages/methods/llm_nlp|LLM / GPT 활용]] — 파인튜닝·RAG·자동 코딩, 응용 분야 1위 (~150편, 40%) ❌
-- [[pages/methods/sentiment_analysis|감성 분석 (Sentiment Analysis)]] — BERT·VADER·ABSA, 응용 분야 2위 (~115편, 30%) ⚠️ 기본
-- [[pages/methods/text_classification|텍스트 분류 (Text Classification)]] — BERT 파인튜닝·제로샷·앙상블, 응용 분야 3위 (~76편, 20%) ⚠️ 부분
+### 신규 (유형 C 응용 분야 기반, 2026-09-22 789편 전수 재합성)
+- [[pages/methods/llm_nlp|LLM / GPT 활용]] — 파인튜닝·RAG·자동 코딩, 응용 분야 1위 (~215편, 27%) ❌
+- [[pages/methods/sentiment_analysis|감성 분석 (Sentiment Analysis)]] — BERT·VADER·ABSA, 응용 분야 2위 (~213편, 27%) ⚠️ 기본은 ✅ — ABSA·멀티모달 ❌
+- [[pages/methods/topic_modeling|Topic Modeling (토픽모델링)]] — LDA·BERTopic·STM, 응용 분야 3위 (~145편, 18%) ✅ (BERTopic 포함, 과거 ❌ 오류 정정)
+- [[pages/methods/text_classification|텍스트 분류 (Text Classification)]] — BERT 파인튜닝·제로샷·앙상블 (~120편, 15%) ⚠️ 부분
+- [[pages/methods/semantic_network_analysis|Semantic Network Analysis (의미연결망)]] — 응용 분야 진짜 SNA 사례 (~50–57편, 7%) ✅ 최강 데모 후보 다수 확보
 
 ---
 
@@ -166,11 +171,11 @@
 
 > 위키 쿼리 결과 및 누적 분석 정보
 
-- [[pages/insights/sna_method_frequency|SNA 방법론 사용 빈도 (2020–2026)]] — 181편 집계, 트렌드 순위
-- [[pages/insights/netminer_trend_insight|NetMiner 기능-트렌드 인사이트]] — ERGM 즉시홍보·GNN/BERTopic 미래선점·SAOM공백, 우선순위 정리
-- [[pages/insights/applied_domain_venue_2026|응용 분야 도메인 및 학술지 분포 (2026)]] — 379편 (arXiv 제외), 7개 분야, 181개 학술지 분포
-- [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]] — 379편 전체 집계, LLM 40%·감성분석 30%·토픽 18%·SNA 10%, NetMiner 시사점
-- [[pages/insights/applied_data_source_2026|응용 분야 주요 데이터 소스 (2026)]] — Twitter/X 1위, 소셜미디어 40%·뉴스 16%·리뷰 14%, 다국어 NLP 15–20%
+- [[pages/insights/sna_method_frequency|SNA 방법론 사용 빈도]] — 318편 전수 집계(2026-09-22), ERGM+SAOM+REM 86편(27%) 단일 최대 계열
+- [[pages/insights/netminer_trend_insight|NetMiner 기능-트렌드 인사이트]] — 에고넷 배치분석(즉시 실행 가능)·ERGM 홍보·SAOM/REM 공백, 우선순위 정리
+- [[pages/insights/applied_domain_venue_2026|응용 분야 도메인 및 학술지 분포]] — 789편 전수(2026-09-22), 보건/정신건강 1위(18%)
+- [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도]] — 789편 전수 집계, LLM 27%·감성분석 27%·토픽 18%·진짜SNA 7%, NetMiner 시사점
+- [[pages/insights/applied_data_source_2026|응용 분야 주요 데이터 소스]] — 저자원 언어 NLP 15–20% 지속, "post-API 시대" 수집 위기 신호
 - [[pages/insights/sna_data_source|SNA 학술지 주요 데이터 소스 (2020–2026)]] — 설문/에고넷 인터뷰 56%, 종단 28%, 응용 분야와 수집 방식 대조 정리
 
 ---
@@ -184,8 +189,8 @@
 
 ## 통계
 
-- 총 페이지: 1,188 (papers 1,159 · concepts 6 · methods 15 · insights 6 · tools 2)
-- 최근 업데이트: 2026-07-31 (raw/·raw/applied/ 미등록 파일 일괄 인제스트 — sna 7편, applied 107편, netminer 38편 신규)
+- 총 페이지: 1,192 (papers 1,159 · concepts 7 · methods 16 · insights 6 · tools 2, synthesize 신규 생성분 반영)
+- 최근 업데이트: 2026-09-22 (SNA 318편 + 응용 789편 전수 synthesize — methods/concepts/insights 대량 갱신, netminer.md 대비 지원 현황 오류 2건 정정)
 - NetMiner 사용 논문: 43편 (PDF/KCI/OpenAlex, `pages/papers/netminer/`)
 - 학계 트렌드 논문: 695편 (OpenAlex, 2020–2026) — 개별 페이지 318편 + 카탈로그 7개(419편)
 - 응용 분야 논문: 847편 (키워드 수집, 2025–2026) — 개별 페이지 789편 + 카탈로그 2개(58편)

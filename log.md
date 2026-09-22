@@ -1,5 +1,23 @@
 ﻿# 위키 로그
 
+## [2026-09-22] synthesize | SNA 318편 + 응용분야 789편 전수 재합성 (2026-05-27판 대체)
+- 대상: `pages/papers/sna/` 318편 + `pages/papers/applied/` 789편, 총 1,107편 (마지막 synthesize 이후 첫 전체 재합성)
+- 탐색: 병렬 에이전트 10개(SNA 3개 × ~106편, applied 7개 × ~113편) 동시 탐색 → 결과 합산
+- 합성 작성: 에이전트 2개(SNA 전담 / applied 전담, 파일 소유권 분리로 충돌 방지) + 오케스트레이터가 overview.md·index.md·tools/other_tools.md·log.md 직접 정리
+- **신규 생성**: `pages/methods/relational_event_model.md`(REM/RHEM/DyNAM 17편, 2023 Social Networks 특별호 근거), `pages/concepts/egocentric_network_design.md`(에고넷 설계·수집 방법론, SNA 318편 중 단일 최대 클러스터 ~46편)
+- **전면 재작성**: `pages/insights/sna_method_frequency.md`, `pages/insights/applied_method_frequency_2026.md`, `pages/insights/applied_domain_venue_2026.md`
+- **갱신**: `methods/ergm.md`·`saom.md`·`network_scaleup.md`·`centrality.md`·`community_detection.md`·`bayesian_network_model.md`·`llm_nlp.md`·`sentiment_analysis.md`·`topic_modeling.md`·`semantic_network_analysis.md`, `concepts/mixed_methods.md`, `insights/applied_data_source_2026.md`, `tools/other_tools.md`, `overview.md`(Part 2·3 전면 갱신), `index.md`(통계·Methods·Insights 목록 갱신)
+- **netminer.md 대비 정정 2건**: BERTopic(기존 ❌ 기록 → 실제 ✅ Text>BERTopic/BERTrend 지원), BERT 기반 감성분석(기존 ❌ → 실제 ✅ Lab>Sentiment Analysis 7개 언어 지원) — 응용분야 논문 재확인 과정에서 발견
+- 핵심 발견:
+  1. SNA: ERGM(40)+SAOM(29)+REM(17)=86편(27%)이 "동적·생성적 통계 네트워크 모형" 단일 계열 — 개별 기능이 아닌 계열 전체 공백
+  2. SNA: 에고넷 설계·수집 방법론이 46편으로 단일 최대 클러스터. 필요 부품(Ego Network Extract·지표·Hierarchical Clustering·Random Forest)이 이미 NetMiner에 존재 — 워크플로우 문서화만으로 대응 가능한 최고 ROI 기회
+  3. SNA: 진짜 GNN 실사용 0/318편 확인(OpenAlex GNN 태그 오탐 10건+ 검증) — GNN은 지원하되 학술 수요 없음을 명확히 분리 서술
+  4. 응용: LLM(27%)·감성분석(27%)이 공동 1위로 부상, 진짜 SNA는 7%(50~57편)에 불과 — 유형 C 수집 목적(SNA 심화 아닌 텍스트마이닝 폭넓은 응용 확인)에 부합하는 결과
+  5. 응용: 도메인 특화 소형 파인튜닝 모델(ConfliBERT·DEBATE·BERTimbau-LoRA 등)이 범용 LLM 프롬프팅보다 정확도·비용·속도 모두 우위 — 7개 청크 중 4개 이상에서 독립 반복 확인된 강한 근거
+  6. 응용: 신규 경쟁 도구 확인 — pyBiblioNet(무료 오픈소스, Biblio Extension 직접 경쟁), Sometrend/TEXTOM(국내 상용, SNA 기능 보유 재확인)
+  7. 응용: 보건/정신건강이 최대 응용 분야(18%)인데 NetMiner 침투도 최저 — `lie_quantifying_multidisciplinary`(의료진 협진 네트워크) 등 강력한 데모 후보 확보
+- 데이터 품질 이슈 발견(별도 조치 필요, 이번 synthesize에서는 미조치): 응용분야 논문 다수 페이지에 한국어 요약 섹션 인코딩 깨짐(mojibake) — 번역 파이프라인 버그 추정. 중복 논문 3건, 유형 B로 재분류해야 할 순수 이론 논문 다수가 `applied/`에 혼입된 것으로 추정 — 다음 lint 시 확인 필요
+
 ## [2026-07-31] ingest | raw/·raw/applied/ 미등록 파일 일괄 인제스트 (전체 마무리)
 - 대상: index.md에 미등록된 raw/ 전체 (raw/sna, raw/applied, raw/netminer)
 - **sna**: `batch_ingest.py` 실행 → 개별 페이지 7편 신규 (`pages/papers/sna/`), catalog_2026 +1편. 총 개별 페이지 258→318편

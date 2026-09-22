@@ -32,9 +32,71 @@ netminer_support: "✅ 지원"
 | [[pages/papers/sna/2026_almquist_search_common\|Almquist 외 (2026)]] | 키워드 보조 토픽 모델로 가치 네트워크 추출 → 국가별 협상 구조 분석 | "공정성·권력"에서 "환경·성취" 중심 가치로 전환 |
 | [[pages/papers/sna/2023_koskinen_analysing_networks_networks\|Koskinen 외 (2023)]] | 개별 의미 구조를 사회적 유대로 연결하는 다층 네트워크 분석 프레임 | 라인 그래프 변환으로 의미 네트워크의 네트워크 분석 가능 |
 
-## 응용 분야 사용 패턴 (2026, 키워드 수집 459편 기반)
+## ⭐ 응용 분야 대표 사례 (789편 전수 판독, 2026-09-22)
 
-응용 분야에서 SNA·네트워크 분석은 전체 5위(~45편, ~8%)이며, 그 중 의미연결망(공출현 네트워크)이 약 40%(~18편)를 차지한다.
+> 789편 전수 판독에서 **실제 네트워크 데이터를 구성해 분석한 진성 SNA 논문은 ~50–57편(~7%)**이며, 그중 **공출현 기반 의미연결망이 가장 큰 세부 유형**이다. 아래 3편은 **NetMiner 워크플로우로 전 과정 재현이 가능한 최상위 사례**다.
+> 근거: [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026, 789편)]]
+
+### 사례 1 — `lie_quantifying_multidisciplinary`: 의료팀 다학제 협업 네트워크
+
+> **789편 전체에서 발견된 최고의 NetMiner 데모 후보**
+
+| 항목 | 내용 |
+|------|------|
+| 주제 | 의료팀의 다학제 협업 정도 정량화 |
+| 네트워크 구성 | 협업 **공출현 네트워크** |
+| 분석 지표 | **모듈성(Modularity)** + **Degree / Betweenness / PageRank 중심성** |
+| NetMiner 재현성 | ✅ **전 단계 완전 재현 가능** |
+
+**왜 최고 데모 후보인가**:
+1. **워크플로우가 NetMiner 메뉴 구조와 정확히 일치**한다 — Pre-process(Word Network/공출현) → Network > Subgroup > Community(Modularity) → Network > Centrality(Degree/Betweenness/PageRank) → Visualize. 억지로 연결한 매칭이 아니다(SCHEMA 규칙 3 충족).
+2. **PageRank까지 사용**한다 — NetMiner의 7종 중심성 보유가 실제로 필요한 사례.
+3. **도메인이 보건/의료** — 789편 기준 최대 도메인이자 NetMiner 접점이 가장 낮은 미개척 세그먼트.
+4. 결과가 **"팀이 실제로 다학제적인가"라는 실무 질문**에 답한다 — 학술 데모를 넘어 기관 고객에게 설명 가능한 가치.
+
+→ 세그먼트 분석: [[pages/insights/applied_domain_venue_2026|응용 분야 도메인 분포 (2026)]]
+
+### 사례 2 — `kim_big_datadriven_topical`: K-pop 연구 지형 키워드 네트워크
+
+| 항목 | 내용 |
+|------|------|
+| 주제 | K-pop 연구 문헌의 주제 지형도 |
+| 네트워크 구성 | **키워드 공출현 네트워크** |
+| 분석 지표 | **Degree / Closeness / Betweenness / Eigenvector 4종 중심성** + **Louvain 커뮤니티 탐지** |
+| 사용 도구 | **NetworkX** (Python, 명시적 언급) |
+| NetMiner 재현성 | ✅ 완전 재현 가능 — 4종 중심성·Louvain 모두 보유 |
+
+**시사점**: 연구자가 **Python으로 코딩해서 수행한 작업을 NetMiner는 노코드 GUI로 동일하게 제공**한다. 게다가 Biblio Data Collector(OpenAlex/KCI/Springer)로 **문헌 수집 단계까지 포괄**하므로, 이 논문의 전 파이프라인이 NetMiner 단일 도구로 커버된다. 한류·문화콘텐츠 연구는 국내 대학 고객과 주제 적합성도 높다 — **국내 마케팅 콘텐츠 소재로 우선 활용 가치**.
+
+### 사례 3 — `gu_analyzing_natural_disaster`: 재난 위험요인 공출현 네트워크
+
+| 항목 | 내용 |
+|------|------|
+| 주제 | 자연재난 위험요인 구조 분석 |
+| 네트워크 구성 | **81편 논문 코퍼스 → 위험요인 공출현 네트워크** |
+| 분석 지표 | 중심성 분석 (핵심 위험요인 우선순위화) |
+| NetMiner 재현성 | ✅ 완전 재현 가능 |
+
+**시사점**: 코퍼스 규모가 **81편으로 작다** — 대규모 데이터 없이도 의미 있는 의미연결망 분석이 가능함을 보여주는 사례로, **세미나·튜토리얼 데모에 적합**하다. 체계적 문헌고찰(SLR)과 결합하는 패턴이므로 [[pages/concepts/systematic_literature_review|SLR]] 워크플로우와 함께 소개할 수 있다.
+
+### 참고 — 경쟁 도구가 사용된 유사 사례
+
+| 논문 | 방법 | 사용 도구 |
+|------|------|----------|
+| Guerrero (청크 3) | 2017 멕시코 지진 트위터 SNA, 모듈성·in-degree | Python + **Gephi** (명시) |
+| kanbur_mapping_news_categories (청크 4) | Louvain + 모듈성 | 미명시 |
+| Park (청크 5) | ESG 담론 공출현 네트워크 + 중심성 | **썸트렌드(Sometrend)** — 한국 상용 텍스트분석 플랫폼 |
+| yoo (청크 6) | 한국어 텍스트마이닝 | **TEXTOM** — 한국 상용 플랫폼 |
+| khodjaev, makkawi (청크 4) / yin_hang (청크 6) | 서지계량 네트워크 | **VOSviewer**, CiteSpace, R bibliometrix |
+
+> **경쟁 신호**: 의미연결망 분석 수요가 있는 한국 연구자들이 **썸트렌드·TEXTOM**이라는 두 개의 국내 상용 대안을 이미 사용하고 있다(이번 합성에서 각각 독립 확인). 서지계량 영역에서는 **VOSviewer + pyBiblioNet**이 NetMiner Biblio 기능을 직접 압박한다.
+> → 도구 상세: [[pages/tools/other_tools|기타 도구]]
+
+---
+
+## 응용 분야 세부 분포 (789편 기준)
+
+응용 분야에서 진성 SNA·네트워크 분석은 ~50–57편(~7%)이며, 그 중 의미연결망(공출현 네트워크)이 가장 큰 비중을 차지한다.
 
 | 세부 유형 | 편수 | 주요 분야 |
 |-----------|------|-----------|
@@ -50,9 +112,9 @@ netminer_support: "✅ 지원"
 - 서지계량(SLR) → 저자/키워드 네트워크 → VOSviewer 또는 NetMiner 시각화
 - 소셜미디어 텍스트 → 의미연결망 → 에코챔버·허위정보 구조 분석
 
-> **경쟁 도구 주목**: Textom(한국어 의미연결망 특화, ~2편), VOSviewer(서지계량 특화, ~5편) — NetMiner와 직접 경쟁 관계. 특히 Textom은 국내 연구자의 NetMiner 대안으로 인식되는 추세.
+> **경쟁 도구 주목**: TEXTOM·썸트렌드(한국어 의미연결망 상용 플랫폼), VOSviewer·pyBiblioNet(서지계량 특화), Gephi·NetworkX(무료 오픈소스) — 모두 NetMiner와 직접 경쟁 관계. 특히 국내에서는 TEXTOM·썸트렌드가 NetMiner 대안으로 인식되는 추세.
 
-→ 상세: [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]]
+→ 상세: [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026, 789편)]]
 
 ## [[pages/methods/topic_modeling|토픽모델링]]과의 차이
 

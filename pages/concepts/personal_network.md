@@ -25,6 +25,8 @@ tags: [personal-network, egocentric-network, alter, ego]
 
 ## 수집 방법
 
+> 수집·측정 설계의 상세 방법론(이름 생성기 설계, 수집 소프트웨어, 회상 편향, 구조 유형 자동 분류)은 별도 문서로 분리했다 → **[[pages/concepts/egocentric_network_design|에고중심 네트워크 연구설계]]** (318편 중 46편, 단일 최대 클러스터)
+
 - 이름 생성(name generator) + 이름 해석(name interpreter) 설문
 - Respondent-Driven Sampling (RDS): 은닉 집단 표집
 - Aggregate Relational Data (ARD): 직접 네트워크 매핑 없이 규모 추정
@@ -38,5 +40,13 @@ tags: [personal-network, egocentric-network, alter, ego]
 
 ## NetMiner 연관성
 
-- NetMiner는 에고중심 네트워크 분석 기능 지원
+- NetMiner는 에고중심 네트워크 분석 기능 지원 (`Pre-process > Network Transform > Ego Network Extract`)
 - 알터 구성 분석, 밀도·다양성 지표 계산, 시각화
+- 단, **다수 에고넷 일괄 처리·구조 유형 자동 분류는 미지원** → [[pages/concepts/egocentric_network_design|에고중심 네트워크 연구설계]] 참조
+
+## 위키 연관
+
+- [[pages/concepts/egocentric_network_design|에고중심 네트워크 연구설계]]
+- [[pages/methods/network_scaleup|Network Scale-Up / ARD]]
+- [[pages/insights/sna_method_frequency|SNA 방법론 빈도 분석 (318편 전수)]]
+- [[pages/tools/netminer|NetMiner]]
