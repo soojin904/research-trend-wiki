@@ -1,0 +1,30 @@
+---
+title: "Science on the political stage: analysing representations of science in Austrian parliamentary debates"
+authors: ['Daniel Wiesner', 'Jakob‐Moritz Eberl', 'Sophie K. Lecheler']
+year: 2026
+venue: "Journal of Science Communication"
+tags: ['Cultural and political discourse analysis', 'Computational and Text Analysis Methods', 'Rhetoric and Communication Studies']
+source: raw/applied/applied_2026_Science_on_the_political__385320260718153107.md
+---
+
+# Science on the political stage: analysing representations of science in Austrian parliamentary debates
+
+**저자**: Daniel Wiesner; Jakob‐Moritz Eberl; Sophie K. Lecheler
+**출처**: Journal of Science Communication, Vol.25
+**발행일**: 2026-10-05
+**DOI**: https://doi.org/10.22323/385320260718153107
+
+## 초록 (원문)
+
+Politicians often use science to legitimise or challenge policy decisions, shaping how epistemic authority is claimed and contested in political argumentation. However, this interplay between science and political agendas is marked by partisan interpretations and selective engagement with science. We examine representations of science in all Austrian parliamentary speeches between 1996 and 2022 (n = 104,088). Using automated text analysis and qualitative assessment, we find that parties vary substantially in how and to what extent they invoke science. This study offers a nuanced understanding of how politicians use science in debates to enhance the legitimacy of their arguments.
+
+## 키워드
+
+
+
+## 위키 연관
+
+- [[pages/concepts/social_network_analysis|SNA]]
+
+## 메모
+

@@ -1,0 +1,32 @@
+---
+title: "Analysis of Co-author Network in Technology & Home Economics Education of Practical Arts"
+authors: ['Yoon-Jung Lee', 'Eun Jeung Kim', 'Ji Sun Kim']
+year: 2019
+publication_date: 2019-03-30
+venue: ""
+publisher: ""
+volume: "32"
+issue: "1"
+pages: "103-124"
+doi: "https://doi.org/10.24062/kpae.2019.32.1.103"
+openalex_id: "https://openalex.org/W2944298337"
+cited_by_count: 2
+fwci: 0.3896
+tags: ['Educational Systems and Policies', 'Diverse Approaches in Healthcare and Education Studies']
+keywords: ['Centrality', 'The arts', 'Social network analysis', 'Sociology', 'Mathematics education', 'Order (exchange)', 'Social science', 'Library science']
+source: openalex-netminer
+---
+
+# Analysis of Co-author Network in Technology & Home Economics Education of Practical Arts
+
+**저자**: Yoon-Jung Lee; Eun Jeung Kim; Ji Sun Kim
+**출처**: , Vol.32 No.1, pp.103-124
+**발행일**: 2019-03-30
+**DOI**: https://doi.org/10.24062/kpae.2019.32.1.103
+
+## 초록
+
+이 연구는 실과(기술․가정)교육 분야의 연구자 간 학술 네트워크의 구성을 파악하기 위해 SNA를 활용하여 공저자 네트워크 분석을 수행하였다. 2010년부터 2018년 8월에 발간된 한국실과교육학회지, 한국기술교육학회지, 한국가정과교육학회지를 중심으로 NetMiner 4를 이용하여 공저자 네트워크를 구성하였으며, 그 구조적 속성과 연구자들의 중심성을 파악하여 저자의 학술적 영향력 및 관계를 살펴보았다. 그 결과는 다음과 같다. 첫째, 세 학술지의 공저논문의 비율은 72.5%에서 79.5%로 높은 편이었으며, 그 중 한국기술교육학회지의 공저비율이 가장 높았다. 한국실과교육학회지는 저자수 1명, 한국가정과교육학회지와 한국기술교육학회지는 저자수가 2명이 가장 많았다. 특히 한국기술교육학회지는 8명 이상의 다수 저자가 공저한 논문도 많았다. 학술지 저자의 직업은 한국실과교육학회지와 한국가정과교육학회지의 경우 60%이상이 교수였으나 한국기술교육학회지는 45.5%로 교수 외의 저자가 많음을 알 수 있었다. 한국실과교육학회지는 학생의 비율 낮으며, 한국기술교육학회지는 교사, 연구원, 기타의 비율이 다른 두 학술지에 비하여 현저히 높았다. 둘째, 세 학술지의 공저자 네트워크 분석 결과 네트워크의 밀도와 평균 연결도는 실과교육 분야가 가장 높았고 가정교육 분야가 가장 낮았다. 또한 한국가정과교육 학회지의 경우 컴포넌트의 수는 다른 두 학술지의 2배가 넘었으며, 5개 이상의 노드를 가지고 있는 컴포넌트수도 많았고, 평균 거리와 네트워크 지름도 다른 학술지에 비하여 짧은 편이었다. 셋째, 세 학술지의 공저자 네트워크의 연결 중심성, 근접 중심성, 매개 중심성, 아이겐벡터 중심성을 계산하여 각 연구 분야에서 높은 영향력을 가지고 있는 연구자들을 파악하였다. 그 결과 한국기술교육학회지와 한국실과교육학회지의 저자들은 공통저자가 많은 데 비하여, 한국가정과 교육학회지의 저자들은 한국실과교육학회지의 저자들과 공통된 경우가 많지 않았다. 또한 실과 교육 분야의 저자들 중 영향력이 높은 집단은 대체로 기술교육 분야의 저자들임을 알 수 있었다. 이 연구는 실과(기술․가정)교육이 다양한 학문 공동체로서의 연구자들 간의 상호 교류를 통한 통합적, 융합적 연구가 이루어질 필요가 있음을 보여준다.The purpose of this study was to analyze the structure of social network among co-authors, focusing on the Journal of Korean Practical Arts Education (JKPAE), Journal of Korean Home Economics Education(JKHEE), and Journal of Korean Technology Education(JKTE). The social network analysis method was adopted in order to analyze the structures and structural attributes of co-author networks, the centrality indices of researchers, and the academic influences and relationships among authors. The results are as follows: First, the percentage of co-authored works in the three journals was 72.5% through 79.5%, which is relatively high, and the percentage for JKTE was the highest among the three. In case of JKPAE, the number of single author works was the highest, yet more two-author works were included in JKHEE and JKTE. Over 60% of the authors were professors in JKPAE and JKHEE, compared to 45.5% in JKTE, which indicates more diverse authors published in JKTE. For JKTE, the percentage of student authors was low, and the percentages of secondary school teachers, researchers, and others were higher than the other two journals. Second, the three journals’ co-author network analysis revealed that the density and average degree were highest for JKPAE, and lowest for JKHEE. JKHEE had twice as large the number of components than the other two journals, and the number of components size over 5 was also larger, with smaller mean distance and mean diameter. Third, the co-authors’ in-degree centrality, closeness centrality, node-betweenness centrality, and eigenvector centrality in the networks were calculated in order to identify the influential researchers in the fields. There were overlapping authors between JKPAE and JKTE, but not between JKPAE and JKHEE. Also, the influential authors among authors of JKPAE were more likely to be in the technology education field. The results of this study indicates that more interactions among the researchers are needed in Practical Arts(Technology & Home Economics) Education, through integrative and collaborative research.
+
+## 메모
+

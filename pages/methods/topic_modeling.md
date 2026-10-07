@@ -98,6 +98,30 @@ netminer_support: "✅ 지원"
 
 → 상세: [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]]
 
+## 2026-09-30 갱신 (789편 → 909편, 신규 120편 반영)
+
+신규 청크(778~909번, 130편)에서도 BERTopic 우위 흐름이 그대로 이어지며, 새로운 세부 변형·계보 연구가 확인되었다.
+
+- **계층형 BERTopic 변형**: [[pages/papers/applied/2026_zhang_scbertopic_semanticcentroid_hi|SC-BERTopic (Zhang, 2026)]] — 의미 중심(semantic-centroid) 기반 계층형 토픽 구조. 단일 레벨 BERTopic의 한계(세부 토픽과 상위 토픽 구분 불가)를 해결하려는 시도.
+- **토픽모델링 계보 정리 논문 등장**: [[pages/papers/applied/2026_takola_from_lsa_llm|Takola (2026)]] — LSA → LDA → BERTopic → LLM 기반 토픽모델링으로 이어지는 방법론 계보를 정리. "토픽모델링 자체가 하나의 진화 계열"이라는 서술이 처음으로 명시적으로 정리된 사례 — 콘텐츠 마케팅(방법론 소개 글) 소재로 유용.
+- **다국어·다중 플랫폼 BERTopic 비교**: wang_going_beyond_description_multi(청크7) — 여러 언어·플랫폼 코퍼스에서 BERTopic 성능 비교.
+- **그래프 기반 term weighting**: sutedi_term_weighting_based(청크7) — 토픽모델링 전처리 단계에 그래프 구조를 도입한 신규 가중치 기법. 의미연결망과의 접점 확대 신호.
+- **정책 문서 대규모 적용 지속**: [[pages/papers/applied/2026_xia_air_pollution_regulation_for|Xia (2026)]] — 중국 대기오염 정책 문서 12,081건에 BERTopic 계층 토픽+동적 진화 분석 (기존 789편 판독에서 이미 확인된 사례가 909편에서도 재확인).
+- **시민 프레임 분석**: [[pages/papers/applied/2026_ustenko_measuring_citizen_frames_and|Ustenko (2026)]] — BERTopic으로 시민 프레임 측정.
+
+**결론**: 909편 기준으로도 "BERTopic이 응용 분야 표준"이라는 판정에는 변화 없음. 다만 **계층형 변형(SC-BERTopic)**과 **계보 정리 관점(LSA→LDA→BERTopic→LLM)**이라는 두 가지 새 서술 축이 추가되었다.
+
+## 2026-10-07 보강 (신규 174편 중 24편, 963편 기준)
+
+> 근거: [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]] 2026-10-07 증분 갱신 절
+
+- **"LDA vs BERTopic 경주" 패턴 추가 반복 확인**: [[pages/papers/applied/2026_ilmiah_comparing_lda_and_bertopic|Ilmiah (2026)]] — coherence/diversity 지표로 직접 비교, BERTopic 우위 재확인. 이 하위 장르가 신규분에서도 계속 재생산됨을 보여줌.
+- **토픽모델링 + 텍스트네트워크 결합**: [[pages/papers/applied/2026_ku_understanding_welldying_resear|Ku (2026)]] — LDA+텍스트네트워크로 한국 웰다잉 연구 지식구조 분석. [[pages/methods/semantic_network_analysis|의미연결망]] 결합 패턴의 추가 사례.
+- **토픽모델링 → Main Path Analysis 유도**: [[pages/papers/applied/2026_smith_weightactivated_main_path|Smith (2026, WAMPA)]] — 토픽모델링 결과를 가중치화해 인용 Main Path를 추출, 범죄학 서브분야 간 인용 단절 분석. 토픽모델링을 서지계량 네트워크 분석의 입력으로 쓰는 신규 파이프라인.
+- **대규모 서술문 데이터 적용**: [[pages/papers/applied/2026_rajabu_uncovering_hidden_factors|Rajabu (2026)]] — LDA+N-gram으로 교통사고 서술문 6.7만 건에서 숨겨진 원인 발굴.
+
+**결론**: 963편 기준으로도 BERTopic 우위·LDA 베이스라인화 판정 유지. 토픽모델링을 서지계량/텍스트네트워크의 전처리 단계로 쓰는 파이프라인形 결합이 신규분에서 추가 확인됨.
+
 ## [[pages/methods/semantic_network_analysis|의미연결망]]과의 결합
 
 → 복합 방법론 패턴의 핵심: 토픽 + 네트워크 조합이 SNA 학술지에도 표준 패턴으로 진입

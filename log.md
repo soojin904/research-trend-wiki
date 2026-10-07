@@ -1,5 +1,34 @@
 ﻿# 위키 로그
 
+## [2026-10-07] synthesize | 2026-09-22 이후 신규분 증분 합성 (SNA 3편 + applied 174편)
+
+- **대상**: 2026-09-22 마지막 전수 synthesize 이후 신규 생성된 개별 페이지만 — `pages/papers/sna/` 3편(`2026_gao_multilayer_network_analysis`, `2026_hncean_returning_network_findings`, `2026_murraywatt_the_decay_impact`), `pages/papers/applied/` 174편(2026-09-30·2026-10-07 두 차례 ingest 분 합산, git untracked 기준). 기존 789편/318편 본문은 재열람하지 않음
+- **탐색**: applied 174편은 병렬 에이전트 4개(각 ~44편)로 초록·frontmatter 수준 판독, sna 3편은 직접 판독. 1편(`2026_jalali_postmodern_physics_hamzah`)은 의사과학/AI생성 난센스 텍스트로 집계 제외
+- **methods 갱신**: `sentiment_analysis.md`(+44편, 비중 변화 없음 재확인), `llm_nlp.md`(+29편, 온프레미스 LLM 임상 사례 추가), `topic_modeling.md`(+24편, LDA vs BERTopic 경주 반복 확인), `gnn.md`(+18편, CS 방법론 중심 재확인), `centrality.md`(Hâncean 아트갤러리 환원 사례 추가, Murray-Watters는 기존 미커밋 작업에 이미 반영되어 있던 것 확인), `community_detection.md`(응용 분야 Louvain/Infomap 사례 3건 추가)
+- **concepts 갱신**: `multilayer_network.md` — Gao 외(2026) Reddit 다층 네트워크(담론 레이어+행위자 레이어, 레이어 간 상관) 추가
+- **tools 갱신**: `other_tools.md` — PyTorch Geometric/DGL, 온프레미스 Llama-3.1/Qwen3, Neo4j 신규 추가
+- **insights 갱신**: `applied_method_frequency_2026.md`에 "7. 2026-10-07 증분 갱신" 절 신설 — 174편 기준 방법론 분포 집계, 963편 환산 비율 계산
+- **핵심 발견**: 신규 174편에서 진성 SNA 비중이 18%로 789편 기준(~7%)보다 뚜렷이 높게 나타났으나, 동물행동생태학 SNA 논문 군집 등 **특정 ingest 배치의 수집 편향**으로 판단 — 963편 전체 환산 시 8.4~9.1% 수준의 소폭 상승에 그침. "응용 분야는 SNA 심화가 아닌 폭 탐색" 결론은 유지
+- **overview.md**: 상단 안내문에 증분 synthesize 완료 명시, Part 2·3 전수 수치(318/789)는 2026-09-22 베이스라인으로 유지하고 각 방법론 페이지의 "2026-10-07 보강" 절로 분리 서술
+- **미해결 사항**: 2026-09-30 ingest 직후 누군가 methods(centrality/community_detection/ergm/saom/topic_modeling)·netminer.md·catalog 등에 "327편"·"909편" 기준 증분 작업을 이미 해두었으나 커밋되지 않았고 log.md에도 기록이 없었음 — 해당 수치가 현재 실제 총계(SNA 321편, applied 963편)와 불일치. 이번 작업에서는 그대로 두고 손대지 않았으며, 다음 전수 재합성 시 정합성 정리 필요
+
+## [2026-10-07] ingest | raw/sna/, raw/applied/ 추가 신규분 일괄 인제스트 (raw/netminer/ 제외)
+- 대상: 2026-09-30 이후 추가 수집된 raw 파일(sna 525편 중, applied 포함 총 525편이 log.md 기준 신규) — `batch_ingest.py`(--no-translate, 기존 정책 유지) 재실행
+- **sna**: 신규 644개 재스캔 → 기존 페이지/카탈로그와 중복 제외, 실질 신규 1편(`2026_gao_multilayer_network_analysis`) 개별 페이지 추가. 카탈로그 변동 없음. 개별 페이지 320→321편
+- **applied**: 게이트 탈락 2,113편 → 개별 페이지 60편 신규, catalog_2026 +24편(34→58편). 개별 페이지 907→963편
+- NetMiner 언급 여부 확인: 신규 페이지 61편 전수 grep 검색 결과 NetMiner 언급 0건 — `pages/tools/netminer.md` 갱신 불필요
+- index.md 통계·목록, overview.md 헤더 갱신. 방법론/개념/overview 전수 재합성(개별 페이지 내용 반영)은 미실시 — 기존 방침대로 `/wiki:synthesize` 별도 실행 필요
+- 참고: 직전 2026-09-30 ingest 결과물이 커밋되지 않은 상태로 남아 있었음 — 이번 작업으로 두 세션분이 함께 작업트리에 반영됨 (커밋은 미실행, 필요 시 요청)
+
+## [2026-09-30] ingest | raw/sna/, raw/applied/ 미등록 파일 일괄 인제스트 (raw/netminer/ 제외)
+- 대상: `raw/sna/`(689개 중 신규 643개), `raw/applied/`(2,916개) — index.md 미등록분. `raw/netminer/`는 월별 자동수집 전용이라 이번 작업 범위에서 제외
+- `batch_ingest.py`(--no-translate 기본값) 실행 — 번역은 별도 요청 시에만 진행(기존 정책 유지)
+- **sna**: 신규 643개 중 개별 페이지 대상 225편 산정 → 기존 페이지와 슬러그 중복 223편 제외, 실질 신규 2편(`2026_hncean_returning_network_findings`, `2026_murraywatt_the_decay_impact`). catalog_2026 +2편(21→23편). 개별 페이지 318→320편
+- **applied**: 게이트 탈락 1,684편(SNA·넷마이너 알고리즘 키워드 없음) → 개별 페이지 118편 신규(중복 슬러그 8건 제외 실질 순증), catalog_2026 +17편(34→51편). 개별 페이지 789→907편
+- NetMiner 언급 여부 확인: 신규 페이지 120편 전수 grep 검색 결과 NetMiner 언급 0건 — `pages/tools/netminer.md` 갱신 불필요
+- index.md 통계·목록, overview.md 헤더 갱신(신규분 방법론/도메인 재합성은 미실시 — `/wiki:synthesize` 별도 실행 필요, 안내 문구 추가)
+- 미조치 사항: sna 신규 643편 중 개별/카탈로그 어디에도 포함되지 않은 280편은 초록 누락으로 스킵됨(raw 파일 자체 품질 이슈로 추정, 별도 확인 필요)
+
 ## [2026-09-22] synthesize | SNA 318편 + 응용분야 789편 전수 재합성 (2026-05-27판 대체)
 - 대상: `pages/papers/sna/` 318편 + `pages/papers/applied/` 789편, 총 1,107편 (마지막 synthesize 이후 첫 전체 재합성)
 - 탐색: 병렬 에이전트 10개(SNA 3개 × ~106편, applied 7개 × ~113편) 동시 탐색 → 결과 합산

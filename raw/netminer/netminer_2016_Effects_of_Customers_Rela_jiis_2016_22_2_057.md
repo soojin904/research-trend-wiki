@@ -1,0 +1,32 @@
+---
+title: "Effects of Customers' Relationship Networks on Organizational Performance: Focusing on Facebook Fan Page"
+authors: ['Su-Hyeon Jeon', 'Kee-Young Kwahk']
+year: 2016
+publication_date: 2016-06-30
+venue: "Journal of Intelligence and Information Systems"
+publisher: ""
+volume: "22"
+issue: "2"
+pages: "57-79"
+doi: "https://doi.org/10.13088/jiis.2016.22.2.057"
+openalex_id: "https://openalex.org/W2498029065"
+cited_by_count: 0
+fwci: 0.0
+tags: ['Diverse Approaches in Healthcare and Education Studies', 'Innovation in Digital Healthcare Systems']
+keywords: ['Business', 'Social media', 'Marketing', 'Service (business)', 'Channel (broadcasting)', 'Focus (optics)', 'Advertising', 'Social network (sociolinguistics)']
+source: openalex-netminer
+---
+
+# Effects of Customers' Relationship Networks on Organizational Performance: Focusing on Facebook Fan Page
+
+**저자**: Su-Hyeon Jeon; Kee-Young Kwahk
+**출처**: Journal of Intelligence and Information Systems, Vol.22 No.2, pp.57-79
+**발행일**: 2016-06-30
+**DOI**: https://doi.org/10.13088/jiis.2016.22.2.057
+
+## 초록
+
+최근 소셜 네트워크 서비스는 소비자와의 관계 마케팅 확산 및 확장을 위한 중요한 채널로 인식되며 많은 관심을 받고 있다. 기업이 온라인 환경에서 성공하기 위해서는 기업과 고객 사이의 관계 구축뿐만 아니라 고객들 간의 관계에 초점을 맞출 필요가 있다. 본 연구에서는 페이스북 팬 페이지에 참여하는 사용자들 사이의 네트워크를 분석하여 기업의 비즈니스 성과에 고객 간 네트워크의 구조적 특성이 미치는 영향을 실증적으로 분석하였다. 이를 위해 네트워크 데이터는 코스피 상장 기업 가운데 페이스북 팬 페이지에 100개 이상의 게시글을 올린 54개 기업으로부터 수집하였으며, 수집된 네트워크 데이터는 각 사용자를 노드로 하고 동일한 마케팅 활동에 대해 참여한 사용자간의 관계를 링크로 한 원모드 비방향 이진 네트워크(one-mode undirected binary network)이다. 본 연구에서는 이러한 네트워크 데이터를 핸들링하여 사용자들 간의 활동 관계를 분석할 수 있는 네트워크 지표(밀도, 글로벌 클러스터링 계수, 최단거리평균, 직경)를 도출하였으며, 이러한 고객 간 네트워크의 구조적 특징을 파악할 수 있는 지표와 기업의 과거실적(순이익), 그리고 미래 예측성과(토빈의 Q) 간의 관계를 분석하였다. 본 연구는 학문적 관점에서 소셜 미디어 채널을 비즈니스 관점에서 연구하려는 연구자들에게 소셜네트워크분석 방법을 통한 새로운 접근법을 제시한다. 실무적인 관점에서 본 연구는 소셜미디어를 통해 마케팅 활동을 수행하려는 기업의 관리자들에게 네트워크의 지표를 이용한 지능형 마케팅 서비스를 수행할 수 있는 토대를 제공할 것으로 기대한다. It is a rising trend that the number of users using one of the social media channels, the Social Network Service, so called the SNS, is getting increased. As per to this social trend, more companies have interest in this networking platform and start to invest their funds in it. It has received much attention as a tool spreading and expanding the message that a company wants to deliver to its customers and has been recognized as an important channel in terms of the relationship marketing with them. The environment of media that is radically changing these days makes possible for companies to approach their customers in various ways. Particularly, the social network service, which has been developed rapidly, provides the environment that customers can freely talk about products. For companies, it also works as a channel that gives customized information to customers. To succeed in the online environment, companies need to not only build the relationship between companies and customers but focus on the relationship between customers as well. In response to the online environment with the continuous development of technology, companies have tirelessly made the novel marketing strategy. Especially, as the one-to-one marketing to customers become available, it is more important for companies to maintain the relationship marketing with their customers. Among many SNS, Facebook, which many companies use as a communication channel, provides a fan page service for each company that supports its business. Facebook fan page is the platform that the event, information and announcement can be shared with customers using texts, videos, and pictures. Companies open their own fan pages in order to inform their companies and businesses. Such page functions as the websites of companies and has a characteristic of their brand communities such as blogs as well. As Facebook has become the major communication medium with customers, companies recognize its importance as the effective marketing channel, but they still need to investigate their business performances by using Facebook. Although there are infinite potentials in Facebook fan page that even has a function as a community between users, which other platforms do not, it is incomplete to regard companies' Facebook fan pages as communities and analyze them. In this study, it explores the relationship among customers through the network of the Facebook fan page users. The previous studies on a company's Facebook fan page were focused on finding out the effective operational direction by analyzing the use state of the company. However, in this study, it draws out the structural variable of the network, which customer committment can be measured by applying the social network analysis methodology and investigates the influence of the structural characteristics of network on the business performance of companies in an empirical way. Through each company's Facebook fan page, the network of users who engaged in the communication with each company is exploited and it is the one-mode undirected binary network that respectively regards users and the relationship of them in terms of their marketing activities as the node and link. In this network, it draws out the structural variable of network that can explain the customer commitment, who pressed "like," made comments and shared the Facebook marketing message, of each company by calculating density, global clustering coefficient, mean geodesic distance, diameter. By exploiting companies' historical performance such as net income and Tobin's Q indicator as the result variables, this study investigates influence on companies' business performances. For this purpose, it collects the network data on the subjects of 54 companies among KOSPI-listed companies, which have posted more than 100 articles on their Facebook fan pages during the data collection period. Then it draws out the network indicator of each company. The indicator related to companies' performances is calculated, based on the posted value on DART website of the Financial Supervisory Service. From the academic perspective, this study suggests a new approach through the social network analysis methodology to researchers who attempt to study the business-purpose utilization of the social media channel. From the practical perspective, this study proposes the more substantive marketing performance measurements to companies performing marketing activities through the social media and it is expected that it will bring a foundation of establishing smart business strategies by using the network indicators.
+
+## 메모
+

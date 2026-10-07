@@ -12,7 +12,7 @@
 
 | 유형 | raw 경로 | pages 경로 | 수집 방식 | 활용 목적 |
 |------|----------|-----------|----------|----------|
-| **A. NetMiner 사용 논문** | `raw/netminer/` | `pages/papers/netminer/` | 논문 출처 수집 | 제품 마케팅·사례 연구 |
+| **A. NetMiner 사용 논문** | `raw/netminer/` | `pages/papers/netminer/` | 수집·판정은 `03_marketing/netminer_info`에서 관리 (wiki는 중복 수집 안 함). ingest 시 `research_metadata.xlsx`의 `구분`(AD열)="활용"인 논문만 반영, "검증필요"·"소개"·"언급"은 제외 | 제품 마케팅·사례 연구 |
 | **B. SNA 학계 트렌드 논문** | `raw/sna/` | `pages/papers/sna/` | OpenAlex API 수집 (Social Networks 등 SNA 전문지) | 학계 트렌드 파악, 제품 기획 방향 |
 | **C. 응용 분야 논문** | `raw/applied/` | `pages/papers/applied/` | `fetch_applied.py` — 키워드 검색 (OpenAlex, 전 저널) | SNA·텍스트마이닝의 응용 분야 파악. 신규 고객 세그먼트 발굴 |
 
@@ -36,7 +36,7 @@ wiki/
 │
 ├── raw/               ← 원본 소스 (수정 금지)
 │   ├── assets/        ← 다운로드된 이미지
-│   ├── netminer/      ← [유형 A] NetMiner 사용 논문
+│   ├── netminer/      ← [유형 A] NetMiner 사용 논문 (수집은 netminer_info, wiki는 "활용" 판정만 반영)
 │   ├── applied/       ← [유형 C] 응용 분야 논문 (타 분야 SNA 응용, 수동 큐레이션)
 │   └── sna/           ← [유형 B] OpenAlex 수집 SNA 학술지 논문
 │
@@ -109,6 +109,8 @@ wiki/
 ### 도구 페이지 (`pages/tools/`)
 - 파일명: `도구명.md` (예: `gephi.md`, `netminer.md`)
 - 내용: 기능 개요, 장단점, 주요 사용 사례, 경쟁 포지션
+- `netminer.md`는 NetMiner 관계망 활용 사례·연구 트렌드 분석의 유일한 저장 위치다 (2026-10-02부로 `03_marketing/netminer_info`의 별도 분석 보고서 2종은 폐기, 내용을 이 파일로 통합). `research_metadata.xlsx`(`구분`="활용")가 크게 바뀌면 이 페이지를 직접 갱신하고, 분석 기준일·대상 건수를 섹션 상단에 명시한다
+  - 트렌드 분석 범위는 **항상 "최근 3년" 롤링 윈도우**(`year`≥ 분석 시점 기준 2년 전)로 한정한다. 전체 활용 현황(분야·목적·데이터)과, 그중 텍스트가 아닌 순수 SNA(관계망) 논문만 별도로 구분해 표시한다
 
 ---
 

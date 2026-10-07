@@ -18,7 +18,9 @@ argument-hint: "[파일명 또는 경로]"
 
 ### 0. raw/netminer/ 정리 (인수 없이 전체 실행 시에만)
 
-`D:\soojin\03_marketing\netminer_info\nm-reference\research_metadata.xlsx` 첫 번째 시트의 `title` 컬럼을 기준으로, `raw/netminer/*.md` 중 xlsx에 없는 파일을 삭제한다.
+NetMiner 논문의 **수집·판정 자체는 `03_marketing/netminer_info`에서 관리**한다 (wiki는 중복 수집하지 않음).
+wiki가 하는 일은 `research_metadata.xlsx`의 `구분` 컬럼(AD열)이 **"활용"**(= NetMiner를 실제로 사용한 논문으로 확정된 것)인 논문만 걸러 `raw/netminer/*.md`를 정리하는 것뿐이다.
+`구분`이 "검증필요"·"소개"·"언급"인 논문은 NetMiner를 실제로 쓰지 않았거나 확정되지 않은 것이므로 위키에 반영하지 않는다.
 
 ```python
 import re
@@ -33,7 +35,14 @@ wb = openpyxl.load_workbook(xlsx, read_only=True, data_only=True)
 ws = wb.worksheets[0]
 headers = [c.value for c in next(ws.iter_rows())]
 title_col = headers.index('title')
-xlsx_titles = {normalize(row[title_col].value) for row in ws.iter_rows(min_row=2) if row[title_col].value}
+gubun_col = headers.index('구분')
+
+# "활용"으로 확정된 논문만 대상 (검증필요/소개/언급 제외)
+xlsx_titles = {
+    normalize(row[title_col].value)
+    for row in ws.iter_rows(min_row=2)
+    if row[title_col].value and row[gubun_col].value == '활용'
+}
 
 netminer_dir = Path("D:/soojin/wiki/raw/netminer")
 deleted = []
@@ -51,7 +60,7 @@ print(f"삭제: {len(deleted)}건")
 
 - 가상환경(`D:\soojin\.venv`) 활성화 후 실행 (openpyxl 설치됨)
 - 삭제 전 파일 목록을 출력해 확인한다
-- xlsx에 있는 논문의 md 파일은 유지한다
+- xlsx에서 `구분`="활용"인 논문의 md 파일만 유지한다 (그 외는 전부 삭제 대상)
 
 ### 1. 소스 파악
 - 처리할 파일 목록 확인

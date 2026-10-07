@@ -1,0 +1,32 @@
+---
+title: "Analysis on differences in a seasonal tourism network - Case of Gangwon-do tourism -"
+authors: ['Woon-Gang Song', 'Heewon Yang']
+year: 2017
+publication_date: 2017-02-28
+venue: "International Journal of Tourism and Hospitality Research"
+publisher: "SAGE Publishing"
+volume: "31"
+issue: "2"
+pages: "31-45"
+doi: "https://doi.org/10.21298/ijthr.2017.02.31.2.31"
+openalex_id: "https://openalex.org/W2742322530"
+cited_by_count: 1
+fwci: 0.0
+tags: ['Diverse Topics in Contemporary Research', 'Energy and Environmental Systems', 'Korean Urban and Social Studies']
+keywords: ['Tourism', 'Geography', 'Regional science', 'Economic geography', 'Archaeology']
+source: openalex-netminer
+---
+
+# Analysis on differences in a seasonal tourism network - Case of Gangwon-do tourism -
+
+**저자**: Woon-Gang Song; Heewon Yang
+**출처**: International Journal of Tourism and Hospitality Research, Vol.31 No.2, pp.31-45
+**발행일**: 2017-02-28
+**DOI**: https://doi.org/10.21298/ijthr.2017.02.31.2.31
+
+## 초록
+
+본 연구는 강원도를 방문하는 관광자를 대상으로 계절에 따른 관광 이동성을 분석하였으며, 분석결과를 바탕으로 강원도의 관광전략을 제시하고자 하였다. 본 연구는 4계절 자료를 모두 포함하는 데이터를 수집하기 위하여 1년간 강원도 주요 관광지의 방문객을 대상으로 이동경로를 조사하였으며 2,686부의 유효표본을 분석에 이용하였다. 분석은 NetMiner 4 프로그램을 이용하여 네트워크 분석을 시행하였으며, 계절별 관광 네트워크 내에서의 각 지역의 기능 및 중요성을 확인하기 위하여 중심성 분석을, 클러스터링을 위해 응집성 분석을 실시하였다. 분석 결과, 강원도 관광은 계절에 따라 관광 네트워크 구조 및 이동 경로와 각 지역의 특성 및 역할이 상이한 것으로 나타났다. 특히 지역의 연계성을 고려할 때 계절에 따른 중심도시와 클러스터의 변화는 다양한 정책적 대응의 필요성을 시사하였다. 또한 동계올림픽 개최지인 평창의 독특한 클러스터는 주변지역과의 시너지창출에 어려운 형태를 보이고 있으므로 인근 지역의 콘텐츠 확대를 통하여 유인력을 강화시킬 필요가 있다. 이러한 분석 결과는 강원도 관광자의 계절별 이동경로와 목적지 특성을 명확하게 파악하게 함으로써 향후 강원도의 관광전략 방향을 제시하는 데 유용한 정보를 제공해 줄 수 있다.
+
+## 메모
+

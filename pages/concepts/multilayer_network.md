@@ -26,6 +26,7 @@ tags: [multilayer-network, multiplex, interlayer, network-structure]
 - [[pages/papers/sna/2026_an_peer_influence_multilayer|An 외]] — 다층 네트워크에서 동료 영향 추정 (내생성 처리)
 - [[pages/papers/sna/2026_fluer_multiplex_survey|Fluer 외]] — 설문 데이터 → 멀티플렉스 모델 (레이어 간 상관 포함)
 - [[pages/papers/sna/2026_haapanen_coalition_sna_design|Haapanen 외]] — 연합의 다층 구조(개인간 + 조직간)와 SNA 설계
+- [[pages/papers/sna/2026_gao_multilayer_network_analysis|Gao, Ye & Ackland (2026)]] — Reddit 토론 플랫폼을 담론 레이어(댓글-댓글 트리)+행위자 레이어(이용자 간 응답)로 모델링. 행위자 레이어의 연결정도 분포·동질성(assortativity)·전역 클러스터링 계수가 담론 레이어의 숙의(deliberation) 수준과 상관관계를 보임 — 다층 구조에서 레이어 간 상관을 실증한 추가 사례(2026-10-07 보강)
 
 ## NetMiner 연관성
 

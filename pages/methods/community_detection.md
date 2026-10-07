@@ -41,6 +41,18 @@ updated: 2026-09-22
 - **NMI (Normalized Mutual Information)**: 벤치마크 대비 정확도
 - **안정성**: 동일 네트워크 반복 실행 시 일관성
 
+### 2026-09-30 보강 (327편 전수 재검토)
+
+| 논문 | 접근 |
+|------|------|
+| [[pages/papers/sna/2024_pham_automated_detection_edge\|Pham 외 (2024, aLSEC)]] | 과적합 혼합 사전분포로 군집 수 사전 지정 없이 엣지 군집 자동 탐지 |
+| [[pages/papers/sna/2024_yanchenko_generalized_hypothesis_test\|Yanchenko & Sengupta (2024)]] | 커뮤니티 구조 존재 여부에 대한 일반화 가설 검정 |
+| [[pages/papers/sna/2025_gwee_modelbased_clustering_for_netw\|Gwee 외 (2025, LSPCM)]] | 잠재 공간 차원수·군집 수 동시 자동 추론 |
+| [[pages/papers/sna/2026_lu_zeroinflated_poisson_latent\|Lu 외 (2026)]] | 결측+가중치 동시 처리하는 Zero-Inflated Poisson 잠재 군집 모형 |
+| [[pages/papers/sna/2026_yanchenko_labelswitching_algorithm_for\|Yanchenko 외 (2026)]] | 코어-퍼리퍼리 탐지에서 레이블 스위칭 문제 해결 알고리즘 |
+
+327편 재검토 결과 **모형 기반 탐지(SBM·잠재공간·군집수 자동추론)로의 이동**이 뚜렷이 재확인됐다 — "알고리즘을 고른다"가 아니라 "군집 수·존재 자체를 모형이 추정하게 한다"는 방향.
+
 ## 실제 사용 패턴 (SNA 학술지 논문 기반)
 
 | 논문 | 적용 방식 | 핵심 발견 |
@@ -50,6 +62,18 @@ updated: 2026-09-22
 | [[pages/papers/sna/2023_reittu_network_community_detection\|Reittu 외 (2023)]] | 다층 레이어와 노드 속성 데이터를 통합하는 데이터 행렬 기반 커뮤니티 탐지 | 차수를 열로 추가하면 계층적 스케일프리 네트워크 구조와 잘 일치 |
 | [[pages/papers/sna/2022_suitner_the_rise_climateaction\|Suitner 외 (2022)]] | 의미 네트워크에 커뮤니티 탐지 알고리즘 적용 → 의미 커뮤니티 시계열 비교 | FridaysForFuture 이후 기후변화 담론의 의미 커뮤니티 구조 변화 확인 |
 | [[pages/papers/sna/2022_mayajarieg_use_hierarchical\|Maya-Jariego & González-Tinoco (2022)]] | 반복적 betweenness 노드 제거로 퍼스널 네트워크 내 중첩 하위 집단 계층 탐색 | 밀한 네트워크가 해체에 강인; 명확한 하위 집단은 해체 속도 빠름 |
+
+## 응용 분야 사례 (2026-10-07, 신규 174편)
+
+> 근거: [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]] 2026-10-07 증분 갱신 절. SNA 전문지가 아닌 응용 분야(`pages/papers/applied/`)에서 확인된 사례로, 위 318편 전수 집계와는 별도.
+
+| 논문 | 적용 방식 |
+|------|-----------|
+| [[pages/papers/applied/2026_ouz_soft_trioid_graphs_for\|Öuz (2026)]] | 소프트 트리오이드 그래프 — Louvain/Infomap/동적 SBM 대비 92% 정확도로 동적 커뮤니티·영향력자 탐지 |
+| [[pages/papers/applied/2026_unknown_malaysias_domestic_tourism_net\|Malaysia 관광 네트워크 (2026)]] | Louvain + Fiedler 벡터 기반 클러스터링으로 국내 관광 네트워크 구조 분석 |
+| [[pages/papers/applied/2026_nurkholisa_the_role_social\|Nurkholisa (2026)]] | Gephi로 83노드 SNS 네트워크의 중심성·모듈성 분석 |
+
+Louvain·Infomap 등 휴리스틱 알고리즘이 응용 분야에서도 여전히 표준 선택임을 재확인 — NetMiner가 이미 지원하는 범위와 일치.
 
 ## NetMiner 지원 현황
 

@@ -35,6 +35,15 @@ SNA에서 네트워크 내 노드의 중요도를 수치화하는 지표군. **S
 
 공통점: **기존 지표의 가정(정적 그래프·경로 동등성·허브 우대)을 문제 삼는 방향**으로 분화하고 있다.
 
+### 2026-09-30 보강 (327편 전수 재검토)
+
+| 변형 | 내용 | 대표 논문 |
+|------|------|-----------|
+| **마케팅용 다중 중심성 결합 (8종)** | 인플루언서·오디언스 선정을 위해 8개 중심성 지표를 결합 평가 | [[pages/papers/sna/2024_sziklai_audience_selection_for_maximiz\|Sziklai 외 (2024)]] |
+| **대응분석(CA) vs Bonacich 중심성** | 이원 네트워크에서 고전적 Bonacich 중심성과 대응분석 결과를 비교 | [[pages/papers/sna/2025_liardo_the_correspondence_analysis\|Liardo (2025)]] |
+| **멀티플렉스 결합 면역화 지표(MCPR)** | PageRank+근접 중심성 결합으로 감염병 면역화 전략 설계 | [[pages/papers/sna/2026_asil_immunization_method_using\|Asil & Khansari (2026)]] |
+| **고유벡터 중심성 + Friedkin-Johnsen 확산** | 의견 동학 모형과 중심성을 결합해 영향력 감쇠 추정 | [[pages/papers/sna/2026_murraywatt_the_decay_impact\|Murray-Watters (2026)]] |
+
 ## 실제 사용 패턴 (SNA 학술지 논문 기반)
 
 | 논문 | 적용 방식 | 핵심 발견 |
@@ -44,6 +53,7 @@ SNA에서 네트워크 내 노드의 중요도를 수치화하는 지표군. **S
 | [[pages/papers/sna/2023_kim_adolescent_network_positions_a\|Kim & Kim (2023)]] | 사회계측 네트워크 중심성·인기도 → 성인기 기억 수행 예측 (형제 고정 효과 모형) | 청소년기 중심 위치가 성인기 인지 능력과 유의하게 연관 |
 | [[pages/papers/sna/2024_neal_methodological_moderators_aver\|Neal (2024)]] | 아동·청소년 우정 네트워크 71편 메타분석 — outdegree centrality 추정치 조절 변수 검토 | 명칭 생성기 방식·선택 횟수 제한이 추정치에 유의미한 영향 |
 | [[pages/papers/sna/2026_asil_immunization_method_using\|Asil & Khansari (2026)]] | 멀티플렉스 네트워크에서 PageRank·근접 중심성 결합 MCPR 지표로 면역화 전략 설계 | 10% 면역화 시 홍역 2.2%, 천연두 7% 유행 규모 감소 |
+| [[pages/papers/sna/2026_hncean_returning_network_findings\|Hâncean 외 (2026)]] | 퍼스널 네트워크·중심성 등 분석 결과를 비전문가 대상 아트 갤러리(캔버스·조형물)로 "환원(report-back)"하는 커뮤니티 개입 | 103명 방문자 전원 유용성 높게 평가; 단일 분석 레벨-캔버스 매칭이 이해를 도움 — 중심성 등 분석 결과를 일반 대중에 전달하는 방법론 사례 |
 
 ## 해석 주의사항
 

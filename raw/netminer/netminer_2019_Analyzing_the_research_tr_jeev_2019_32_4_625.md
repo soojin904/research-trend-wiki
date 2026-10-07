@@ -1,0 +1,32 @@
+---
+title: "Analyzing the research trends of the Journal of Educational Evaluation using keyword network analysis for the recent 10 years"
+authors: ['Kilseok Yang']
+year: 2019
+publication_date: 2019-12-30
+venue: "교육평가연구"
+publisher: ""
+volume: "32"
+issue: "4"
+pages: "625-647"
+doi: "https://doi.org/10.31158/jeev.2019.32.4.625"
+openalex_id: "https://openalex.org/W2998263383"
+cited_by_count: 0
+fwci: 0.0
+tags: ['Diverse Approaches in Healthcare and Education Studies', 'Educational Systems and Policies', 'Technology and Data Analysis']
+keywords: ['Computer science', 'Network analysis', 'Data science', 'Information retrieval', 'Engineering']
+source: openalex-netminer
+---
+
+# Analyzing the research trends of the Journal of Educational Evaluation using keyword network analysis for the recent 10 years
+
+**저자**: Kilseok Yang
+**출처**: 교육평가연구, Vol.32 No.4, pp.625-647
+**발행일**: 2019-12-30
+**DOI**: https://doi.org/10.31158/jeev.2019.32.4.625
+
+## 초록
+
+본 연구는 키워드 네트워크 분석을 통해 우리나라의 최근 교육평가 분야의 연구 경향성을 밝히는 데 목적을 두고 있다. 이를 위하여 한국교육평가학회에서 발간하는 「교육평가연구」에 2009년(22권 1호)부터 2018년(31권 4호)까지 게재된 총 450편 논문의 키워드 2,043개를 수집하였다. 정제과정을 거쳐 1,295개의 키워드로 정비한 후 NetMiner4.0프로그램을 이용, 키워드의 논문 출현 빈도, 연결중심성, 매개중심성, 네트워크 시각화 등의 분석을 실시하였다. 분석 결과, ‘국가수준 학업성취도 평가’, ‘문항반응이론’, ‘학업성취도’, ‘동등화’, ‘PISA’, ‘차별기능문항’, ‘Rasch 모형’ 등이 교육평가 연구의 중심을 이루고 있음을 확인할 수 있었다. 더불어 문항반응이론의 확장 및 심화, 교육평가 실제(데이터 기반 정책추진, 학업성취도 평가 체제 개선 및 정보 공개, 학생평가의 혁신 등)와 연계된 연구의 활성화라는 시기적 특징도 살펴볼 수 있었다. 끝으로, 교육평가 분야의 학술적 구조를 체계화하고 후속 학문 탐구의 방향을 조망하기 위해 연구 경향성 분석이 전문화, 활성화되어야 함을 제언하였다.The purpose of the study is to examine the research trend of the Journal of Educational Evaluation over a recent 10 year period by utilizing keyword network analysis method. For this purpose, 1,295 key words of 450 papers from Journal of Educational published in 2009~2018 were analyzed by NetMiner 4.0. through keyword refinement process. The major findings were as follows. First, the core keywords for the research topic were National Assessment for Educational Achievement, IRT, educational achievement, equating, PISA, DIF, and Rasch model. Second, expanding and deepening IRT, activating research in conjunction with educational practice, and incorporating the latest measurement theories and methodologies are key features of this period. In order to systematize the academic structure of the field of educational evaluation and explore the direction of academic exploration, research trend analysis will have to be more specialized and activated.
+
+## 메모
+

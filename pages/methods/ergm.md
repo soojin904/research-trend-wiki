@@ -2,7 +2,7 @@
 title: "ERGM (지수 랜덤 그래프 모형)"
 tags: [ergm, dergm, ernm, tergm, bipartite-ergm, statistical-network-model, exponential-random-graph]
 netminer_support: "⚠️ 부분 (기본 ERGM ✅ / 변형 모형 ❌)"
-updated: 2026-09-22
+updated: 2026-09-30
 ---
 
 # 지수 랜덤 그래프 모형 (Exponential Random Graph Model, ERGM)
@@ -34,6 +34,8 @@ ERGM은 이제 단일 모형이 아니라 **적용 맥락별로 분화한 모형
 | **Bayesian hierarchical ERGM** | 다중 소집단 동시 분석 | [[pages/papers/sna/2022_agneessens_network_formation_organization\|Agneessens 외 (2022)]] | R Bergm |
 | **TERGM / STERGM** | 종단 — 유대 형성·소멸 분리 | (SAOM 비교 논쟁 참조) | R statnet/btergm |
 | **ergmito** | 소규모 네트워크(에고넷 등) 정확 MLE | — | R ergmito |
+| **LASSO-ERGM** | 변수 선택을 정규화(LASSO)로 자동화 — 통계량 후보 과다 문제 대응 | [[pages/papers/sna/2026_buttazzo_using_lasso_for_variable\|Buttazzo 외 (2026)]] | R |
+| **다층 ERGM (조직범죄 적용)** | 야쿠자 등 범죄 조직의 다층 구조(개인-집단) 동시 추정 | [[pages/papers/sna/2025_breuer_investigating_the_dynamics\|Breuer 외 (2025)]] | R statnet |
 
 > **TERGM vs SAOM 비교 인용 시 주의**: Leifeld & Cranmer (2019)의 TERGM–SAOM 경험적 비교는 [[pages/papers/sna/2022_block_circular_specifications_and_pr\|Block 외 (2022)]]가 **순환 논법(circular specification, 미래 정보로 "예측")** 이라고 반박했고, [[pages/papers/sna/2022_leifeld_theoretical_and_empirical\|Leifeld & Cranmer (2022) Corrigendum]]이 뒤따랐다. "TERGM이 SAOM보다 예측력이 좋다"는 식의 단정적 인용은 금지.
 
@@ -46,6 +48,13 @@ ERGM은 이제 단일 모형이 아니라 **적용 맥락별로 분화한 모형
 | [[pages/papers/sna/2024_pattison_exponential_random_graph_model\|Pattison 외 (2024)]] | 의존 구조 위계에 펜던트 삼각형 통계량 추가 | 경계·교량 형성 모델링에서 적합도 현저히 개선 |
 | [[pages/papers/sna/2023_wang_understanding_networks_with_ex\|Wang 외 (2023)]] | ERNM — 네트워크와 노드 속성의 공동 분포를 하나의 지수족으로 추정 | 선택(selection)과 영향(influence)을 단일 틀에서 분리 |
 | [[pages/papers/sna/2022_karwa_dergms_degeneracyrestricted_ex\|Karwa 외 (2022)]] | 퇴화 문제를 구조적으로 배제한 모수 공간 제약 | 기존 ERGM 추정 실패 사례에서 안정적 수렴 |
+
+## 2026-09-30 보강 (327편 전수 재검토)
+
+SNA 전수가 318→327편(9편 순증)으로 갱신되었다. ERGM 계열에서 확인된 추가 패턴:
+- **변수 선택 자동화**: LASSO-ERGM([[pages/papers/sna/2026_buttazzo_using_lasso_for_variable|Buttazzo 2026]])은 통계량 후보가 많아질수록 심해지는 모형 설정 부담을 정규화로 완화하려는 시도 — ERGM 변형이 "더 정교한 모형"뿐 아니라 "모형 설정 자체의 자동화"로도 분화하고 있음을 보여준다.
+- **응용 확장**: 범죄조직(야쿠자, [[pages/papers/sna/2025_breuer_investigating_the_dynamics|Breuer 2025]]), 도시환경 거버넌스([[pages/papers/sna/2025_livas_urban_environmental_stewardshi|Livas 2025]]), 다중 ERGM 기반 괴롭힘-피해자 네트워크([[pages/papers/sna/2025_tanaka_bullyvictim_network_perception|Tanaka 2025]]) 등 다층 ERGM의 응용 도메인이 넓어짐.
+- 이원/이중성(two-mode/duality) 네트워크와의 접점은 [[pages/methods/twomode_duality_network|이원·이중성 네트워크]] 참조.
 
 ## NetMiner 지원 현황
 
@@ -69,6 +78,7 @@ DERGM, bipartite ERGM(NetMiner의 Two-Mode 메뉴는 중심성 산출만 제공,
 - [[pages/methods/relational_event_model|관계 사건 모형 (REM)]] (이벤트 단위 동적 모형)
 - [[pages/methods/longitudinal_network|종단/동적 네트워크]] (TERGM/STERGM이 속하는 범주)
 - [[pages/methods/bayesian_network_model|Bayesian/잠재공간 모델]]
+- [[pages/methods/twomode_duality_network|이원·이중성 네트워크]] (bipartite ERGM과 직접 연결)
 - [[pages/concepts/multilayer_network|다층 네트워크]] (multilevel ERGM)
 - [[pages/tools/netminer|NetMiner]]
 - [[pages/tools/other_tools|Other Tools (ERGM·SAOM 지원 도구)]]

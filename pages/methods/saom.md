@@ -40,7 +40,15 @@ updated: 2026-09-22
 | [[pages/papers/sna/2022_hachen_generators_diffusers_examining\|Hachen 외 (2022)]] | 이원 네트워크 SAOM으로 초점(focus) 유형별 역할 비교 | 동아리=유대 생성자, 음악 장르=취향 확산자 |
 | [[pages/papers/sna/2024_ceoldo_stochastic_actor_oriented_mode\|Ceoldo 외 (2024)]] | SAOM에 **랜덤 효과** 도입 — 행위자 간 이질성 포착 | 고정 효과 모형 대비 유연성 향상 |
 | [[pages/papers/sna/2025_snijders_double_agency_and_coevolution\|Snijders (2025)]] | 이중 행위주체성(double agency) 하의 공진화 모형 확장 | SAOM 이론틀 자체의 확장 논의 |
-| [[pages/papers/sna/2025_shappell_accounting_for_edge_uncertaint\|Shappell 외 (2025)]] | 엣지 불확실성을 반영한 SAOM 추정 | 측정 오차가 모수 추정에 미치는 영향 보정 |
+| [[pages/papers/sna/2025_shappell_accounting_for_edge_uncertaint\|Shappell 외 (2025)]] | 엣지 불확실성을 반영한 SAOM 추정 (SAOM+HMM) | 측정 오차가 모수 추정에 미치는 영향 보정 |
+| [[pages/papers/sna/2025_gilsbach_digital_communication_and_tie\|Gilsbach 외 (2025)]] | SAOM에 다중 대체(Multiple Imputation)를 결합해 결측 종단 데이터 처리 | 결측 처리 방식이 디지털 커뮤니케이션-유대 형성 추정치를 좌우 |
+| [[pages/papers/sna/2025_parker_the_effect_perceptions\|Parker 외 (2025)]] | SIENA로 조직 내 착취-탐색(exploration-exploitation) 인식과 네트워크 진화 | 인식 차이가 유대 형성·해소 패턴을 예측 |
+| [[pages/papers/sna/2026_vit_rigid_boundaries_selective_sal\|Vit 외 (2026)]] | **베이지안 다층 SAOM**으로 학급 경계를 넘나드는 우정 형성 분석 | 경직된 경계보다 선택적 특출성이 다층 유대 형성을 설명 |
+| [[pages/papers/sna/2026_park_intersectoral_structural_netwo\|Park 외 (2026)]] | SAOM으로 부문 간(intersectoral) 구조적 네트워크 변화 추적 | 개입 설계와 연동된 종단 네트워크 변화 확인 |
+
+## 2026-09-30 보강 (327편 전수 재검토)
+
+318→327편 재검토에서 SAOM이 여전히 최빈 방법론군 중 하나임을 재확인했다. 새로 두드러진 흐름은 **결측·측정 오차 보정**(Shappell의 SAOM+HMM, Gilsbach의 SAOM+MI)과 **다층/부문 간 확장**(Vit의 베이지안 다층 SAOM, Park의 부문 간 구조 변화)이다. 즉 SAOM 자체의 확산보다 "SAOM을 실제 지저분한 데이터에 어떻게 적용할 것인가"가 다음 단계 연구 주제로 부상하고 있다.
 
 ## 방법론 논쟁: SAOM vs TERGM 비교의 신뢰성 ⚠️
 

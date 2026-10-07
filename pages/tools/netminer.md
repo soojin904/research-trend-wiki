@@ -21,7 +21,7 @@ tags: [tools, netminer, sna, text-mining, machine-learning]
 ### Network (네트워크 분석)
 | 기능 | 세부 |
 |------|------|
-| Neighbor | Degree, Assortativity |
+| Neighbor | Degree, Structural Hole, Assortativity |
 | Connection | Shortest Path |
 | Subgroup | Component, Clique, Community (Betweenness / Modularity / Louvain / Leiden), k-Core |
 | **Centrality** | **Degree, Closeness, Betweenness, Eigenvector, Status, PageRank, HITS** |
@@ -43,9 +43,10 @@ tags: [tools, netminer, sna, text-mining, machine-learning]
 |------|------|
 | Learn (Classical) | AdaBoost, CART, Gradient Boosted Trees, kNN, Linear/Logistic Regression, MLP, Naive Bayes, Random Forest, SVM |
 | **Learn (Graph)** | **GCN, GraphSAGE, GAT** |
+| Evaluation | Confusion Matrix |
 | XAI | SHAP |
 | Inference | — |
-| Clustering | k-means |
+| Clustering | k-means, PCA |
 
 ### Text (텍스트 분석)
 | 기능 | 세부 |
@@ -58,8 +59,19 @@ tags: [tools, netminer, sna, text-mining, machine-learning]
 ### Visualize (시각화)
 | 기능 | 세부 |
 |------|------|
-| Network | 1-Mode (Force Atlas 2, Fruchterman-Reingold, Force, D3 Force, Kamada-Kawai, Clustered), Multi-Mode |
-| Chart | Scatter, Box, Pie, Bar, Line, Word Cloud |
+| Network | 1-Mode (Force Atlas 2, Fruchterman-Reingold, Force, D3 Force, Kamada-Kawai, Clustered), 2-Mode, Multi-Mode |
+| Chart | Scatter, Box, Pie, Bar, Line, Radar, Tree Map, Word Cloud |
+| Flow/Relation | Arc Diagram, Chord Diagram, Sankey Diagram |
+
+#### Visualize - 캔버스 UI 기능 (v5.2.1, 2026-09)
+| 기능 | 세부 |
+|------|------|
+| 노드 검색 | 라벨(이름) 입력 시 해당 노드로 자동 이동(Pan/Zoom) + 하이라이트 |
+| 우클릭 컨텍스트 메뉴 | Select Neighbor(인접 노드 확장 선택), 에고 노드 보기(선택 노드 중심 전환), 새 탭에서 시각화(선택 영역만 서브그래프로 분리) |
+| 라벨 스타일 동기화 | Sync with Node Size(라벨 크기를 노드 크기에 연동), Sync with Node Color(라벨·링크 색을 그룹/노드 색상에 통일, 링크 그라데이션 포함) |
+| 멀티모드 네트워크 시각화 | 서로 다른 노드셋(예: 저자/논문/키워드)을 한 화면에 통합 시각화 |
+
+> 출처: `03_marketing/outputs/contents/storyboard/2026-09-17_시각화업데이트/` 쇼츠 스토리보드 4건
 
 ### Extension (확장)
 | 기능 |
@@ -89,6 +101,39 @@ tags: [tools, netminer, sna, text-mining, machine-learning]
 | [[pages/papers/netminer/2021_kang_csr_ad_semantic_network|강윤지 외 (2021)]] | 의미연결망 + LDA |
 
 전체 목록: [[index|index.md]] "A. NetMiner 사용 논문" 섹션 또는 `pages/papers/netminer/` 폴더 직접 탐색.
+
+> 참고: 위 43편은 위키에 개별 페이지로 만든 사례만 집계. NetMiner 전체 "활용"(실사용 확정) 논문은 `03_marketing/netminer_info/nm-reference/research_metadata.xlsx` 기준 724편(2016년 이후)이며, 전수 관리는 netminer_info에서 담당한다.
+
+---
+
+## 최근 3년 NetMiner 활용 트렌드 (2023년~현재, 297건)
+
+> 분석 기준: research_metadata.xlsx `구분`="활용" & `year`≥2023, 297건 (2026-09-22 분석, 2026-10-02 본 페이지로 통합·재구성). **이 섹션은 항상 최근 3년 창으로 롤링 갱신** — 재분석 시 연도 하한을 그 시점 기준으로 다시 계산.
+
+### ① 전체 활용 현황 — 분야·목적·데이터
+
+**연구 분야 비중**: 의학·보건·간호학(30.6%) > 교육학(26.3%) > 체육·스포츠과학(12.8%) — 상위 3개 분야가 69.7% 차지. 간호학은 신규간호사 적응·환자안전·소진(burnout) 등 반복 재생산 클러스터가 뚜렷.
+
+**활용 방향(목적) 비중**: 연구동향/지식지형 분석(39.4%) > 질적·학술 텍스트 토픽분석(22.9%) > 뉴스·미디어 이슈분석(16.8%) > 소셜미디어 반응분석(8.8%) > 정책문서 분석(7.7%) > 순수 관계망 분석(4.4%, 13건 — 상세는 ② 참조).
+
+**주요 데이터 유형**: 학술지 초록/키워드(KCI·RISS·WoS·PubMed 서지), 뉴스 빅데이터(빅카인즈), 질적 텍스트(저널·피드백일지·FGI·개방형 설문), 소셜미디어(YouTube·앱리뷰·SNS), 정책문서, 순수 관계형 데이터(②).
+
+**마케팅 전략 제언 3가지**:
+1. 간호·보건의료 학회 대상 "저널/피드백 텍스트 네트워크 분석 실습" 세미나 최우선 추진
+2. 교육학·유아교육 연구자 대상 "RISS 수집 + 키워드 네트워크 + LDA" 표준 워크플로우 튜토리얼 재발간
+3. "텍스트 마이닝 전용 도구"라는 인식을 넘어 순수 관계망 분석 역량 재소구 (② 참조)
+
+### ② 순수 SNA(관계망) 논문만 — 텍스트 아닌 실제 개체 간 관계 데이터 (4.4%, 13건)
+
+NetMiner는 텍스트 마이닝 전용 도구가 아니라, 실제 개체(Actor) 간 인접행렬·노드-링크 데이터를 입력해 SNA를 수행한 사례도 보유. 최근 3년 "활용" 297건 중 **13건(4.4%)**이 텍스트가 아닌 순수 관계형 데이터 사용.
+
+| 유형 | 데이터 성격 | 대표 사례 (2023년 이후) |
+|------|------------|----------|
+| 조직·이해관계자 관계망 | 기관 간 연계·협력 Matrix | 노인·치매 돌봄서비스 공급기관 21개 간 연계 네트워크(한국농촌간호학회지, 2025), 충청권 대학 공동연구 네트워크 연도별 변화(한국비교정부학보, 2025) |
+| 인적·대인관계망 | 설문 기반 실제 인적 네트워크 | 종합병원 간호단위 간호사 업무·정보교류 관계망(한국간호교육학회지, 2024), 후기 청소년 대인관계 강도 네트워크(Brain and Behavior, 2025) |
+| 연구자 공저 네트워크 | 저자-저자 공동 집필 Matrix | 대한가정학회지 공저자 네트워크 분석 2010~2022(Human Ecology Research, 2024) |
+
+→ **마케팅 시사점**: "설문/조직 데이터로 실제 관계망 그리기" 가이드북 콘텐츠로 조직연구·정책 네트워크 연구자(텍스트마이닝 외 신규 세그먼트) 공략 가능.
 
 ---
 
@@ -129,6 +174,7 @@ tags: [tools, netminer, sna, text-mining, machine-learning]
 
 ## 마케팅 인사이트
 - **ERGM 지원 확인** → 그간 "미지원"으로 알려졌을 가능성 — 적극 홍보 필요
+- **Arc/Chord/Sankey Diagram** → 관계·흐름 시각화까지 커버 범위 확장
 - **GNN (GCN/GraphSAGE/GAT) 보유** → 학술 최신 트렌드 대응 가능한 유일한 GUI 도구
 - **BERTopic 탑재** → LDA를 넘어 최신 토픽모델링까지 커버
 - **Louvain + Leiden** → 커뮤니티 탐지 최신 알고리즘 보유

@@ -85,6 +85,19 @@ $$h_v^{(k)} = \text{AGGREGATE}^{(k)}\left(\{h_u^{(k-1)}: u \in \mathcal{N}(v)\}\
 
 ---
 
+## 2026-10-07 보강 (신규 174편 중 18편, 963편 기준)
+
+> 근거: [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]] 2026-10-07 증분 갱신 절
+
+응용 분야 신규 174편 중 GNN 관련 18편(약 10%) 확인 — 이전 379편 기준 추정(~4편)보다 비중이 높아 보이나, 대부분 **GNN을 적용 대상(디지털포렌식·추천·지식그래프)에 맞춘 아키텍처 변형 논문**이며 SNA 중심 데모는 드물다.
+
+- **소셜미디어 포렌식**: [[pages/papers/applied/2026_gudelli_gnnbased_social_media_forensic|Gudelli (2026)]] — GNN으로 SNS 노드/엣지 모델링해 봇·조작 탐지.
+- **인용추천**: [[pages/papers/applied/2026_liu_citation_recommendation_algori|Liu (2026)]] — SciBERT+시간인지 GAT.
+- **고령층 디지털격차 시뮬레이션**: [[pages/papers/applied/2026_yang_simulation_study_digital|Yang (2026)]] — 19만 사용자 이종 멀티레이어 네트워크에서 PAC-GNN 기반 전파-수용 결합모델.
+- **그래프 압축+차분프라이버시**: [[pages/papers/applied/2026_zhang_locally_differentially_private|Zhang (2026)]] — GCC-LDP, 프라이버시 보존 그래프 클러스터링.
+
+**NetMiner 관점**: 기존 판단("지원하되 응용 수요는 낮음") 유지. 신규분에서도 GNN은 자체 아키텍처 구현이 필수적인 CS 방법론 연구 중심이라 NetMiner GUI로 재현 가능한 사례는 거의 없음.
+
 ## 관련 페이지
 
 - [[pages/methods/ml|전통 ML]] — GNN 이전의 그래프 ML (링크 예측, 노드 분류)

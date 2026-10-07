@@ -91,7 +91,7 @@
 - [[pages/papers/sna/2026_qiao_ecommerce_rural_china|Qiao & Qiu (2026)]] — 농촌 중국 e-커머스 창업의 소셜 영향 (#social-influence)
 - [[pages/papers/sna/2026_fancello_sociability_space|Fancello 외 (2026)]] — 소셜 네트워크를 지리 공간에 배치 (#spatial-network)
 
-#### 2020–2026년 고관련도 논문 (개별 페이지 318편)
+#### 2020–2026년 고관련도 논문 (개별 페이지 321편)
 `pages/papers/sna/` 폴더 직접 탐색 또는 `/wiki:query`로 검색
 
 #### 연도별 카탈로그 (관련도 하위 논문 목록)
@@ -101,7 +101,7 @@
 - [[pages/papers/sna/catalog_2023|2023년 카탈로그]] — 49편
 - [[pages/papers/sna/catalog_2024|2024년 카탈로그]] — 33편
 - [[pages/papers/sna/catalog_2025|2025년 카탈로그]] — 49편
-- [[pages/papers/sna/catalog_2026|2026년 카탈로그 (추가분)]] — 21편
+- [[pages/papers/sna/catalog_2026|2026년 카탈로그 (추가분)]] — 23편
 
 ---
 
@@ -112,7 +112,7 @@
 > **성격**: NetMiner 사용 여부와 무관. SNA·텍스트마이닝이 마케팅·보건학·경영학·커뮤니케이션 등 응용 분야에서 어떻게 쓰이는지 파악하고 신규 고객 세그먼트를 발굴하는 목적.
 > **인제스트**: `batch_ingest.py` → 관련도 점수 기반 분류 (개별 페이지: `pages/papers/applied/`, 카탈로그: `pages/papers/applied/catalog_YYYY.md`).
 
-**현황**: 개별 페이지 789편 (`pages/papers/applied/`) · 카탈로그 2편 — 2025년 24편, 2026년 34편 (`pages/papers/applied/catalog_2025.md`, `catalog_2026.md`)
+**현황**: 개별 페이지 963편 (`pages/papers/applied/`) · 카탈로그 2편 — 2025년 24편, 2026년 58편 (`pages/papers/applied/catalog_2025.md`, `catalog_2026.md`)
 
 `pages/papers/applied/` 폴더 직접 탐색 또는 `/wiki:query`로 검색
 
@@ -189,9 +189,9 @@
 
 ## 통계
 
-- 총 페이지: 1,192 (papers 1,159 · concepts 7 · methods 16 · insights 6 · tools 2, synthesize 신규 생성분 반영)
-- 최근 업데이트: 2026-09-22 (SNA 318편 + 응용 789편 전수 synthesize — methods/concepts/insights 대량 갱신, netminer.md 대비 지원 현황 오류 2건 정정)
+- 총 페이지: 1,861 (papers 1,830 · concepts 7 · methods 16 · insights 6 · tools 2)
+- 최근 업데이트: 2026-10-07 (raw/sna, raw/applied 추가 신규분 ingest — SNA 개별 +1편, 응용 개별 +60편·카탈로그 +24편. 번역은 미포함, 신규 NetMiner 사용 사례 없음. 방법론/개념/overview 전수 재합성은 `/wiki:synthesize` 별도 실행 필요)
 - NetMiner 사용 논문: 43편 (PDF/KCI/OpenAlex, `pages/papers/netminer/`)
-- 학계 트렌드 논문: 695편 (OpenAlex, 2020–2026) — 개별 페이지 318편 + 카탈로그 7개(419편)
-- 응용 분야 논문: 847편 (키워드 수집, 2025–2026) — 개별 페이지 789편 + 카탈로그 2개(58편)
+- 학계 트렌드 논문: 742편 (OpenAlex, 2020–2026) — 개별 페이지 321편 + 카탈로그 7개(421편)
+- 응용 분야 논문: 1,045편 (키워드 수집, 2025–2026) — 개별 페이지 963편 + 카탈로그 2개(82편)
 - 수집 학술지 (유형 B): Social Networks (ISSN 0378-8733), Network Science (ISSN 2050-1250), Connections (ISSN 2816-4245, INSNA)

@@ -1,0 +1,32 @@
+---
+title: "GANE: A Generative Adversarial Network Embedding"
+authors: ['Huiting Hong', 'Xin Li', 'Mingzhong Wang']
+year: 2018
+publication_date: 2018-05-18
+venue: "arXiv (Cornell University)"
+publisher: "Cornell University"
+volume: "None"
+issue: "None"
+pages: ""
+doi: "https://doi.org/10.48550/arxiv.1805.07324"
+openalex_id: "https://openalex.org/W2804494348"
+cited_by_count: 1
+fwci: None
+tags: ['Advanced Graph Neural Networks', 'Domain Adaptation and Few-Shot Learning', 'Complex Network Analysis Techniques']
+keywords: ['Discriminator', 'Computer science', 'Embedding', 'Artificial intelligence', 'Discriminative model', 'Margin (machine learning)', 'Autoencoder', 'Artificial neural network']
+source: openalex-netminer
+---
+
+# GANE: A Generative Adversarial Network Embedding
+
+**저자**: Huiting Hong; Xin Li; Mingzhong Wang
+**출처**: arXiv (Cornell University)
+**발행일**: 2018-05-18
+**DOI**: https://doi.org/10.48550/arxiv.1805.07324
+
+## 초록
+
+Network embedding has become a hot research topic recently which can provide low-dimensional feature representations for many machine learning applications. Current work focuses on either (1) whether the embedding is designed as an unsupervised learning task by explicitly preserving the structural connectivity in the network, or (2) whether the embedding is a by-product during the supervised learning of a specific discriminative task in a deep neural network. In this paper, we focus on bridging the gap of the two lines of the research. We propose to adapt the Generative Adversarial model to perform network embedding, in which the generator is trying to generate vertex pairs, while the discriminator tries to distinguish the generated vertex pairs from real connections (edges) in the network. Wasserstein-1 distance is adopted to train the generator to gain better stability. We develop three variations of models, including GANE which applies cosine similarity, GANE-O1 which preserves the first-order proximity, and GANE-O2 which tries to preserves the second-order proximity of the network in the low-dimensional embedded vector space. We later prove that GANE-O2 has the same objective function as GANE-O1 when negative sampling is applied to simplify the training process in GANE-O2. Experiments with real-world network datasets demonstrate that our models constantly outperform state-of-the-art solutions with significant improvements on precision in link prediction, as well as on visualizations and accuracy in clustering tasks.
+
+## 메모
+
