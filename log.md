@@ -1,5 +1,44 @@
 ﻿# 위키 로그
 
+## [2026-10-14] synthesize | 2026-10-07 이후 신규분 증분 합성 (응용 60편, 유효 57편)
+
+- **대상**: 2026-10-07 마지막 synthesize 이후 신규 생성된 개별 페이지만 — `pages/papers/applied/` 신규(untracked) 60편. `pages/papers/sna/`는 이번 ingest에서 신규 0편(전수 중복)이라 대상 없음. 기존 963편/321편 본문은 재열람하지 않음
+- **제외**: 60편 중 3편을 의사과학/비검증·안내성 콘텐츠로 집계 제외 — `2026_computing_october_top_read_articles`(Zenodo 안내글, 실증 없음), `2026_lvarez_sociometra_ordinal_computacion`(자가출판 유사과학 매니페스토), `2026_kurdin_macroscope_case_studies_part`(비표준 자가지시적 프레임워크). 유효 57편 기준 집계
+- **탐색**: 병렬 에이전트 4개(각 15편)로 초록 수준 판독
+- **methods 갱신**: `centrality.md`(+10편, 완전 재현 가능 데모 2건 신규 확보: wu·fernández), `ergm.md`(Bright — ERGM을 개입평가 시뮬레이션 도구로 쓰는 신규 응용 패턴), `community_detection.md`(sommer·feoh·fernández + signed network 공백 재확인), `topic_modeling.md`(+3편, STM 공변량 결합형 공백 재확인), `sentiment_analysis.md`(커스텀 하이브리드 딥러닝 감성모델 클러스터 4편+, ABSA·XAI 사례 추가), `llm_nlp.md`(LLM 에이전트 네트워크 시뮬레이션 추가 사례, GNN+LSTM 시공간 융합), `gnn.md`(mardamsyah 시공간 융합 사례)
+- **insights 갱신**: `applied_method_frequency_2026.md`에 "8. 2026-10-14 증분 갱신" 절 신설 — 57편 기준 방법론 분포, 1,023편 환산 비율
+- **tools 갱신**: `other_tools.md`(VOSviewer 편수 갱신, SHAP/LIME·IndoBERT 신규 추가), `netminer.md`(signed network/균형이론 기능 공백 신규 행 추가)
+- **핵심 발견**:
+  1. **신규 기능 공백**: signed network(부호화 네트워크)/균형이론 — Zhang(2026, Science Advances, graph-tool 개발자 Peixoto 참여) 확인. NetMiner Blockmodel/Community 메뉴는 비부호 네트워크 전제라 미지원
+  2. **커스텀 하이브리드 딥러닝 감성모델 확산**: Bourasi·Orgun·Sumy·Zhao 등 4편+ — NetMiner Lab 단일 BERT 모델과의 격차가 좁혀지지 않고 구조적으로 확대되는 신호
+  3. **ERGM의 신규 활용 패턴**: Bright — 모형 적합이 아닌 "개입 평가 시뮬레이션"(네트워크 1,000개 생성) 도구로 ERGM 활용. 범죄학 마케팅 소재로 가치
+  4. **진성 SNA 비중 재급등(~35%)의 원인은 ingest 게이트 선택효과**: 2026-10-07 증분과는 다른 메커니즘 — 이번 60편은 관련도 스코어링(threshold=3) 통과분만 개별 페이지화된 표본이라 SNA 관련도가 원래 높게 선별됨. 학술 트렌드 변화로 해석하지 않음
+  5. **완전 재현 가능 데모 2건 신규 확보**: wu(중국 마약거래 조직, 중심성 4종), fernández(대학 미션성명, Bonacich+QAP+Word Network)
+  6. **데이터 품질 플래그**: `unknown_deep_learning_based_cyberbully`·`unknown_semanticbased_approach` 2편이 저자 미표기 + 주제 무관 저널(의약전달지) 게재 — 약탈적 저널 가능성, 다음 lint 시 확인 필요
+- **미조치**: 60편 중 1편 편수 카운트 불일치(ingest 로그는 "61편 신규"로 기록했으나 실제 git untracked 개별 파일은 60개 확인 — 원인 미파악, 다음 lint 시 재확인 권장)
+
+---
+
+## [2026-10-14] ingest | raw/sna, raw/applied 신규분 일괄 ingest
+
+- **대상**: `raw/sna/`, `raw/applied/` 전체에서 `batch_ingest.py` 기준 미등록 파일 탐색 (`raw/netminer/`는 이번 작업 제외)
+- **raw/sna**: 신규 파일 644개 발견했으나 전부 기존 페이지(321편)·카탈로그에 이미 반영되어 있어 **신규 생성 0건** (제목 슬러그·카탈로그 타이틀 매칭으로 중복 확인). `raw/sna/` 자체는 이미 git에 커밋된 상태였음
+- **raw/applied**: 신규(untracked) 파일 518개 중 게이트(SNA/텍스트마이닝 키워드) 탈락 2,532편 제외, 관련도 스코어링(threshold=3) 결과 **개별 페이지 61편 신규 생성**(`pages/papers/applied/`), **카탈로그 6편 추가**(`catalog_2026.md`, 총 64건)
+- **번역**: 미포함 (기본 정책 — 번역은 별도 요청 시에만 수행)
+- **NetMiner 사례**: 신규 61편 전수 `netminer` 키워드 검색 — 언급 없음. `pages/tools/netminer.md` 갱신 불필요
+- **신규 61편 주제 경향**: 감성분석(Sentiment Analysis)·토픽모델링·텍스트 분류 등 NLP 계열이 다수, 네트워크 고유 방법(여론 동학·전파) 소수 — 기존 `sentiment_analysis.md`/`topic_modeling.md`/`llm_nlp.md` 등의 통계(789/963편 기준 전수 집계)와 정합성을 맞추려면 **개별 수치 수정 대신 `/wiki:synthesize`로 전수 재합성 필요** → 이번 ingest에서는 methods/concepts/overview.md 본문 미수정, index.md 통계만 갱신
+- **index.md 갱신**: 응용 분야 개별 1,023편·카탈로그 88편, 총 페이지 1,427편으로 통계 정정 (기존 1,861편 표기는 papers 집계 오류로 판단되어 실제 파일 수 기준 재계산)
+- **핵심 인사이트**: `raw/sna`는 이미 포화 상태(신규 수집분도 전량 중복) — 다음 수집 주기부터는 `raw/sna` 자동 수집분의 중복률을 먼저 점검할 가치가 있음
+
+---
+
+## [2026-10-07] lint | 편수 불일치 정정 + 후속 확인 메모
+- **정정**: `methods/ergm.md`·`saom.md`·`centrality.md`·`community_detection.md`·`topic_modeling.md`의 2026-09-30 보강 절 제목·본문 편수를 실제 총계에 맞춤 (SNA 327→321편, applied 909→907편/신규 120→118편). ergm·saom에는 정정 주석 추가
+- **후속 확인 메모 (미처리)**:
+  1. 위 5개 보강 절의 *서술 내용*이 신규 페이지에 근거한 것인지 미검증. 정정 주석에 "대부분 기존 318편에 포함된 논문의 재정리"라 적었으나 논문별로 확인한 것은 아님 → 다음 전수 재합성 때 절별 근거 검증
+  2. `scripts/synth_findings_sna.md`·`synth_findings_applied.md`(327편·909편 기준 임시 합성 메모)는 위키 페이지가 아닌 작업 중간 산출물 — 삭제 여부 사용자 판단 대기
+  3. `pages/tools/netminer.md`·catalog에도 어긋난 편수가 있다는 이전 기록이 있으나 "327편/909편" 패턴 검색으로는 안 잡힘 → 별도 확인 필요
+
 ## [2026-10-07] synthesize | 2026-09-22 이후 신규분 증분 합성 (SNA 3편 + applied 174편)
 
 - **대상**: 2026-09-22 마지막 전수 synthesize 이후 신규 생성된 개별 페이지만 — `pages/papers/sna/` 3편(`2026_gao_multilayer_network_analysis`, `2026_hncean_returning_network_findings`, `2026_murraywatt_the_decay_impact`), `pages/papers/applied/` 174편(2026-09-30·2026-10-07 두 차례 ingest 분 합산, git untracked 기준). 기존 789편/318편 본문은 재열람하지 않음

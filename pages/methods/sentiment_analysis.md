@@ -142,6 +142,29 @@ LDA로 문서를 **단일 토픽에 할당**하는 방식은 **정보 손실이 
 - **저자원 언어 확산 지속**: 칸나다-영어 코드믹스(mBERT+CharCNN), 아랍어 GCN+BERT ABSA 등.
 - **감성+SNA 결합 신규 사례**: zhao_analysis(LDA+감성사전+SNA+봇탐지), zhang_research(XGBoost-SHAP+감성+SNA) — 기존 "감성 네트워크" 결합 패턴([[pages/concepts/mixed_methods|복합 방법론]] 패턴 6)의 추가 근거.
 
+## 2026-10-14 보강 (신규 60편 중 감성분석 10편, 1,023편 기준)
+
+> 근거: [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]] 2026-10-14 증분 갱신 절
+
+### ⭐ 커스텀 하이브리드 딥러닝 감성모델 확산 — 격차 확대 신호
+
+신규분에서 **최적화 알고리즘명까지 붙인 커스텀 하이브리드 아키텍처**가 다수 확인됐다. NetMiner Lab의 단일 BERT 기반 감성 분류와의 격차가 구조적으로 벌어지고 있음을 시사한다.
+
+| 논문 | 모델 구성 | 비고 |
+|------|-----------|------|
+| [[pages/papers/applied/2026_bourasi_sentiment_analysis_social\|Bourasi (2026)]] | FastText 임베딩 + BiLSTM + Attention + CNN | TensorFlow/PyTorch 명시 |
+| [[pages/papers/applied/2026_orgun_integrating_sentiment_and_cont\|Orgun (2026)]] | BERT + BiTCN(양방향 시간합성곱망) + 감성점수 결합 — 자살경향성 탐지 | |
+| [[pages/papers/applied/2026_sumy_deep_contextual_feature_fusion\|Sumy (2026)]] | CFF-Net(어텐션) + AGWO 옵티마이저 | 타밀·말라얄람어 — **NetMiner 지원 7개 언어 밖**, 언어 격차도 동시 확인 |
+| [[pages/papers/applied/2026_zhao_sentiment_analysis_and_satisfa\|Zhao (2026)]] | GAO-LSTR(LSTM-Transformer 하이브리드) + BERT + TF-IDF — 생태관광 만족도 | |
+
+### ABSA·해석가능AI(XAI) 사례 추가
+
+- [[pages/papers/applied/2026_destianto_aspectbased_sentiment_analysis\|Destianto (2026)]], [[pages/papers/applied/2026_siddiqua_unified_binary_aspectbased_sen\|Siddiqua (2026)]] — ABSA(BERT/RoBERTa/DeBERTa 파인튜닝 비교) — 기존 ABSA 공백(❌) 재확인.
+- [[pages/papers/applied/2026_salehi_explainable_detection_depressi\|Salehi (2026)]] — 아랍어 트윗 우울증 탐지, TF-IDF+ML(LR/RF/SVM/XGBoost)+**TreeSHAP** — NetMiner ML 모듈의 SHAP 지원과 직접 대응 가능한 사례.
+- [[pages/papers/applied/2026_irzani_integrating_linguistic_feature\|Irzani (2026)]] — IndoBERT+언어특징 하이브리드, **SHAP·LIME** 명시 — LIME은 NetMiner 미지원.
+
+**결론**: 커스텀 하이브리드 딥러닝 감성모델이 신규분의 주류 패턴으로 재확인되며, NetMiner의 "BERT 단일모델, Lab 단계" 포지션과의 격차가 좁혀지지 않고 있다. 단기 대응보다 ABSA·SHAP 등 **상대적으로 구현 비용이 낮은 항목의 정식 기능화**가 우선.
+
 ## 위키 연관
 
 - [[pages/methods/llm_nlp|LLM/GPT 활용]] (BERT 기반 도구와 중첩)

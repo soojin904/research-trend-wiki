@@ -41,7 +41,7 @@ updated: 2026-09-22
 - **NMI (Normalized Mutual Information)**: 벤치마크 대비 정확도
 - **안정성**: 동일 네트워크 반복 실행 시 일관성
 
-### 2026-09-30 보강 (327편 전수 재검토)
+### 2026-09-30 보강 (SNA 321편 기준 재검토, 2026-10-07 편수 정정)
 
 | 논문 | 접근 |
 |------|------|
@@ -51,7 +51,7 @@ updated: 2026-09-22
 | [[pages/papers/sna/2026_lu_zeroinflated_poisson_latent\|Lu 외 (2026)]] | 결측+가중치 동시 처리하는 Zero-Inflated Poisson 잠재 군집 모형 |
 | [[pages/papers/sna/2026_yanchenko_labelswitching_algorithm_for\|Yanchenko 외 (2026)]] | 코어-퍼리퍼리 탐지에서 레이블 스위칭 문제 해결 알고리즘 |
 
-327편 재검토 결과 **모형 기반 탐지(SBM·잠재공간·군집수 자동추론)로의 이동**이 뚜렷이 재확인됐다 — "알고리즘을 고른다"가 아니라 "군집 수·존재 자체를 모형이 추정하게 한다"는 방향.
+321편 재검토 결과 **모형 기반 탐지(SBM·잠재공간·군집수 자동추론)로의 이동**이 뚜렷이 재확인됐다 — "알고리즘을 고른다"가 아니라 "군집 수·존재 자체를 모형이 추정하게 한다"는 방향.
 
 ## 실제 사용 패턴 (SNA 학술지 논문 기반)
 
@@ -74,6 +74,18 @@ updated: 2026-09-22
 | [[pages/papers/applied/2026_nurkholisa_the_role_social\|Nurkholisa (2026)]] | Gephi로 83노드 SNS 네트워크의 중심성·모듈성 분석 |
 
 Louvain·Infomap 등 휴리스틱 알고리즘이 응용 분야에서도 여전히 표준 선택임을 재확인 — NetMiner가 이미 지원하는 범위와 일치.
+
+## 응용 분야 사례 (2026-10-14, 신규 60편)
+
+> 근거: [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]] 2026-10-14 증분 갱신 절
+
+| 논문 | 적용 방식 |
+|------|-----------|
+| [[pages/papers/applied/2026_sommer_the_role_endogenous\|Sommer (2026)]] | 농촌 문화발전 네트워크 — SNA + 군집분석(cluster analysis) |
+| [[pages/papers/applied/2026_feoh_bahasa_inggris\|Feoh (2026)]] | 인도네시아 시위 담론 — 네트워크 매핑·클러스터링 + 감성분석 |
+| [[pages/papers/applied/2026_fernndez_semantic_convergence_and_natio\|Fernández (2026)]] | 대학 미션/비전 성명 의미연결망 — 계층적 클러스터링 |
+
+**신규 기능 공백 재확인**: [[pages/papers/applied/2026_zhang_mesoscale_structures_signed\|Zhang (2026, Science Advances)]] — 부호화 네트워크(signed network) 중시구조(meso-structure) 탐지, 균형이론 기반. 24개 실증 네트워크(정치·금융·생물) 분석. NetMiner의 Blockmodel·Community 메뉴는 비부호(unsigned) 네트워크 전제라 **signed network 전용 커뮤니티 탐지는 미지원**으로 신규 확인.
 
 ## NetMiner 지원 현황
 

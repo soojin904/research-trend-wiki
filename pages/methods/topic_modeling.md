@@ -98,18 +98,18 @@ netminer_support: "✅ 지원"
 
 → 상세: [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]]
 
-## 2026-09-30 갱신 (789편 → 909편, 신규 120편 반영)
+## 2026-09-30 갱신 (789편 → 907편, 신규 118편 반영; 2026-10-07 편수 정정)
 
-신규 청크(778~909번, 130편)에서도 BERTopic 우위 흐름이 그대로 이어지며, 새로운 세부 변형·계보 연구가 확인되었다.
+신규 청크에서도 BERTopic 우위 흐름이 그대로 이어지며, 새로운 세부 변형·계보 연구가 확인되었다.
 
 - **계층형 BERTopic 변형**: [[pages/papers/applied/2026_zhang_scbertopic_semanticcentroid_hi|SC-BERTopic (Zhang, 2026)]] — 의미 중심(semantic-centroid) 기반 계층형 토픽 구조. 단일 레벨 BERTopic의 한계(세부 토픽과 상위 토픽 구분 불가)를 해결하려는 시도.
 - **토픽모델링 계보 정리 논문 등장**: [[pages/papers/applied/2026_takola_from_lsa_llm|Takola (2026)]] — LSA → LDA → BERTopic → LLM 기반 토픽모델링으로 이어지는 방법론 계보를 정리. "토픽모델링 자체가 하나의 진화 계열"이라는 서술이 처음으로 명시적으로 정리된 사례 — 콘텐츠 마케팅(방법론 소개 글) 소재로 유용.
 - **다국어·다중 플랫폼 BERTopic 비교**: wang_going_beyond_description_multi(청크7) — 여러 언어·플랫폼 코퍼스에서 BERTopic 성능 비교.
 - **그래프 기반 term weighting**: sutedi_term_weighting_based(청크7) — 토픽모델링 전처리 단계에 그래프 구조를 도입한 신규 가중치 기법. 의미연결망과의 접점 확대 신호.
-- **정책 문서 대규모 적용 지속**: [[pages/papers/applied/2026_xia_air_pollution_regulation_for|Xia (2026)]] — 중국 대기오염 정책 문서 12,081건에 BERTopic 계층 토픽+동적 진화 분석 (기존 789편 판독에서 이미 확인된 사례가 909편에서도 재확인).
+- **정책 문서 대규모 적용 지속**: [[pages/papers/applied/2026_xia_air_pollution_regulation_for|Xia (2026)]] — 중국 대기오염 정책 문서 12,081건에 BERTopic 계층 토픽+동적 진화 분석 (기존 789편 판독에서 이미 확인된 사례가 907편에서도 재확인).
 - **시민 프레임 분석**: [[pages/papers/applied/2026_ustenko_measuring_citizen_frames_and|Ustenko (2026)]] — BERTopic으로 시민 프레임 측정.
 
-**결론**: 909편 기준으로도 "BERTopic이 응용 분야 표준"이라는 판정에는 변화 없음. 다만 **계층형 변형(SC-BERTopic)**과 **계보 정리 관점(LSA→LDA→BERTopic→LLM)**이라는 두 가지 새 서술 축이 추가되었다.
+**결론**: 907편 기준으로도 "BERTopic이 응용 분야 표준"이라는 판정에는 변화 없음. 다만 **계층형 변형(SC-BERTopic)**과 **계보 정리 관점(LSA→LDA→BERTopic→LLM)**이라는 두 가지 새 서술 축이 추가되었다.
 
 ## 2026-10-07 보강 (신규 174편 중 24편, 963편 기준)
 
@@ -121,6 +121,15 @@ netminer_support: "✅ 지원"
 - **대규모 서술문 데이터 적용**: [[pages/papers/applied/2026_rajabu_uncovering_hidden_factors|Rajabu (2026)]] — LDA+N-gram으로 교통사고 서술문 6.7만 건에서 숨겨진 원인 발굴.
 
 **결론**: 963편 기준으로도 BERTopic 우위·LDA 베이스라인화 판정 유지. 토픽모델링을 서지계량/텍스트네트워크의 전처리 단계로 쓰는 파이프라인形 결합이 신규분에서 추가 확인됨.
+
+## 2026-10-14 보강 (신규 60편 중 LDA/STM 사용 소수, 1,023편 기준)
+
+> 근거: [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]] 2026-10-14 증분 갱신 절
+
+- [[pages/papers/applied/2026_allaham_mapping_web_scraping_research\|Allaham (2026)]] — 웹스크래핑 연구 지형 분석에 서지계량(공동인용·키워드 네트워크) + LDA 결합.
+- [[pages/papers/applied/2026_rodriguez_understanding_youth_screen_tim\|Rodriguez (2026)]] — 청소년 스크린타임·정신건강 담론에 LDA + 질적 개방코딩 삼각검증.
+- [[pages/papers/applied/2026_srivastav_hashtags_hope_technology\|Srivastav (2026)]] — 재난대응 해시태그에 SNA + LDA 결합(위기관리 도메인).
+- **STM 공변량 결합형 — 기능 공백 재확인**: [[pages/papers/applied/2026_luijten_combining_natural_language_pro\|Luijten (2026)]] — 아동 코로나 불안 연구에 Structural Topic Model(공변량 포함) 사용. NetMiner는 LDA/BERTopic은 지원하나 **공변량 결합형 STM은 여전히 미지원** — 기존 STM 공백(STM/keyATM ❌) 재확인.
 
 ## [[pages/methods/semantic_network_analysis|의미연결망]]과의 결합
 

@@ -98,6 +98,12 @@ $$h_v^{(k)} = \text{AGGREGATE}^{(k)}\left(\{h_u^{(k-1)}: u \in \mathcal{N}(v)\}\
 
 **NetMiner 관점**: 기존 판단("지원하되 응용 수요는 낮음") 유지. 신규분에서도 GNN은 자체 아키텍처 구현이 필수적인 CS 방법론 연구 중심이라 NetMiner GUI로 재현 가능한 사례는 거의 없음.
 
+## 2026-10-14 보강 (응용 분야 신규 60편 중 1편)
+
+> 근거: [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]] 2026-10-14 증분 갱신 절
+
+- **시공간 융합 GNN**: [[pages/papers/applied/2026_mardamsyah_spatiotemporal_disinformation_\|Mardamsyah (2026)]] — 남중국해 허위정보 탐지에 GNN(공간)+LSTM(시간)+Cross-Attention 융합, CNN/BERT/GAT-BERT 벤치마크. NetMiner는 정적 그래프 기반 GCN/GraphSAGE/GAT만 지원하므로 **시계열 결합·어텐션 융합 아키텍처는 미지원** — 기존 판단("CS 방법론 중심") 재확인.
+
 ## 관련 페이지
 
 - [[pages/methods/ml|전통 ML]] — GNN 이전의 그래프 ML (링크 예측, 노드 분류)

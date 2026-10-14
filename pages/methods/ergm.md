@@ -49,12 +49,20 @@ ERGM은 이제 단일 모형이 아니라 **적용 맥락별로 분화한 모형
 | [[pages/papers/sna/2023_wang_understanding_networks_with_ex\|Wang 외 (2023)]] | ERNM — 네트워크와 노드 속성의 공동 분포를 하나의 지수족으로 추정 | 선택(selection)과 영향(influence)을 단일 틀에서 분리 |
 | [[pages/papers/sna/2022_karwa_dergms_degeneracyrestricted_ex\|Karwa 외 (2022)]] | 퇴화 문제를 구조적으로 배제한 모수 공간 제약 | 기존 ERGM 추정 실패 사례에서 안정적 수렴 |
 
-## 2026-09-30 보강 (327편 전수 재검토)
+## 2026-09-30 보강 (SNA 321편 기준 재검토)
 
-SNA 전수가 318→327편(9편 순증)으로 갱신되었다. ERGM 계열에서 확인된 추가 패턴:
+> 2026-10-07 정정: 당초 "318→327편(9편 순증)"으로 적혔으나 실제 SNA 개별 페이지는 318→321편(3편 순증)이다. 아래 사례는 대부분 기존 318편 베이스라인에 이미 포함된 논문의 재정리다.
+
+ERGM 계열에서 확인된 추가 패턴:
 - **변수 선택 자동화**: LASSO-ERGM([[pages/papers/sna/2026_buttazzo_using_lasso_for_variable|Buttazzo 2026]])은 통계량 후보가 많아질수록 심해지는 모형 설정 부담을 정규화로 완화하려는 시도 — ERGM 변형이 "더 정교한 모형"뿐 아니라 "모형 설정 자체의 자동화"로도 분화하고 있음을 보여준다.
 - **응용 확장**: 범죄조직(야쿠자, [[pages/papers/sna/2025_breuer_investigating_the_dynamics|Breuer 2025]]), 도시환경 거버넌스([[pages/papers/sna/2025_livas_urban_environmental_stewardshi|Livas 2025]]), 다중 ERGM 기반 괴롭힘-피해자 네트워크([[pages/papers/sna/2025_tanaka_bullyvictim_network_perception|Tanaka 2025]]) 등 다층 ERGM의 응용 도메인이 넓어짐.
 - 이원/이중성(two-mode/duality) 네트워크와의 접점은 [[pages/methods/twomode_duality_network|이원·이중성 네트워크]] 참조.
+
+## 2026-10-14 보강 (응용 분야 신규 60편)
+
+> 근거: [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]] 2026-10-14 증분 갱신 절
+
+- **ERGM을 "적합"이 아닌 "개입 평가 시뮬레이션 도구"로 활용**: [[pages/papers/applied/2026_bright_targeting_drug_trafficking_net\|Bright (2026)]] — 약물밀매 네트워크 교란전략(중심성 기반 노드 제거, 최소절단집합, 백본 추출)의 효과를 비교하기 위해 ERGM으로 네트워크 1,000개를 생성·시뮬레이션. 기존 "모형 적합"과는 다른 **"정책 개입 효과를 ERGM 생성 네트워크로 사전 평가"**하는 응용 패턴 — 범죄학·법집행 마케팅 소재로 가치 있음.
 
 ## NetMiner 지원 현황
 

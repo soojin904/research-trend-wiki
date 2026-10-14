@@ -35,7 +35,7 @@ SNA에서 네트워크 내 노드의 중요도를 수치화하는 지표군. **S
 
 공통점: **기존 지표의 가정(정적 그래프·경로 동등성·허브 우대)을 문제 삼는 방향**으로 분화하고 있다.
 
-### 2026-09-30 보강 (327편 전수 재검토)
+### 2026-09-30 보강 (SNA 321편 기준 재검토, 2026-10-07 편수 정정)
 
 | 변형 | 내용 | 대표 논문 |
 |------|------|-----------|
@@ -54,6 +54,25 @@ SNA에서 네트워크 내 노드의 중요도를 수치화하는 지표군. **S
 | [[pages/papers/sna/2024_neal_methodological_moderators_aver\|Neal (2024)]] | 아동·청소년 우정 네트워크 71편 메타분석 — outdegree centrality 추정치 조절 변수 검토 | 명칭 생성기 방식·선택 횟수 제한이 추정치에 유의미한 영향 |
 | [[pages/papers/sna/2026_asil_immunization_method_using\|Asil & Khansari (2026)]] | 멀티플렉스 네트워크에서 PageRank·근접 중심성 결합 MCPR 지표로 면역화 전략 설계 | 10% 면역화 시 홍역 2.2%, 천연두 7% 유행 규모 감소 |
 | [[pages/papers/sna/2026_hncean_returning_network_findings\|Hâncean 외 (2026)]] | 퍼스널 네트워크·중심성 등 분석 결과를 비전문가 대상 아트 갤러리(캔버스·조형물)로 "환원(report-back)"하는 커뮤니티 개입 | 103명 방문자 전원 유용성 높게 평가; 단일 분석 레벨-캔버스 매칭이 이해를 도움 — 중심성 등 분석 결과를 일반 대중에 전달하는 방법론 사례 |
+
+### 2026-10-14 보강 (응용 분야 신규 60편 중 중심성 사용 다수 확인, 1,023편 기준)
+
+> 근거: [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]] 2026-10-14 증분 갱신 절. 응용 분야(`pages/papers/applied/`) 신규 60편 병렬 탐색(에이전트 4개) 결과.
+
+| 논문 | 적용 방식 | NetMiner 재현성 |
+|------|-----------|-----------------|
+| [[pages/papers/applied/2026_wu_social_network_analysis\|Wu (2026)]] | 중국 마약거래 조직 네트워크 — 중심성 4종(연결·근접·매개·고유벡터) 비교 | ✅ **완전 재현 가능 — 범죄학 데모 최우선 후보** |
+| [[pages/papers/applied/2026_fernndez_semantic_convergence_and_natio\|Fernández (2026)]] | 대학 미션/비전 성명 의미연결망 — Bonacich 중심성 + 계층적 클러스터링 + QAP | ✅ Eigenvector/Status 중심성으로 Bonacich 근사, Word Network+MR-QAP+계층적 클러스터링 모두 지원 — **거의 완전 재현 가능** |
+| [[pages/papers/applied/2026_bright_targeting_drug_trafficking_net\|Bright (2026)]] | 약물밀매 네트워크 교란전략 — 매개·연결·고유벡터 중심성 기반 노드 제거 비교 + ERGM 1,000개 시뮬레이션 | ✅ 중심성 3종 지원. ERGM 반복 시뮬레이션은 별도 확인 필요 |
+| [[pages/papers/applied/2026_cobo_audit_committee_social_network\|Cobo (2026)]] | 감사위원회 네트워크 — 중심성 4종(연결·고유벡터·매개·근접) + 로지스틱/프로빗 회귀 | ⚠️ 중심성은 지원, 프로빗·순서형 로짓은 통계 메뉴 밖 |
+| [[pages/papers/applied/2026_bianchi_firms_collaboration_strategies\|Bianchi (2026)]] | 임업·생태관광 협력전략 — 고유벡터·매개 중심성 + MR-QAP | ✅ 지원 |
+| [[pages/papers/applied/2026_giraldi_mapping_italys_tourism_economy\|Giraldi (2026)]] | 이탈리아 관광경제 — in/out-degree·근접·매개·밀도·global efficiency | ✅ 표준 지표 대부분 지원 |
+| [[pages/papers/applied/2026_blackburn_social_support_among_lgbtq\|Blackburn (2026)]] | LGBTQ 대학생 에고네트워크 사회적 지지 | ✅ Ego Network Extract 강점 영역 |
+| [[pages/papers/applied/2026_melli_given_and_chosen_ties\|Melli (2026)]] | 영국 given/chosen ties 정치행동 — 에고네트워크 지위 동질성(status homophily) | ✅ Ego Network Extract + Assortativity |
+| [[pages/papers/applied/2026_sitthirat_moving_towards_decolonizing_he\|Sitthirat (2026)]] | 보건의료교육 공저네트워크 — small-world 계수, 중심성 | ✅ Centrality, Network Metric 지원 |
+| [[pages/papers/applied/2026_daoud_intelligent_entity_resolution\|Daoud (2026)]] | 중심성 기반 중복 레코드 탐지(Entity Resolution) — SNA를 데이터품질 문제에 재해석 적용 | ⚠️ 중심성 프레임워크는 가능하나 문자열 유사도(Levenshtein 등)·k-means 병합 로직은 범위 밖. **SNA를 비(非)네트워크 문제에 적용하는 새로운 응용 패턴** |
+
+**신규 기능 공백 확인**: [[pages/papers/applied/2026_zhang_mesoscale_structures_signed\|Zhang (2026, Science Advances)]] — 부호화 네트워크(signed network) 중시구조 탐지, 균형이론(balance theory) 기반 core-periphery 분석. graph-tool 개발자 Peixoto 참여 저명 저널 게재 — **signed network/균형이론 중심성·구조 분석은 NetMiner 미지원 영역으로 신규 확인**.
 
 ## 해석 주의사항
 

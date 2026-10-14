@@ -1,8 +1,8 @@
 ---
-title: "응용 분야 논문 분석 방법론 빈도 (2026, 789편 기준 + 2026-10-07 증분)"
+title: "응용 분야 논문 분석 방법론 빈도 (2026, 789편 기준 + 2026-10-07·2026-10-14 증분)"
 tags: [applied, method-frequency, 2026, synthesis, llm, sentiment, topic-modeling]
 created: 2026-05-27
-updated: 2026-10-07
+updated: 2026-10-14
 ---
 
 # 응용 분야 논문 분석 방법론 빈도 (2026, 789편 기준)
@@ -214,6 +214,38 @@ BERTopic(UMAP+HDBSCAN) 우위 확립. LDA는 베이스라인·비교군으로 �
 - **감성분석 결과를 SNA 노드 속성에 결합하는 패턴 추가 사례** (zhao_analysis, zhang_research).
 
 → 상세 방법론 갱신: [[pages/methods/sentiment_analysis|감성 분석]], [[pages/methods/llm_nlp|LLM/NLP 활용]], [[pages/methods/topic_modeling|토픽 모델링]], [[pages/methods/gnn|GNN]], [[pages/methods/community_detection|커뮤니티 탐지]]
+
+## 8. 2026-10-14 증분 갱신 (963편 → 1,023편, 신규 60편)
+
+> **집계 방법**: 2026-10-14 ingest로 신규 생성된 개별 페이지 60편(게이트 통과·관련도 스코어링 통과분)을 병렬 탐색 에이전트 4개(각 15편)로 초록 수준 판독. 60편 중 **3편은 의사과학/비검증 프리프린트·안내성 글로 집계 제외**(`2026_computing_october_top_read_articles` — Zenodo 안내글, `2026_lvarez_sociometra_ordinal_computacion` — 자가출판 유사과학 매니페스토, `2026_kurdin_macroscope_case_studies_part` — 비표준 자가지시적 프레임워크). **유효 57편** 기준 집계.
+
+### 신규 57편 방법론 분포
+
+| 방법론 | 편수(추정) | 비율(57편 중) | 1,023편 기준 환산 | 비고 |
+|--------|------|----------------|-----------------|------|
+| 진성 SNA/중심성 기반 네트워크 분석 | ~19–22 | ~35% | — | **963편 기준(~7–9%)보다 뚜렷이 높음 — 아래 참조** |
+| 감성 분석(사전·ML·트랜스포머·커스텀 하이브리드) | ~10 | ~18% | — | 963편 비율(27%)과 유사~소폭 낮음 |
+| LLM/NLP 활용 | ~11 | ~19% | — | 963편 비율(25%)보다 낮음 |
+| 혼합·복합 방법론 | ~5 | ~9% | — | — |
+| 확산/여론동역학 시뮬레이션(이론) | 5 | ~9% | — | 기존 공백(확산/전파) 재확인 |
+| GNN | 1 | ~2% | — | — |
+| 인프라/시스템/개념 리뷰(방법론 논문 아님) | ~6 | ~11% | — | 실증 분석 없음 |
+
+### ⭐ 진성 SNA 비중이 또다시 신규분에서 급등 — ingest 게이트 선택효과로 재해석
+
+963편 전수 기준 진성 SNA는 ~7–9%(소수파)였으나, 이번 신규 57편에서는 **~35%**로 세 배 이상 높다. 원인은 2026-10-07 증분에서 확인된 "수집 배치 편향"과 다른 메커니즘이다 — 이번 60편은 `raw/applied/` 전체(게이트 탈락 2,532편 제외) 중 **SNA/텍스트마이닝 키워드 관련도 스코어링(threshold=3)을 통과한 상위 분만** 개별 페이지로 승격된 결과이므로, **애초에 SNA 관련도가 높은 논문만 선별된 표본**이다. 즉 이번 비율 상승은 학술 트렌드 변화가 아니라 **인제스트 필터링 단계의 구조적 선택효과**로 해석해야 한다 — 전체 모수(1,023편) 대비 비율은 963편 기준과 크게 다르지 않을 것으로 추정된다. "응용 분야는 SNA 심화가 아닌 폭 탐색" 결론은 유지.
+
+### 기타 신규 확인 사항
+
+- **커스텀 하이브리드 딥러닝 감성모델 클러스터**: Bourasi(FastText+BiLSTM+Attention+CNN), Orgun(BERT+BiTCN), Sumy(CFF-Net+AGWO), Zhao(GAO-LSTR) 등 4편 이상 — NetMiner Lab 단일 BERT 모델과의 격차 확대 신호. → [[pages/methods/sentiment_analysis|감성 분석]]
+- **signed network/균형이론 신규 기능 공백**: Zhang(2026, Science Advances) — graph-tool 개발자 Peixoto 참여, 저명 저널 게재. → [[pages/methods/centrality|중심성 분석]], [[pages/methods/community_detection|커뮤니티 탐지]]
+- **ERGM을 "개입 평가 시뮬레이션 도구"로 쓰는 신규 응용 패턴**: Bright(약물밀매 네트워크 교란전략, ERGM 1,000개 시뮬레이션). → [[pages/methods/ergm|ERGM]]
+- **SNA를 비(非)네트워크 문제에 적용하는 패턴**: Daoud(중심성 기반 Entity Resolution/중복 레코드 탐지).
+- **wu_social_network_analysis(중국 마약거래 조직, 중심성 4종)**, **fernndez_semantic_convergence(대학 미션성명, Bonacich+QAP+Word Network)** — 둘 다 **NetMiner로 거의 완전 재현 가능한 최고 데모 후보**로 신규 확보.
+- **데이터 품질 이슈(위키 운영, 콘텐츠 트렌드 아님)**: `2026_unknown_deep_learning_based_cyberbully`·`2026_unknown_semanticbased_approach` 2편이 저자 미표기 + 주제와 무관한 저널(의약전달지)에 게재 — 약탈적 저널 가능성, 다음 lint 시 재확인 필요. 의사과학 3편 제외는 위 참고.
+- **위키 메타데이터 품질 이슈**: 다수 신규 페이지의 "위키 연관" 자동 링크가 실제 본문과 무관하게 SNA/토픽모델링으로 기본 연결되어 있음 확인 — synthesize/lint 시 참고용으로만 사용(본 집계는 초록 본문 기준으로 함).
+
+→ 상세 방법론 갱신: [[pages/methods/centrality|중심성 분석]], [[pages/methods/ergm|ERGM]], [[pages/methods/community_detection|커뮤니티 탐지]], [[pages/methods/topic_modeling|토픽 모델링]], [[pages/methods/sentiment_analysis|감성 분석]], [[pages/methods/llm_nlp|LLM/NLP 활용]], [[pages/methods/gnn|GNN]]
 
 ## 관련 페이지
 

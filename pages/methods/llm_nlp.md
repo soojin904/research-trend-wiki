@@ -157,6 +157,15 @@ LLM이 연구 도구를 넘어 **연구 활동 자체를 대상으로** 쓰이�
 - **지식그래프+멀티에이전트 LLM**: elshaer(Neo4j 지식그래프+멀티에이전트 LLM 의료전문과 추천)—LLM을 구조화 지식과 결합하는 하이브리드 패턴 지속.
 - **다중 LLM 비교 벤치마킹 지속**: koak(터키어 뉴스, GPT-4o/Claude/Qwen/Llama 비교), dai(중국어 질적 인터뷰, LLM 4종 비교) — "어떤 LLM이 이 언어·도메인에 적합한가" 장르가 신규분에서도 반복.
 
+## 9. 2026-10-14 보강 (응용 분야 신규 60편, 1,023편 기준)
+
+> 근거: [[pages/insights/applied_method_frequency_2026|응용 분야 방법론 빈도 (2026)]] 2026-10-14 증분 갱신 절
+
+- **LLM 에이전트 네트워크 시뮬레이션 추가 사례**: [[pages/papers/applied/2026_piao_emergence_polarization\|Piao (2026)]] — GPT-3.5/4o·ChatGLM·Llama-3·DeepSeek-V3 멀티 LLM 에이전트가 형성한 네트워크에서 여론 양극화 창발을 관찰. 4장 `papachrist_network_formation`과 같은 "LLM이 네트워크 형성 이론을 실험하는 신규 방향"의 추가 근거.
+- **GNN+LSTM+Cross-Attention 시공간 융합**: [[pages/papers/applied/2026_mardamsyah_spatiotemporal_disinformation_\|Mardamsyah (2026)]] — 남중국해 허위정보 탐지. NetMiner GCN/GraphSAGE/GAT(정적 그래프)로는 시계열 결합·Cross-Attention 아키텍처 재현 불가 — GNN 기능 공백(정적 vs 동적)의 구체 사례.
+- **LLM 자동채점 파이프라인**: [[pages/papers/applied/2026_tang_llmpowered_automatic_scoring_t\|Tang (2026)]] — Claude Sonnet 4.5/GPT-5.4/Gemini 2.5 기반 텍스트 매칭 자동채점. 네트워크 분석과 무관하나 최신 LLM 모델 벤치마킹 사례로 참고.
+- **설명가능AI(XAI) 택소노미 리뷰**: [[pages/papers/applied/2026_mohammadi_explainable_nlp_the\|Mohammadi (2026)]] — 헬스케어·법률금융 등 범용 XAI 분류체계 리뷰. NetMiner ML 모듈의 SHAP 지원과 부분 대응.
+
 ## 위키 연관
 
 - [[pages/methods/sentiment_analysis|감성 분석]] (BERT 기반 도구와 중첩, ABSA-via-LLM)

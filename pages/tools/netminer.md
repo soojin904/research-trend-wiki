@@ -46,13 +46,14 @@ tags: [tools, netminer, sna, text-mining, machine-learning]
 | Evaluation | Confusion Matrix |
 | XAI | SHAP |
 | Inference | — |
-| Clustering | k-means, PCA |
+| Clustering | k-means |
+| Dimension Reduction | PCA (사용자 확인, 2026-10-13) |
 
 ### Text (텍스트 분석)
 | 기능 | 세부 |
 |------|------|
 | Word Statistics | — |
-| **BERTopic** | **BERTopic, BERTrend** |
+| **BERTopic** | **BERTopic, BERTrend. 결과물에 토픽 간 코사인 유사도 매트릭스 포함(사용자 확인, 2026-10-11)** |
 | **LDA** | **Raw Text, TDM** |
 | Topic Evaluation(Perplexity, Coherence) | Raw Text, TDM |
 
@@ -72,6 +73,15 @@ tags: [tools, netminer, sna, text-mining, machine-learning]
 | 멀티모드 네트워크 시각화 | 서로 다른 노드셋(예: 저자/논문/키워드)을 한 화면에 통합 시각화 |
 
 > 출처: `03_marketing/outputs/contents/storyboard/2026-09-17_시각화업데이트/` 쇼츠 스토리보드 4건
+
+#### Visualize - 캔버스 UI 추가 기능 (미출시 포함, 사용자 확인 2026-10-13)
+| 기능 | 세부 |
+|------|------|
+| 그룹 축소(Collapse/Expand) | 클러스터드 맵에서 그룹을 1개 점(그룹 노드)으로 축소. 그룹명 라벨 + 소속 노드 수 배지. 마지막 클러스터는 축소 불가. 점 색상·크기는 Preferences > Styling > Node > Group Node에서 설정 |
+| Undo/Redo | 캔버스 작업(마우스 동작, 스타일 적용, 툴바의 노드/링크 라벨 표시·숨김, 링크 화살표 머리 표시·숨김(Directional Link Style), 상하/좌우 반전(Flip) 포함) 최대 10단계 저장, Ctrl+Z/Ctrl+Y. 최상단 툴바 아이콘, 현재 시각화에만 적용, 최대 3개 시각화 탭 동시 지원 |
+| 노드 속성 확장 | 우클릭 속성 창에 에고넷 크기, In/Out Degree 추가 표시 |
+| Show Top (%) | 노드/링크 라벨 크기 연동 시 속성 값 상위 %(기본 10, 1~100)의 라벨만 표시. 수치형은 큰 값순, 텍스트형은 가나다순 |
+| Auto Hide Small Labels | 시각화 툴바 토글(기본 켜짐). 화면 배율에 따라 작은 라벨 자동 숨김. Show Top (%) 적용 후 추가 적용 |
 
 ### Extension (확장)
 | 기능 |
@@ -156,6 +166,7 @@ NetMiner는 텍스트 마이닝 전용 도구가 아니라, 실제 개체(Actor)
 | 커뮤니티 탐지 (7) | ✅ Louvain, Leiden 등 4종 | **강점 — 최신 알고리즘 보유** |
 | 확산 / 전파 (10) | ⚠️ 없음 (간접 지원) | 기능 공백 |
 | 의미연결망 / 키워드 네트워크 (3) | ✅ Word Network | **독보적 강점 (국내)** |
+| 부호화 네트워크(signed network) / 균형이론 (신규 확인, 2026-10-14) | ❌ 미지원 | 신규 기능 공백 — Science Advances 게재(Peixoto 참여) 등 저명도 높은 최신 트렌드 |
 
 ---
 

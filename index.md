@@ -112,7 +112,7 @@
 > **성격**: NetMiner 사용 여부와 무관. SNA·텍스트마이닝이 마케팅·보건학·경영학·커뮤니케이션 등 응용 분야에서 어떻게 쓰이는지 파악하고 신규 고객 세그먼트를 발굴하는 목적.
 > **인제스트**: `batch_ingest.py` → 관련도 점수 기반 분류 (개별 페이지: `pages/papers/applied/`, 카탈로그: `pages/papers/applied/catalog_YYYY.md`).
 
-**현황**: 개별 페이지 963편 (`pages/papers/applied/`) · 카탈로그 2편 — 2025년 24편, 2026년 58편 (`pages/papers/applied/catalog_2025.md`, `catalog_2026.md`)
+**현황**: 개별 페이지 1,023편 (`pages/papers/applied/`) · 카탈로그 2편 — 2025년 24편, 2026년 64편 (`pages/papers/applied/catalog_2025.md`, `catalog_2026.md`)
 
 `pages/papers/applied/` 폴더 직접 탐색 또는 `/wiki:query`로 검색
 
@@ -189,9 +189,9 @@
 
 ## 통계
 
-- 총 페이지: 1,861 (papers 1,830 · concepts 7 · methods 16 · insights 6 · tools 2)
-- 최근 업데이트: 2026-10-07 (raw/sna, raw/applied 추가 신규분 ingest — SNA 개별 +1편, 응용 개별 +60편·카탈로그 +24편. 번역은 미포함, 신규 NetMiner 사용 사례 없음. 방법론/개념/overview 전수 재합성은 `/wiki:synthesize` 별도 실행 필요)
+- 총 페이지: 1,427 (papers 1,396 · concepts 7 · methods 16 · insights 6 · tools 2)
+- 최근 업데이트: 2026-10-14 (raw/applied 신규분 ingest — 응용 개별 +60편·카탈로그 +6편. raw/sna는 신규 대상 없음(전수 기존 페이지와 중복). 번역 미포함, 신규 NetMiner 사용 사례 없음) + `/wiki:synthesize` 증분 완료 — 신규 60편(유효 57편) 방법론/인사이트/도구 페이지 반영. 상세: [[pages/insights/applied_method_frequency_2026|응용 방법론 빈도 2026-10-14 증분]]
 - NetMiner 사용 논문: 43편 (PDF/KCI/OpenAlex, `pages/papers/netminer/`)
-- 학계 트렌드 논문: 742편 (OpenAlex, 2020–2026) — 개별 페이지 321편 + 카탈로그 7개(421편)
-- 응용 분야 논문: 1,045편 (키워드 수집, 2025–2026) — 개별 페이지 963편 + 카탈로그 2개(82편)
+- 학계 트렌드 논문: 328편 (OpenAlex, 2020–2026) — 개별 페이지 321편 + 카탈로그 7개
+- 응용 분야 논문: 1,111편 (키워드 수집, 2025–2026) — 개별 페이지 1,023편 + 카탈로그 2개(88편)
 - 수집 학술지 (유형 B): Social Networks (ISSN 0378-8733), Network Science (ISSN 2050-1250), Connections (ISSN 2816-4245, INSNA)
